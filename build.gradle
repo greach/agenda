@@ -37,9 +37,7 @@ dependencies {
         exclude group: "org.codehaus.groovy", module: "groovy-all"
     }
     testCompile "io.micronaut:micronaut-inject-groovy"
-    testCompile "junit:junit:4.12"
     testCompile "io.micronaut:micronaut-inject-java"
-    testCompile "org.hamcrest:hamcrest-all:1.3"
 }
 
 shadowJar {
