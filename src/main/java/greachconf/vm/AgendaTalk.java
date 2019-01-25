@@ -12,6 +12,7 @@ public class AgendaTalk extends AgendaItem {
     @Nullable
     private List<AgendaTalkSpeaker> speakers;
 
+    public AgendaTalk() {}
 
     public AgendaTalk(String uid, String title, List<AgendaTalkSpeaker> speakers) {
         super(title);

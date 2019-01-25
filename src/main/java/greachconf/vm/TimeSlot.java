@@ -10,6 +10,8 @@ public class TimeSlot implements Comparable<TimeSlot> {
     @Nonnull
     private LocalTime end;
 
+    public TimeSlot() {}
+
     public TimeSlot(LocalTime start, LocalTime end) {
         this.start = start;
         this.end = end;

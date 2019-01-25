@@ -9,6 +9,8 @@ public class AgendaTalkSpeaker {
     @Nonnull
     private String name;
 
+    public AgendaTalkSpeaker() {}
+
     public AgendaTalkSpeaker(String uid, String name) {
         this.uid = uid;
         this.name = name;

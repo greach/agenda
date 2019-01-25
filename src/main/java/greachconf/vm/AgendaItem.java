@@ -6,6 +6,8 @@ public class AgendaItem {
     @Nonnull
     private String title;
 
+    public AgendaItem() {}
+
     public AgendaItem(String title) {
         this.title = title;
     }

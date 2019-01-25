@@ -15,6 +15,8 @@ public class AgendaTimeSlot implements Comparable<AgendaTimeSlot> {
     @Nonnull
     private List<AgendaItem> items;
 
+    public AgendaTimeSlot() {}
+
     public AgendaTimeSlot(TimeSlot timeSlot, Map<String, AgendaTalk> trackTalks, List<AgendaItem> items) {
         this.timeSlot = timeSlot;
         this.trackTalks = trackTalks;

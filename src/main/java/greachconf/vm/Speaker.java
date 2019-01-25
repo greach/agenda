@@ -20,9 +20,7 @@ public class Speaker {
     @Nullable
     private String image;
 
-    public Speaker() {
-
-    }
+    public Speaker() {}
 
     @Nonnull
     public String getUid() {

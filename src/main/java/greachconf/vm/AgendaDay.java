@@ -16,6 +16,8 @@ public class AgendaDay implements Comparable<AgendaDay> {
     @Nonnull
     private List<AgendaTimeSlot> timeSlots;
 
+    public AgendaDay() {}
+
     public AgendaDay(LocalDate day, List<AgendaTimeSlot> timeSlots) {
         this.day = day;
         this.timeSlots = timeSlots;

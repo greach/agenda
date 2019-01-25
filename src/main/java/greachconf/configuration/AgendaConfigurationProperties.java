@@ -27,7 +27,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @ConfigurationProperties("agenda")
-public class AgendaRepositoryConfigurationProperties implements AgendaRepository, TalkRepository, SpeakerRepository {
+public class AgendaConfigurationProperties implements AgendaRepository, TalkRepository, SpeakerRepository {
 
     @Nonnull
     private List<Speaker> speakers;

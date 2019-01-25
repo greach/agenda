@@ -9,6 +9,8 @@ public class Agenda {
     @Nonnull
     private List<AgendaDay> days;
 
+    public Agenda() {}
+
     public Agenda(List<AgendaDay> days) {
         this.days = days;
         Collections.sort(days);
