@@ -1,4 +1,5 @@
 plugins {
+    id "com.github.erdi.webdriver-binaries" version "2.0"
     id "io.spring.dependency-management" version "1.0.6.RELEASE"
     id "com.github.johnrengelman.shadow" version "4.0.2"
     id "net.ltgt.apt-eclipse" version "0.18"
@@ -36,8 +37,21 @@ dependencies {
     testCompile("org.spockframework:spock-core") {
         exclude group: "org.codehaus.groovy", module: "groovy-all"
     }
+
+    compile "io.micronaut:micronaut-views"
+    runtime "org.apache.velocity:velocity-engine-core:$velocityEngineCoreVersion"
+
+    compile ("org.gebish:geb-spock:$gebVersion") {
+        exclude group: 'org.codehaus.groovy', module: 'groovy-all'
+    }
+    compile "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
+    testRuntime "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
+    testRuntime "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
+    testRuntime "org.seleniumhq.selenium:selenium-safari-driver:$seleniumSafariDriverVersion"
+
     testCompile "io.micronaut:micronaut-inject-groovy"
     testCompile "io.micronaut:micronaut-inject-java"
+    testCompile "io.micronaut.test:micronaut-test-spock:1.0.1"
 }
 
 shadowJar {
@@ -50,4 +64,9 @@ mainClassName = "greachconf.Application"
 tasks.withType(JavaCompile){
     options.encoding = "UTF-8"
     options.compilerArgs.add('-parameters')
+}
+
+webdriverBinaries {
+    chromedriver "$chromeDriverVersion"
+    geckodriver "$geckodriverVersion"
 }

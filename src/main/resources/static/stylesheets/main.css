@@ -1,0 +1,35 @@
+table {
+    margin-bottom: 50px;
+    border-collapse: collapse;
+}
+thead th {
+    background: lightgrey;
+    font-size: 1.2em;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.untrackItem {
+    background-color: lightyellow;
+}
+nav li {
+    display: inline;
+    margin-left: 0;
+    padding: 10px 30px;
+}
+nav li.selected a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.logo {
+    text-align: center;
+}

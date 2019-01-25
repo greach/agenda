@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${name} ${messages["speakerPageTitle"]}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+<body>
+#parse("views/logo.vm")
+#parse("views/nav.vm")
+<article>
+    #foreach($speaker in $speakers)
+        <ul>
+            <li>
+                <h2><a href="/speaker/${speaker.uid}">${speaker.name}</a></h2>
+            </li>
+        </ul>
+    #end
+</article>
+</body>
+</html>

@@ -8,3 +8,437 @@ micronaut:
                 mapping: /**
                 paths:
                     - classpath:static
+agenda:
+    speakers:
+        -
+            name: 'Sendil Kumar'
+            uid: 'sendil-kumar'
+        -
+            name: 'Jeff Beck'
+            uid: 'jeff-beck'
+        -
+            name: 'Iván López'
+            uid: 'ivan-lopez'
+        -
+            name: 'Guillaume Laforge'
+            uid: 'guillaume-laforge'
+        -
+            name: 'Micahel Kutz'
+            uid: 'micahel-kutz'
+        -
+            name: 'Mary Grygleski'
+            uid: 'mary-grygleski'
+        -
+            name: 'Alberto de Avila'
+            uid: 'alberto-de-avila'
+        -
+            name: 'Marco Vermuelen'
+            uid: 'marco-vermuelen'
+        -
+            name: 'Marcin Zajączkowski'
+            uid: 'marcin-zajączkowski'
+        -
+            name: 'Evelina Kieras'
+            uid: 'evelina-kieras'
+        -
+            name: 'Antonio Leiva'
+            uid: 'antonio-leiva'
+        -
+            name: 'Andres Almiray'
+            uid: 'andres-almiray'
+        -
+            name: 'Vladimir Orany'
+            uid: 'vladimir-orany'
+        -
+            name: 'Mario Garcia'
+            uid: 'mario-garcia'
+        -
+            name: 'Oleh Dokuka'
+            uid: 'oleh-dokuka'
+        -
+            name: 'Graeme Rocher'
+            uid: 'graeme-rocher'
+        -
+            name: 'Pablo Martinez'
+            uid: 'pablo-martinez'
+        -
+            name: 'Saúl Molinero'
+            uid: 'saul-molinero'
+        -
+            name: 'Bruno Verachten'
+            uid: 'bruno-verachten'
+        -
+            name: 'Alberto Barón'
+            uid: 'alberto-baron'
+        -
+            name: 'Miguel Ángel García Gómez'
+            uid: 'miguel-angel-garcia-gomez'
+        -
+            name: 'Anton María Rodrigo Yuste'
+            uid: 'anton-maria-rodrigo-yuste'
+        -
+            name: 'Kevin Wittek'
+            uid: 'kevin-wittek'
+        -
+            name: 'Todd Sharp'
+            uid: 'todd-sharp'
+        -
+            name: 'Mercedes Wyss'
+            uid: 'mercedes-wyss'
+        -
+            name: 'Cédric Champeau'
+            uid: 'cedric-champeau'
+        -
+            name: 'Nicolás Patarino'
+            uid: 'nicolas-patarino'
+        -
+            name: 'Jorge Barroso'
+            uid: 'jorge-barroso'
+        -
+            name: 'Alvaro Sanchez Mariscal'
+            uid: 'alvaro-sanchez-mariscal'
+        -
+            name: 'Katia Aresti'
+            uid: 'katia-aresti'
+        -
+            name: 'Vladimir Orany'
+            uid: 'vladimir-orany'
+    talks:
+        -
+            uid: 'lunch-break-28'
+            title: 'Lunch Break'
+            start: '2019-03-28T12:00:00'
+            end: '2019-03-28T13:00:00'
+        -
+            uid: 'coffee-break-28'
+            title: 'Coffee Break'
+            start: '2019-03-28T16:00:00'
+            end: '2019-03-28T16:15:00'
+        -
+            uid: 'registration'
+            title: 'Registration'
+            start: '2019-03-29T08:00:00'
+            end: '2019-03-29T08:45:00'
+        -
+            uid: 'welcome'
+            title: 'Welcome to Greach 2019'
+            start: '2019-03-29T08:45:00'
+            end: '2019-03-29T09:00:00'
+        -
+            uid: 'coffee-break-29'
+            title: 'Coffee Break'
+            start: '2019-03-29T10:45:00'
+            end: '2019-03-29T11:00:00'
+        -
+            uid: 'lunch-break-29'
+            title: 'Lunch Break'
+            start: '2019-03-29T13:00:00'
+            end: '2019-03-29T14:00:00'
+        -
+            uid: 'coffee-break-29-2'
+            title: 'Coffee Break'
+            start: '2019-03-29T15:45:00'
+            end: '2019-03-29T16:15:00'
+        -
+            uid: 'coffee-break-30'
+            title: 'Coffee Break'
+            start: '2019-03-30T10:45:00'
+            end: '2019-03-30T11:00:00'
+        -
+            uid: 'lunch-break-30'
+            title: 'Lunch Break'
+            start: '2019-03-30T12:30:00'
+            end: '2019-03-30T13:30:00'
+        -
+            uid: 'closure'
+            title: 'Closure'
+            start: '2019-03-30T15:20:00'
+            end: '2019-03-30T15:30:00'
+        -
+            uid: 'karumi-stories'
+            title: 'Karumi Stories'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T17:15:00'
+            end: '2019-03-29T18:00:00'
+            speakers:
+                - 'jorge-barroso'
+        -
+            uid: 'android-keynote'
+            title: 'Keynote'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T09:00:00'
+            end: '2019-03-29T09:45:00'
+            speakers:
+                - 'jorge-barroso'
+        -
+            title: 'Jhipster Workshop'
+            uid: 'jhipster-workshop'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-28T16:00:00'
+            end: '2019-03-28T19:00:00'
+            speakers:
+                - 'sendil-kumar'
+        -
+            title: 'Observability workshop'
+            uid: 'observability-workshop'
+            track: 'Reactive & Microservices'
+            start: '2019-03-28T13:00:00'
+            end: '2019-03-28T16:00:00'
+            speakers:
+              - 'jeff-beck'
+        -
+            title: 'How I Automated My Barn with Arduino, Raspberry Pi, Kafka, Docker, Kubernetes, Mongo and the Cloud'
+            uid: 'how-i-automated-my-barn-with-arduino-raspberry-pi-kafka-docker-kubernetes-mongo-and-the-cloud'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-29T16:15:00'
+            end: '2019-03-29T17:00:00'
+            speakers:
+                - 'todd-sharp'
+        -
+            title: '(Automated) Security Testing in a DevOps world'
+            uid: 'automated-security-testing-in-a-devops-world'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-30T10:45:00'
+            end: '2019-03-30T11:30:00'
+            speakers:
+                - 'kevin-wittek'
+        -
+            title: 'Containers In Anger with Micronaut'
+            uid: 'containers-in-anger-with-micronaut'
+            track: 'Reactive & Microservices'
+            start: '2019-03-28T16:00:00'
+            end: '2019-03-28T19:00:00'
+            speakers:
+                - 'anton-maria-rodrigo-yuste'
+        -
+            title: 'Micronaut performance'
+            uid: 'micronaut-performance'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-30T11:45:00'
+            end: '2019-03-30T12:00:00'
+            speakers:
+                - 'miguel-angel-garcia-gomez'
+        -
+            title: 'Analyze your code with SonarLint for IntelliJ'
+            uid: 'analyze-your-code-with-sonarlint-for-intellij'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-30T11:45:00'
+            end: '2019-03-30T12:00:00'
+            speakers:
+                - 'alberto-baron'
+        -
+            title: 'The Android device farm that fits in a (cloudy) pocket'
+            uid: 'the-android-device-farm-that-fits-in-a-cloudy-pocket'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-30T14:30:00'
+            end: '2019-03-30T15:15:00'
+            speakers:
+                - 'bruno-verachten'
+        -
+            title: 'Android Dev Tools and Workflows'
+            uid: 'android-dev-tools-and-workflows'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-30T09:30:00'
+            end: '2019-03-30T10:15:00'
+            speakers:
+                - 'saul-molinero'
+        -
+            title: 'Conquering Google play'
+            uid: 'conquering-google-play'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T15:00:00'
+            end: '2019-03-29T15:45:00'
+            speakers:
+                - 'pablo-martinez'
+        -
+            title: 'Grails State of the Union'
+            uid: 'grails-state-of-theunion'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-30T09:30:00'
+            end: '2019-03-30T10:15:00'
+            speakers:
+                - 'graeme-rocher'
+        -
+            title: 'Micronaut State of the Union'
+            uid: 'micronaut-state-of-the-union'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-29T10:00:00'
+            end: '2019-03-29T10:45:00'
+            speakers:
+                - 'graeme-rocher'
+        -
+            title: 'Reactive Hardcore. How to build a Publisher<?> and beyond'
+            uid: 'reactive-hardcore-how-to-build-a-publisher-and-beyond'
+            track: 'Reactive & Microservices'
+            start: '2019-03-28T09:00:00'
+            end: '2019-03-28T12:00:00'
+            speakers:
+                - 'oleh-dokuka'
+        -
+            title: 'Create your own blog using Jbake'
+            uid: 'create-your-own-blog-using-jbake'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-28T13:00:00'
+            end: '2019-03-28T16:00:00'
+            speakers:
+                - 'mario-garcia'
+        -
+            title: 'Guide to Developer-Friendly DSLs'
+            uid: 'guide-to-developer-friendly-dsls'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-28T13:00:00'
+            end: '2019-03-28T16:00:00'
+            speakers:
+                - 'vladimir-orany'
+        -
+            title: 'Keynote'
+            uid: 'keynote-jvm-frameworks'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-29T09:00:00'
+            end: '2019-03-29T09:45:00'
+            speakers:
+                - 'andres-almiray'
+        -
+            title: 'Build libraries with Kordamp Gradle Plugins'
+            uid: 'build-libraries-with-kordamp-gradle-plugins'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-28T16:00:00'
+            end: '2019-03-28T19:00:00'
+            speakers:
+                - 'andres-almiray'
+        -
+            title: 'Kotlin Workshop'
+            uid: 'kotlin-workshop'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-28T09:00:00'
+            end: '2019-03-28T12:00:00'
+            speakers:
+                - 'antonio-leiva'
+        -
+            title: 'Kotlin & Implications in an IoT project'
+            uid: 'kotlin-implications-in-an-iot-project'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-30T13:30:00'
+            end: '2019-03-30T14:15:00'
+            speakers:
+                - 'mercedes-wyss'
+        -
+            title: 'Kotlin coroutines'
+            uid: 'kotlin-coroutines'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T14:00:00'
+            end: '2019-03-29T14:45:00'
+            speakers:
+                - 'antonio-leiva'
+        -
+            title: 'A More Secure World for Android Apps'
+            uid: 'a-more-secure-world-for-android-apps'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T16:15:00'
+            end: '2019-03-29T17:00:00'
+            speakers:
+                - 'mercedes-wyss'
+        -
+            title: 'Testing Kotlin with Spock'
+            uid: 'testing-kotlin-with-spock'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T12:15:00'
+            end: '2019-03-29T13:00:00'
+            speakers:
+                - 'evelina-kieras'
+        -
+            title: 'Spock vs JUnit 5 - Clash of the Titans'
+            uid: 'spock-vs-junit5-clash-of-the-titans'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T11:15:00'
+            end: '2019-03-29T12:00:00'
+            speakers:
+                - 'marcin-zajączkowski'
+        -
+            title: "It's a bird, it's a plane, no it's SDKMAN!"
+            uid: 'its-a-bird-its-a-plane-no-its-sdkman'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T10:00:00'
+            end: '2019-03-29T10:45:00'
+            speakers:
+                - 'marco-vermuelen'
+        -
+            title: 'GRAALVM with Groovy & Kotlin'
+            uid: 'graalvm-with-groovy-kotlin'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-29T15:00:00'
+            end: '2019-03-29T15:45:00'
+            speakers:
+                - 'alberto-de-avila'
+        -
+            title: 'Reactive for the Impatient - A Gentle Intro to Reactive Programming and Systems'
+            uid: 'reactive-for-the-impatient-a-gentle-intro-to-reactive-programming-and-systems'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-29T12:15:00'
+            end: '2019-03-29T13:00:00'
+            speakers:
+                - 'mary-grygleski'
+        -
+            title: 'How To Build a Test Lib for a Microservice Based Web Application with Geb & Spock'
+            uid: 'how-to-build-a-test-lib-for-a-microservice-based-web-application-with-geb-spock'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-30T13:30:00'
+            end: '2019-03-30T14:15:00'
+            speakers:
+                - 'michael-kutz'
+        -
+            title: 'A Groovy serverless journey on Google Cloud'
+            uid: 'a-groovy-serverless-journey-on-google-cloud'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-30T08:30:00'
+            end: '2019-03-30T09:15:00'
+            speakers:
+                - 'guillaume-laforge'
+        -
+            title: "What's new in Gradle 5?"
+            uid: 'whats-new-in-gradle-5?'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-30T08:30:00'
+            end: '2019-03-30T09:15:00'
+            speakers:
+                - 'cedric-champeau'
+        -
+            title: 'Creating Micronaut Configurations'
+            uid: 'creating-micronaut-configurations'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-30T14:30:00'
+            end: '2019-03-30T15:15:00'
+            speakers:
+                - 'ivan-lopez'
+        -
+            title: 'When Clean Architecture met Kotlin: A love story'
+            uid: 'when-clean-architecture-met-kotlin-a-love-story'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-30T10:45:00'
+            end: '2019-03-30T11:30:00'
+            speakers:
+                - 'nicolas-patarino'
+        -
+            title: 'Micronaut Workshop'
+            uid: 'micronaut-workshop'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-28T09:00:00'
+            end: '2019-03-28T12:00:00'
+            speakers:
+                - 'alvaro-sanchez-mariscal'
+        -
+            title: 'Boosting your applications with distributed caches/datagrids'
+            uid: 'boosting-your-applications-with-distributed-caches-datagrids'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-29T11:15:00'
+            end: '2019-03-29T12:00:00'
+            speakers:
+                - 'katia-aresti'
+        -
+            title: 'AWS + MN = BFF'
+            uid: 'aws-mn-bff'
+            track: 'Microservices & JVM Frameworks'
+            start: '2019-03-29T14:00:00'
+            end: '2019-03-29T14:45:00'
+            speakers:
+                - 'vladimir-orany'

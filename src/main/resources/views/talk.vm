@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${title} ${messages["talkPageTitle"]}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+<body>
+#parse("views/logo.vm")
+#parse("views/nav.vm")
+<article>
+    <header>
+        <h1>${title}</h1>
+    </header>
+</article>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${messages["pageTitle"]}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+<body>
+#parse("views/logo.vm")
+#parse("views/nav.vm")
+
+#foreach( $day in $days)
+
+<table>
+    <thead>
+        #set( $colspan = $day.getTracks().size() + 1 )
+        <tr><th colspan="${colspan}">${day.getDay().toString()}</th></tr>
+        <tr>
+            <th></th>
+            #foreach($track in $day.getTracks())
+                <th>$track</th>
+            #end
+        </tr>
+    </thead>
+    <tbody>
+    #foreach($timeSlot in $day.getTimeSlots())
+    <tr>
+        <td>
+            <span class="start">${timeSlot.getTimeSlot().getStart()}</span>
+            <span class="timeSeparator"> - </span>
+            <span class="end">${timeSlot.getTimeSlot().getEnd()}</span>
+        </td>
+        #if(${timeSlot.getTrackTalks()})
+        #foreach($track in ${day.getTracks()})
+            <td>
+                #if(${timeSlot.getTrackTalks()[$track]})
+                    <a class="title" href="/talk/${timeSlot.getTrackTalks()[$track].uid}">${timeSlot.getTrackTalks()[$track].title}</a>
+                    #foreach($speaker in ${timeSlot.getTrackTalks()[$track].getSpeakers()})
+                    <a class="speaker" href="/speaker/${speaker.uid}">${speaker.getName()}</a>
+                    #end
+                #end
+            </td>
+        #end
+        #end
+        #foreach($item in $timeSlot.getItems())
+            <td colspan="${day.getTracks().size()}" class="untrackItem">${item.getTitle()}</td>
+        #end
+    </tr>
+    #end
+
+    </tbody>
+</table>
+#end
+</body>
+</html>

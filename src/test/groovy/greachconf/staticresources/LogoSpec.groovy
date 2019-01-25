@@ -1,4 +1,4 @@
-package greachconf
+package greachconf.staticresources
 
 import io.micronaut.context.ApplicationContext
 import io.micronaut.http.HttpRequest
@@ -20,7 +20,7 @@ class LogoSpec extends Specification {
     @Shared
     HttpClient client = HttpClient.create(embeddedServer.URL)
 
-    def "logo.png is exposed"() {
+    def "/images/logo.png returns 200"() {
         when:
         HttpResponse response = client.toBlocking().exchange(HttpRequest.GET("/images/logo.png"))
 
