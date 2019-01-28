@@ -82,7 +82,7 @@ agenda:
             name: 'Schalk Cronjé'
             uid: 'schalk-cronje'
             twitter: 'ysb33r'
-            image: 'ysb33r.jpg'
+            image: 'https://greach.s3.amazonaws.com/ysb33r.jpg'
             bio:
                 - 'Schalk Cronjé is a long-time Groovy fan and creator of a number f Groovy libraries.. He is very well known for his extensive knowledge on Gradle and he is also the person behind in the @DailyGradle Twitter account. He is active member of the Asciidoctor community and is currently the leading maintainer on the Asciidoctor Gradle plugin.'
                 - 'He has 30yrs of experience in the software industry and now linves and works from Andorra in the Pyrenees mountains.'
@@ -90,7 +90,7 @@ agenda:
             name: 'Jacob Aae Mikkelsen'
             uid: 'jacob-aae-mikkelsen'
             twitter: 'JacobAae'
-            image: 'JacobAae.jpg'
+            image: 'https://greach.s3.amazonaws.com/JacobAae.jpg'
             bio:
                 - 'Jacob is a senior solution architect working in a startup fintect company in Denmark: Cardlay. While still hands-on, scaling microservices and microservice architechture is part of the job.'
                 - "He’s been on the crew arranging GR8conf Europe for several years, and as a hobby on the side, Jacob has for multiple years taught courses at the University of Southern Denmark, including a course on “Web development with Groovy and Grails”."
@@ -105,7 +105,7 @@ agenda:
             name: 'Evelina Kieras'
             uid: 'evelina-kieras'
             twitter: 'Ev3Kieras'
-            image: 'https://greach.s3.amazonaws.com/placeholder.jpg'
+            image: 'https://greach.s3.amazonaws.com/Evelina-Kieras.jpg'
             bio:
                 - "My name is Evelina and I have been working with Groovy and Grails since 2015. I'm currently working as a software developer at Salenda, a company dedicated to custom apps development, mainly in Groovy, Grails and Angular 2, where I learn something new everyday, and I try to do my best improving my development skills to get better at web-app development."
         -
