@@ -3,6 +3,7 @@
 <head>
     <title>${name} ${messages["speakerPageTitle"]}</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+#parse("views/header.vm")
 </head>
 <body>
 #parse("views/logo.vm")
