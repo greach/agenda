@@ -6,11 +6,22 @@ install: true
 jdk:
   - oraclejdk8
 script:
-  - ./gradlew -Dgeb.env=chromeHeadless build --scan -s
+  - "./gradlew -Dgeb.env=chromeHeadless build --scan -s"
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 cache:
   directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
+    - "$HOME/.gradle/caches/"
+    - "$HOME/.gradle/wrapper/"
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: ''
+  secret_access_key:
+    secure: d1UfhmyYC63MVYQmmkhXI/VgGz3X8SSkUyedGer4qzLu/P3HExkOyVWwVCdamR4ldxQp1ajKsRl6boF6ynNI2bksh7i0flNrvA7IfJBui/HGePZQfs61bAVj+Jr33WW+V4Z+4oSUi+h8sZJZiD32S+NXCwzOKCbiiVMNllKI/+Zvu3f73wXdhfT+cDA//qq38DA3BMLWqrVJ9NI7yF4XkIiBXfgBTtjaAvGSw2kXxRrpmI8C+jOSxBNXyl9sYlV8Z6IxwL86Kud6GPgzHZOQPLdwLPnw3ubFo90oPW8XoKVIkvnNnFZMwrt5p6cMdjM+rFTOJ3cQQayLbvGEsDqx/jcAzYSfG0y4e83UChIvwqfSx17Pov9mHXu43/mWlaTUr5Ky4deGEvmuY/ObwrPRAWqhxx1Ao/n3Fe8ws+KPL0I42I1VHBJOnjinWsmny9Rf0g1LoPLz1lxQQqAFY5orYEOgwRHFTvatQRa13JEnwLOMLTDZvWx/JEV23BJQMDwA6TgVgVCdmaQ3kv1KY6CBClc0AL0CpEHZ/NE1IJx2tRcPhN2hkgpvDYu8OoHESgaZVECgpznzV96OSUesuTD4YR3eR8v8ZcsQkq69sGVZEXxfJJdMvMTdQrwGTbphPni7ICIAPNNmNrspV2+AgkX0wVmMD+piaLrwpzFI8TTnWrk=
+  region: eu-west-1
+  app: greachagenda
+  env: Greachagenda-env
+  on:
+    repo: greach/agenda
+  zip_file: 'build/libs/agenda-0.1.jar'
