@@ -6,7 +6,13 @@ body {
 p {
     font-size: 1.2em;
 }
-
+.breadcrumbs,
+div.logo,
+nav,
+article {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 .breadcrumbs {
     list-style-type: none;
     overflow: auto;
@@ -16,12 +22,6 @@ p {
     margin-right: 15px;
 }
 
-div.logo,
-nav,
-article {
-    max-width: 1280px;
-    margin: 0 auto;
-}
 article header {
     text-align: center;
     margin-top: 50px;
