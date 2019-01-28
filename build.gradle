@@ -71,6 +71,7 @@ webdriverBinaries {
     geckodriver "$geckodriverVersion"
 }
 tasks.withType(Test) {
+    systemProperty "geb.env", System.getProperty('geb.env')
     beforeTest { descriptor -> logger.quiet " -- $descriptor" }
     testLogging {
         events "passed", "skipped", "failed"
