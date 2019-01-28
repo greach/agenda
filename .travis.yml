@@ -15,6 +15,7 @@ cache:
   - "$HOME/.gradle/caches/"
   - "$HOME/.gradle/wrapper/"
 deploy:
+  skip_cleanup: true
   provider: elasticbeanstalk
   access_key_id:
     secure: "$ACCESSKEYID"
@@ -24,9 +25,10 @@ deploy:
   app: greachagenda
   env: Greachagenda-env
   on:
+    tags: true
     branch: master
     repo: greach/agenda
-  zip_file: build/libs/agenda-0.1.jar
+  zip_file: build/libs/agenda-0.1-all.jar
   bucket_name: "$BUCKETNAME"
 env:
   global:
