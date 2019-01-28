@@ -9,7 +9,7 @@ plugins {
 apply plugin:"application"
 apply plugin:"groovy"
 
-version "0.1"
+version "0.2"
 group "greachconf"
 
 repositories {
