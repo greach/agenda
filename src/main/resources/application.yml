@@ -8,6 +8,14 @@ micronaut:
                 mapping: /**
                 paths:
                     - classpath:static
+endpoints:
+    health:
+        enabled: true
+    info:
+        enabled: true
+        sensitive: false
+        git:
+          enabled: true
 agenda:
     speakers:
         -
@@ -70,6 +78,22 @@ agenda:
             image: 'https://greach.s3.amazonaws.com/marc0der.jpg'
             bio:
                 - 'Marco Vermeulen is a South African Software Developer who works and lives in London. He is passionate about writing well crafted code, driven and guided by tests. As a proponent of BDD, he has successfully applied this technique in the Enterprise as well as on Open Source Projects. He is an avid supporter of OSS and is the creator of SDKMAN, the Software Development Kit Manager.'
+        -
+            name: 'Schalk Cronjé'
+            uid: 'schalk-cronje'
+            twitter: 'ysb33r'
+            image: 'ysb33r.jpg'
+            bio:
+                - 'Schalk Cronjé is a long-time Groovy fan and creator of a number f Groovy libraries.. He is very well known for his extensive knowledge on Gradle and he is also the person behind in the @DailyGradle Twitter account. He is active member of the Asciidoctor community and is currently the leading maintainer on the Asciidoctor Gradle plugin.'
+                - 'He has 30yrs of experience in the software industry and now linves and works from Andorra in the Pyrenees mountains.'
+        -
+            name: 'Jacob Aae Mikkelsen'
+            uid: 'jacob-aae-mikkelsen'
+            twitter: 'JacobAae'
+            image: 'JacobAae.jpg'
+            bio:
+                - 'Jacob is a senior solution architect working in a startup fintect company in Denmark: Cardlay. While still hands-on, scaling microservices and microservice architechture is part of the job.'
+                - "He’s been on the crew arranging GR8conf Europe for several years, and as a hobby on the side, Jacob has for multiple years taught courses at the University of Southern Denmark, including a course on “Web development with Groovy and Grails”."
         -
             name: 'Marcin Zajączkowski'
             uid: 'marcin-zajączkowski'
@@ -291,8 +315,8 @@ agenda:
         -
             uid: 'coffee-break-30'
             title: 'Coffee Break'
-            start: '2019-03-30T10:15:00'
-            end: '2019-03-30T10:45:00'
+            start: '2019-03-30T09:45:00'
+            end: '2019-03-30T10:15:00'
         -
             uid: 'lunch-break-30'
             title: 'Lunch Break'
@@ -355,8 +379,8 @@ agenda:
             title: '(Automated) Security Testing in a DevOps world'
             uid: 'automated-security-testing-in-a-devops-world'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T10:45:00'
-            end: '2019-03-30T11:30:00'
+            start: '2019-03-30T11:15:00'
+            end: '2019-03-30T12:00:00'
             speakers:
                 - 'kevin-wittek'
             about:
@@ -379,8 +403,8 @@ agenda:
             title: 'Micronaut performance'
             uid: 'micronaut-performance'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T11:45:00'
-            end: '2019-03-30T12:00:00'
+            start: '2019-03-30T12:15:00'
+            end: '2019-03-30T12:30:00'
             speakers:
                 - 'miguel-angel-garcia-gomez'
             about:
@@ -389,8 +413,8 @@ agenda:
             title: 'Analyze your code with SonarLint for IntelliJ'
             uid: 'analyze-your-code-with-sonarlint-for-intellij'
             track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T11:45:00'
-            end: '2019-03-30T12:00:00'
+            start: '2019-03-30T12:15:00'
+            end: '2019-03-30T12:30:00'
             speakers:
                 - 'alberto-baron'
             about:
@@ -419,8 +443,8 @@ agenda:
             title: 'Android Dev Tools and Workflows'
             uid: 'android-dev-tools-and-workflows'
             track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T09:30:00'
-            end: '2019-03-30T10:15:00'
+            start: '2019-03-30T10:15:00'
+            end: '2019-03-30T11:00:00'
             speakers:
                 - 'saul-molinero'
         -
@@ -545,8 +569,8 @@ agenda:
             title: 'A More Secure World for Android Apps'
             uid: 'a-more-secure-world-for-android-apps'
             track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T10:45:00'
-            end: '2019-03-30T11:30:00'
+            start: '2019-03-30T11:15:00'
+            end: '2019-03-30T12:00:00'
             speakers:
                 - 'mercedes-wyss'
             about:
@@ -623,18 +647,40 @@ agenda:
             title: 'A Groovy serverless journey on Google Cloud'
             uid: 'a-groovy-serverless-journey-on-google-cloud'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T08:30:00'
-            end: '2019-03-30T09:15:00'
+            start: '2019-03-30T09:00:00'
+            end: '2019-03-30T09:45:00'
             speakers:
                 - 'guillaume-laforge'
             about:
                 - 'Lucky the Groovy developer with the lovely frameworks and libraries at their disposal to craft their web apps, APIs or microservices. But where should one deploy those apps? Furthermore, if you don’t want to deal with infrastructure, if you want to scale transparently, and pay only for what you use, is it possible to deploy your apps in a “serverless” fashion? In this presentation, we’ll have a look at how to deploy Groovy functions, apps or containerized payloads on Google Cloud Platform (with App Engine and Cloud Functions), as well as discovering the other useful services you can take advantage of for storing data (with Cloud Firestore), messaging between services (with Pub/Sub), or for monitoring (with Stackdriver).'
         -
+            title: "Zipfiles on the Fly with Micronaut"
+            uid: 'zipfiles-on-the-fly-with-micronaut'
+            start: '2019-03-30T08:10:00'
+            end: '2019-03-30T08:50:00'
+            track: 'Microservices & JVM Frameworks'
+            speakers:
+                - 'jacob-aae-mikkelsen'
+            about:
+                - 'If you have a collection of photos that your users can download in a zip file, you have many different options for the user experience. Most of these involve the user to wait for the zip to be produced in the background.'
+                - 'In the presentation, I will take you through the steps of creating the zip fly on the fly, using reactive programming with backpressure in micronaut. Doing it this way, we can limit the memory usage, even with many clients downloading on a slow connection.'
+                - 'An introduction to reactive programming and backpressure is included!'
+        -
+            title: "What's new in Asciidoctor"
+            uid: 'whats-new-in-asciidoctor'
+            start: '2019-03-30T08:10:00'
+            end: '2019-03-30T08:50:00'
+            track: 'Android, Tests & JVM Langs'
+            speakers:
+                - 'schalk-cronje'
+            about:
+                - "Let's talk Asciidoctor, Gradle and Groovy. About what's new in the 2.x releases of the Asciidoctor Gradle plugin, about dealing with Gradle workers, serialising closures. This is not just just a talk about new and esciting feastures, but also about the practically of having to deal with real-world issues when writing plugins for Gradle in Groovy."
+        -
             title: "What's new in Gradle 5?"
             uid: 'whats-new-in-gradle-5?'
             track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T08:30:00'
-            end: '2019-03-30T09:15:00'
+            start: '2019-03-30T09:00:00'
+            end: '2019-03-30T09:45:00'
             speakers:
                 - 'cedric-champeau'
             about:
@@ -649,8 +695,8 @@ agenda:
             title: 'Creating Micronaut Configurations'
             uid: 'creating-micronaut-configurations'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T09:30:00'
-            end: '2019-03-30T10:15:00'
+            start: '2019-03-30T10:15:00'
+            end: '2019-03-30T11:00:00'
             speakers:
                 - 'ivan-lopez'
             about:
