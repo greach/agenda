@@ -4,7 +4,7 @@
         <li><a href="https://greachconf.com/tickets">Tickets</a></li>
         <li class="selected"><a href="https://agenda.greachconf.com/">Agenda</a></li>
         <li><a href="https://greachconf.com/venue">Venue</a></li>
-        <li><a href="https://greachconf.com/speakers">Speakers</a></li>
+        <li><a href="https://agenda.greachconf.com/speakers">Speakers</a></li>
         <li><a href="https://greachconf.com/sponsors">Sponsors</a></li>
         <li><a href="https://greachconf.com/faq"><abbr title="Frequently Asked Questions">FAQ</abbr></a></li>
         <li><a href="https://greachconf.com/coc"><abbr title="Code of Conduct">COC</abbr></a></li>
