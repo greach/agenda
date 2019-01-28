@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>${title} ${messages["talkPageTitle"]}</title>
+    <title>${talk.title} ${messages["talkPageTitle"]}</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 </head>
 <body>
 #parse("views/logo.vm")
 #parse("views/nav.vm")
+<ul class="breadcrumbs">
+    <li><a href="/">Agenda</a></li>
+    <li>&rarr;</li>
+    <li><span>${talk.title}</span></li>
+</ul>
 <article>
-    <header>
-        <h1>${title}</h1>
-    </header>
+    <h1>${talk.title}</h1>
+    <h2>${talk.start}</h2>
+    #foreach($paragraph in $talk.about)
+        <p>${paragraph}</p>
+    #end
+    <h2>${messages["speakers"]}</h2>
+    #foreach($speaker in $speakers)
+        <a href="/speaker/${speaker.uid}">
+        <h3>${speaker.name}</h3>
+        <img src="${speaker.image}" alt="${speaker.name}" width="200"/>
+        </a>
+    #end
 </article>
 </body>
 </html>

@@ -6,11 +6,21 @@
 </head>
 <body>
 #parse("views/logo.vm")
-#parse("views/nav.vm")
+#parse("views/speakers-nav.vm")
+<ul class="breadcrumbs">
+    <li><a href="/">Agenda</a></li>
+    <li>&rarr;</li>
+    <li><a href="/speakers">Speakers</a></li>
+    <li>&rarr;</li>
+    <li><span>${name}</span></li>
+</ul>
 <article>
-    <header>
-        <h1>${name}</h1>
-    </header>
+    <h1>${name}</h1>
+    <p><a href="https://twitter.com/${twitter}">@${twitter}</a></p>
+    #foreach($bioparagraph in $bio)
+        <p>${bioparagraph}</p>
+    #end
+    <img src="${image}" alt="${name}"/>
 </article>
 </body>
 </html>

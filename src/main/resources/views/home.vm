@@ -8,6 +8,8 @@
 #parse("views/logo.vm")
 #parse("views/nav.vm")
 
+<article>
+    <header><h1>Agenda</h1></header>
 #foreach( $day in $days)
 
 <table>
@@ -34,6 +36,7 @@
             <td>
                 #if(${timeSlot.getTrackTalks()[$track]})
                     <a class="title" href="/talk/${timeSlot.getTrackTalks()[$track].uid}">${timeSlot.getTrackTalks()[$track].title}</a>
+                    <span> - </span>
                     #foreach($speaker in ${timeSlot.getTrackTalks()[$track].getSpeakers()})
                     <a class="speaker" href="/speaker/${speaker.uid}">${speaker.getName()}</a>
                     #end
@@ -50,5 +53,6 @@
     </tbody>
 </table>
 #end
+</article>
 </body>
 </html>

@@ -70,3 +70,10 @@ webdriverBinaries {
     chromedriver "$chromeDriverVersion"
     geckodriver "$geckodriverVersion"
 }
+tasks.withType(Test) {
+    beforeTest { descriptor -> logger.quiet " -- $descriptor" }
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat 'full'
+    }
+}

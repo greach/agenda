@@ -52,7 +52,7 @@ public class AgendaConfigurationProperties implements AgendaRepository, TalkRepo
 
     private List<AgendaItem> findUnTrackTalskByTimeSlot(@Nonnull LocalDate localDate, @Nonnull TimeSlot timeSlot) {
         return talks.stream()
-                .filter(talk -> talk.getStart()!=null && talk.getEnd() != null && (talk.getTrack() == null || talk.getTrack().isBlank()))
+                .filter(talk -> talk.getStart()!=null && talk.getEnd() != null && (talk.getTrack() == null || talk.getTrack().isEmpty()))
                 .filter(talk -> talk.getStart().toLocalDate().equals(localDate) &&
                         talk.getStart().toLocalTime().equals(timeSlot.getStart()) &&
                         talk.getEnd().toLocalTime().equals(timeSlot.getEnd()))

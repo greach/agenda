@@ -2,8 +2,9 @@ package greachconf.vm;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.List;
 
-public class Speaker {
+public class Speaker implements Comparable<Speaker> {
 
     @Nonnull
     private String uid;
@@ -12,7 +13,7 @@ public class Speaker {
     private String name;
 
     @Nullable
-    private String bio;
+    private List<String> bio;
 
     @Nullable
     private String twitter;
@@ -41,11 +42,11 @@ public class Speaker {
     }
 
     @Nullable
-    public String getBio() {
+    public List<String> getBio() {
         return bio;
     }
 
-    public void setBio(@Nullable String bio) {
+    public void setBio(@Nullable List<String> bio) {
         this.bio = bio;
     }
 
@@ -65,5 +66,10 @@ public class Speaker {
 
     public void setImage(@Nullable String image) {
         this.image = image;
+    }
+
+    @Override
+    public int compareTo(Speaker o) {
+        return getName().compareTo(o.getName());
     }
 }

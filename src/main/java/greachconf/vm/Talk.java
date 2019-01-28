@@ -3,6 +3,8 @@ package greachconf.vm;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Talk {
@@ -14,7 +16,7 @@ public class Talk {
     private String title;
 
     @Nullable
-    private String about;
+    private List<String> about;
 
     @Nullable
     private String slides;
@@ -23,7 +25,7 @@ public class Talk {
     private String video;
 
     @Nullable
-    private Set<String> speakers;
+    private Set<String> speakers = new HashSet<>();
 
     @Nullable
     private LocalDateTime start;
@@ -102,11 +104,11 @@ public class Talk {
     }
 
     @Nullable
-    public String getAbout() {
+    public List<String> getAbout() {
         return about;
     }
 
-    public void setAbout(@Nullable String about) {
+    public void setAbout(@Nullable List<String> about) {
         this.about = about;
     }
 

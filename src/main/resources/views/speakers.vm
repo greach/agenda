@@ -6,12 +6,18 @@
 </head>
 <body>
 #parse("views/logo.vm")
-#parse("views/nav.vm")
+#parse("views/speakers-nav.vm")
 <article>
+    <header>
+        <h1>Speakers</h1>
+    </header>
     #foreach($speaker in $speakers)
-        <ul>
+        <ul class="speakers">
             <li>
-                <h2><a href="/speaker/${speaker.uid}">${speaker.name}</a></h2>
+                <a href="/speaker/${speaker.uid}">
+                    <b>${speaker.name}</b>
+                    <img src="${speaker.image}" alt="${speaker.name}"/>
+                </a>
             </li>
         </ul>
     #end
