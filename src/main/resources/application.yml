@@ -701,6 +701,7 @@ agenda:
                 - 'ivan-lopez'
             about:
                 - 'Micronaut provides out-of-the-box integrations with a lot of tools and third-party libraries: Consul, Eureka, Hibernate, Kafka, Mongo, Micrometer, Zipkin, Hystrix, Swagger,... But sometimes this is not enough and you need to integrate with a new one.'
+                - 'In this talk, we will discuss the different options that we have to create a new configuration for Micronaut: bean factories, conditional beans, configuration properties,... and you will learn how to make the most out of it.'
         -
             title: 'When Clean Architecture met Kotlin: A love story'
             uid: 'when-clean-architecture-met-kotlin-a-love-story'
