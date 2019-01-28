@@ -4,24 +4,30 @@ addons:
 language: java
 install: true
 jdk:
-  - oraclejdk8
+- oraclejdk8
 script:
-  - "./gradlew -Dgeb.env=chromeHeadless test"
+- "./gradlew -Dgeb.env=chromeHeadless test"
 before_cache:
-  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+- rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 cache:
   directories:
-    - "$HOME/.gradle/caches/"
-    - "$HOME/.gradle/wrapper/"
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
 deploy:
   provider: elasticbeanstalk
-  access_key_id: ''
+  access_key_id:
+    secure: "$ACCESSKEYID"
   secret_access_key:
-    secure: d1UfhmyYC63MVYQmmkhXI/VgGz3X8SSkUyedGer4qzLu/P3HExkOyVWwVCdamR4ldxQp1ajKsRl6boF6ynNI2bksh7i0flNrvA7IfJBui/HGePZQfs61bAVj+Jr33WW+V4Z+4oSUi+h8sZJZiD32S+NXCwzOKCbiiVMNllKI/+Zvu3f73wXdhfT+cDA//qq38DA3BMLWqrVJ9NI7yF4XkIiBXfgBTtjaAvGSw2kXxRrpmI8C+jOSxBNXyl9sYlV8Z6IxwL86Kud6GPgzHZOQPLdwLPnw3ubFo90oPW8XoKVIkvnNnFZMwrt5p6cMdjM+rFTOJ3cQQayLbvGEsDqx/jcAzYSfG0y4e83UChIvwqfSx17Pov9mHXu43/mWlaTUr5Ky4deGEvmuY/ObwrPRAWqhxx1Ao/n3Fe8ws+KPL0I42I1VHBJOnjinWsmny9Rf0g1LoPLz1lxQQqAFY5orYEOgwRHFTvatQRa13JEnwLOMLTDZvWx/JEV23BJQMDwA6TgVgVCdmaQ3kv1KY6CBClc0AL0CpEHZ/NE1IJx2tRcPhN2hkgpvDYu8OoHESgaZVECgpznzV96OSUesuTD4YR3eR8v8ZcsQkq69sGVZEXxfJJdMvMTdQrwGTbphPni7ICIAPNNmNrspV2+AgkX0wVmMD+piaLrwpzFI8TTnWrk=
+    secure: "$SECRETACCESSKEY"
   region: eu-west-1
   app: greachagenda
   env: Greachagenda-env
   on:
+    branch: master
     repo: greach/agenda
-  zip_file: 'build/libs/agenda-0.1.jar'
+  zip_file: build/libs/agenda-0.1.jar
+env:
+  global:
+  - secure: I2v2+hiaQ6OY1WgJF4c7cmnHOOwQZo3V0ZitLOsAaXCj9Wl0UxnWWDn9hpmxM1G5ZeWSr3udr7S2ZQ/eHxlRV29F5ZtO8kXXWJ5q7lyTDkeECfNrtZhlBbASEoIVKUvML4Lm+kl0WkJ455NNwHa9F0GT826raLe4e/YkabUbfkyjkYP5tG8pXSvWxS6StzFYjE5nXEI35OmhDC+0SaBT4Xzb0Im96T0qR+j+1dX3greEmhZi62f+UukSMTexd96O5MqmjyD3LHSWDuHWkNECyqetdOCnLSfM0K39QshNQUo1bP9+ZlvMLhBVVVN7QXt2fMoSFdZcjh4cOKA8zBSRbHpRJBT2U18g++uk026LxNGrZ4zVa90RAft+rInk3bGCe1k+bFlbI8ay3/o4DNdq0MG5924+KplqnLCf/9Aqoskumfd1iR/ilLP8ZVlSEYBmlGUtyJye+9IzyffbIVDfATLKt0zW6H1YJAeQ/nM9WU2jb7R8LsDuFGlp6TU+/CC80BvYIUqlfimZ6xATZvfZVCM50Tsul8feq1HHR0GP4tuVaitCyJ1O+FyV9hRTBUeYoEeSjFWXBV1yYx0pHySI0Rq/W931Da4RxFEhCllEtbKpd9o0M9ZCA2QY6Z2mn3cD7VImXGcUQ2v2/aFJyWBtazejnf6K7J8zjNCtR0kKOsM=
+  - secure: PeGRVfuw5EJGc3X/HXSiyR68u3lR0e2I4lzpUolfp1+BaBb4bH/9s6RrwY8EHptY3Tchab2lVQHpIstEPSIAvEMJTnOUu7R0wRw1cuPfeyIE2Gm+y5omJp8H8TLpFsVz13IO/DPs7s+NWsUDY0aklIiP9Pa63NECLwinLLoy0RLYQ/JX3rVniyL2KnnSF4qO/xsKVViUH+6KsnCwy6RuEnc4CXZxTPqRnFAkgkjuU8I47zi2//I8JMvU9vyFSVX2Hs+znaKiEraSxK4Sjuuo0IZL7fBMxUDhH+7ONxTlcAgBH2d8HaBCBzFDFVkCVsJSJwiXgULFfKElk9K/dfUmm3GdMhej1iw1ZX7XqEqb9XzvAKuhuxJ3+R6LoUWMKY39bp/SEIpZmMADNScsJjFL/aoA7m39WbbCyV0pXnFJaE+BPOguho6yFrglTnovI+ac2m/wqjvmcPYh4odt+ZYLN1fmtyQ8KE3ms+RKEHqdRKmaw6xKMK2JwIeXg4pWMDMgCEFIk4PktCFcDqMXKGLivDXMhVJ0fcyLUYdMf94CfbWPhnXzTf3Ka2wk3bscqC/3Jdn8/Qneok8q/n0xBsB/Z4s4MDlLObAICCZgx4dyFTk1t+c/EhL6VD0R5HtNmIiccGHq0s7UTM7MtixZdt52WDNdocaOyUwnqyoID7TlCrQ=
