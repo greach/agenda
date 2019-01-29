@@ -18,23 +18,23 @@
         #set( $colspan = $day.getTracks().size() + 1 )
         <tr><th colspan="${colspan}">${day.getDay().toString()}</th></tr>
         <tr>
-            <th></th>
+            <th class="timeslot"></th>
             #foreach($track in $day.getTracks())
-                <th>$track</th>
+                <th class="track${day.getTracks().size()}">$track</th>
             #end
         </tr>
     </thead>
     <tbody>
     #foreach($timeSlot in $day.getTimeSlots())
     <tr>
-        <td>
+        <td class="timeslot">
             <span class="start">${timeSlot.getTimeSlot().getStart()}</span>
             <span class="timeSeparator"> - </span>
             <span class="end">${timeSlot.getTimeSlot().getEnd()}</span>
         </td>
         #if(${timeSlot.getTrackTalks()})
         #foreach($track in ${day.getTracks()})
-            <td>
+            <td class="talk${day.getTracks().size()}">
                 #if(${timeSlot.getTrackTalks()[$track]})
                     <a class="title" href="/talk/${timeSlot.getTrackTalks()[$track].uid}">${timeSlot.getTrackTalks()[$track].title}</a>
                     <span> - </span>

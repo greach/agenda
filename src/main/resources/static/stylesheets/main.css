@@ -85,6 +85,16 @@ article img {
     -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
+th.timeslot,
+td.timeslot {
+    width: 10%;
+}
+td.talk2 {
+    width: 45%;
+}
+td.talk3 {
+    width: 30%;
+}
 ul.speakers li img {
     max-width: 100%;
     overflow: hidden;
