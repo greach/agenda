@@ -184,7 +184,7 @@ agenda:
             name: 'Miguel Ángel García Gómez'
             uid: 'miguel-angel-garcia-gomez'
             twitter: 'MiguelAngelGG82'
-            image: 'https://greach.s3.amazonaws.com/placeholder.jpg'
+            image: 'https://greach.s3.amazonaws.com/MiguelAngelGG82.png'
             bio:
                 - ''
         -
@@ -256,8 +256,8 @@ agenda:
         -
             name: 'Felipe Fernandéz'
             uid: 'felipe-fernandez'
-            image: 'felipe-fernandez.jpg'
-            twitter: 'felipefzdz.jpg'
+            image: 'https://greach.s3.amazonaws.com/felipefzdz.jpg'
+            twitter: 'felipefzdz'
             bio:
                 - "Spanish developer based in Las Palmas de Gran Canaria. I've been working for Gradle as Senior Software Engineer for 2 years on the Gradle Enterprise team. Before of that I used to work for Codurance, a software craftsmanship consultancy located in London."
     talks:
@@ -713,11 +713,19 @@ agenda:
             about:
                 - 'Kotlin, a modern language bursts into the community when developers have been perfecting what they call Clean Architecture for years, some potions and spells with which to increase the power of testability and become independent of evil external agents and cruel frameworks.'
         -
-            title: 'Micronaut Workshop'
+            title: 'Learn Micronaut: a reactive microservices framework for the JVM'
             uid: 'micronaut-workshop'
             track: 'Microservices & JVM Frameworks'
             start: '2019-03-28T09:00:00'
             end: '2019-03-28T12:00:00'
+            about:
+                - 'Micronaut is a modern, JVM-based, full stack microservices framework designed for building modular, easily testable Microservice applications in Java, Kotlin or Groovy. Micronaut is developed by the creators of Grails and takes inspiration from lessons learnt over the years building real-world applications from monoliths to microservices using Spring, Spring Boot and Grails.'
+                - 'This instructor-led workshop covers building a couple of microservices using Java, Gradle, JPA with H2 and MongoDB and Consul. It also covers the basic features of Micronaut, such as:'
+                - '- Dependency Injection and Inversion of Control (IoC).'
+                - '- Configuration system.'
+                - '- HTTP services.'
+                - '- Cloud and serverless deployments.'
+                - '- Management & Monitoring.'
             speakers:
                 - 'alvaro-sanchez-mariscal'
         -
