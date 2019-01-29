@@ -50,8 +50,8 @@ agenda:
             bio:
                 - 'Apache Groovy co-founder and Developer Advocate for Google Cloud'
         -
-            name: 'Micahel Kutz'
-            uid: 'micahel-kutz'
+            name: 'Michael Kutz'
+            uid: 'michael-kutz'
             image: 'https://greach.s3.amazonaws.com/MichaKutz.jpg'
             twitter: 'MichaKutz'
             bio:
@@ -217,14 +217,14 @@ agenda:
                 - 'Mercedes Wyss is a software engineer with more than seven years of experience in the backend, frontend and Android development using Java and Kotlin. Currently, she is a CTO at Produactivity, a startup based in Guatemala.'
                 - 'She was previously organizing meetings in Guatemala Java Users Group from 2012 to 2016. Now she has two years an a half focusing on increasing women’s participation in STEAM by running a JDuchess Chapter in Guatemala and is the leader of a Google community (Devs+502).'
                 - 'She is an Oracle Groundbreaker Ambassador and an Auth0 Ambassador, she also has a Duke’s Choice Award in Educational Outreach.'
-        -
-            name: 'Cédric Champeau'
-            uid: 'cedric-champeau'
-            twitter: 'CedricChampeau'
-            image: 'https://greach.s3.amazonaws.com/CedricChampeau.jpg'
-            bio:
-                - 'Cédric Champeau is a software engineer at Gradle, Inc. , where he is currently focused on implementing next generation dependency management features. He also worked on improving the performance of the build tool. He is committer of Apache Groovy and spent more than 3 years developing full time the language at Pivotal, where he implemented features like the static compiler, traits, Android support, AST transformations or type checking extensions.'
-                - 'Prior to that, he spent several years in the industry as a user, where he used Groovy in multiple industrial contexts including DSLs for natural language processing, scripting or even workflows.'
+#        -
+#            name: 'Cédric Champeau'
+#            uid: 'cedric-champeau'
+#            twitter: 'CedricChampeau'
+#            image: 'https://greach.s3.amazonaws.com/CedricChampeau.jpg'
+#            bio:
+#                - 'Cédric Champeau is a software engineer at Gradle, Inc. , where he is currently focused on implementing next generation dependency management features. He also worked on improving the performance of the build tool. He is committer of Apache Groovy and spent more than 3 years developing full time the language at Pivotal, where he implemented features like the static compiler, traits, Android support, AST transformations or type checking extensions.'
+#                - 'Prior to that, he spent several years in the industry as a user, where he used Groovy in multiple industrial contexts including DSLs for natural language processing, scripting or even workflows.'
         -
             name: 'Nicolás Patarino'
             uid: 'nicolas-patarino'
@@ -675,22 +675,22 @@ agenda:
                 - 'schalk-cronje'
             about:
                 - "Let's talk Asciidoctor, Gradle and Groovy. About what's new in the 2.x releases of the Asciidoctor Gradle plugin, about dealing with Gradle workers, serialising closures. This is not just just a talk about new and esciting feastures, but also about the practically of having to deal with real-world issues when writing plugins for Gradle in Groovy."
-        -
-            title: "What's new in Gradle 5?"
-            uid: 'whats-new-in-gradle-5?'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T09:00:00'
-            end: '2019-03-30T09:45:00'
-            speakers:
-                - 'cedric-champeau'
-            about:
-                - "Gradle continues to evolve to bring faster, precise and reproducible builds tailored to your needs. In particular, we'll focus on what Gradle 5 brings to the game:"
-                - '- statically-typed Kotlin-based DSL'
-                - '- faster builds (incremental builds, incremental annotation processing, ...)'
-                - '- fine-grained transitive dependency management (dependency locking, version alignment, ...)'
-                - '- new plugin APIs'
-                - '- and much more!'
-                - "Don't wait, upgradle your build!"
+#        -
+#            title: "What's new in Gradle 5?"
+#            uid: 'whats-new-in-gradle-5?'
+#            track: 'Android, Tests & JVM Langs'
+#            start: '2019-03-30T09:00:00'
+#            end: '2019-03-30T09:45:00'
+#            speakers:
+#                - 'cedric-champeau'
+#            about:
+#                - "Gradle continues to evolve to bring faster, precise and reproducible builds tailored to your needs. In particular, we'll focus on what Gradle 5 brings to the game:"
+#                - '- statically-typed Kotlin-based DSL'
+#                - '- faster builds (incremental builds, incremental annotation processing, ...)'
+#                - '- fine-grained transitive dependency management (dependency locking, version alignment, ...)'
+#                - '- new plugin APIs'
+#                - '- and much more!'
+#                - "Don't wait, upgradle your build!"
         -
             title: 'Creating Micronaut Configurations'
             uid: 'creating-micronaut-configurations'
