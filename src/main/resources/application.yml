@@ -134,7 +134,7 @@ agenda:
             name: 'Mario Garcia'
             uid: 'mario-garcia'
             twitter: 'marioggar'
-            image: 'https://greach.s3.amazonaws.com/placeholder.jpg'
+            image: 'https://greach.s3.amazonaws.com/marioggar.jpg'
             bio:
                 - "I'm a software developer currently working for Kaleidos.net ,a small consulting company based in Madrid. Although I've been always related to the JVM world, nowadays you could find me either creating a REST or GraphQL APIs or programming a React application to consume those APIs. I also like to do some work out from time to time because I think too many hours in front of my laptop can't be healthy at all."
         -
@@ -170,7 +170,7 @@ agenda:
             name: 'Bruno Verachten'
             uid: 'bruno-verachten'
             twitter: 'Poddingue'
-            image: 'https://greach.s3.amazonaws.com/placeholder.jpg'
+            image: 'https://greach.s3.amazonaws.com/Poddingue.jpg'
             bio:
                 - 'Father of two, husband of one, geek in denial, fond of handheld devices since 1989 and permie.'
         -
