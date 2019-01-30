@@ -173,7 +173,8 @@ agenda:
             twitter: 'albertoBaron1'
             image: 'https://greach.s3.amazonaws.com/albertoBaron1.jpeg'
             bio:
-                - ''
+                - 'My name is Alberto, senior developer at Salenda for 4 years, working every day with Groovy, Grails, Java and not for a long time, with Micronaut.'
+                - 'Moreover, I try to improve myself learning other ecosystems such us mobile and attending or even preparing talks in events like Greach, T3chfest or Codemotion.'
         -
             name: 'Miguel Ángel García Gómez'
             uid: 'miguel-angel-garcia-gomez'
