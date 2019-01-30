@@ -102,13 +102,6 @@ agenda:
             bio:
                 - 'Experienced architect aiming for high quality solutions. Very engaged in evangelising Software Craftsmanship, Clean Code and Test-Driven Development as a conference speaker and trainer. An expert in deployment automation with Continuous Delivery and Continuous Inspection of Code Quality. An enthusiast of Reactive Systems and broadly defined concurrency. Besides, an open source author and a contributor, a blogger and a trainer.'
         -
-            name: 'Evelina Kieras'
-            uid: 'evelina-kieras'
-            twitter: 'Ev3Kieras'
-            image: 'https://greach.s3.amazonaws.com/Evelina-Kieras.jpg'
-            bio:
-                - "My name is Evelina and I have been working with Groovy and Grails since 2015. I'm currently working as a software developer at Salenda, a company dedicated to custom apps development, mainly in Groovy, Grails and Angular 2, where I learn something new everyday, and I try to do my best improving my development skills to get better at web-app development."
-        -
             name: 'Antonio Leiva'
             uid: 'antonio-leiva'
             twitter: 'lime_cl'
@@ -577,16 +570,6 @@ agenda:
                 - 'In the world of development, security is sometimes a subject that does not receive the importance it should have. This talk has as objective touch some points for make Android Apps more secure.'
                 - 'We will start the talk by studying some real-life cases where there was an absolute lack of security or poorly implemented strategies, in situations like consume web services, SSL/TLS certificates; how use JSON Web Tokens next to JSON Web Signature and JSON Web Encryption, not only for Authentication and Authorization processes, if not for Information Exchange too.'
                 - 'Then we will evaluate use some libraries as the SafetyNet APIs like reCAPTCHA; handle permissions in Android; and PaaS technologies for implement User Management, Passwordless and Multifactor Authentication using Firebase or Auth0 Technologies.'
-        -
-            title: 'Testing Kotlin with Spock'
-            uid: 'testing-kotlin-with-spock'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T12:15:00'
-            end: '2019-03-29T13:00:00'
-            speakers:
-                - 'evelina-kieras'
-            about:
-                - 'Probably you already know how to test your Groovy applications with Spock. Why not apply this Groovy testing framework to test your Kotlin code?'
         -
             title: 'Spock vs JUnit 5 - Clash of the Titans'
             uid: 'spock-vs-junit5-clash-of-the-titans'
