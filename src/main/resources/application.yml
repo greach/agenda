@@ -145,12 +145,13 @@ agenda:
             bio:
                 - 'Creator of [Grails](http://grails.org) and [Micronaut](http://micronaut.io). Senior Engineer at OCI'
         -
-            name: 'Pablo Martinez'
+            name: 'Pablo A. Martinez'
             uid: 'pablo-martinez'
             image: 'https://greach.s3.amazonaws.com/pamartineza.jpg'
             twitter: 'pamartineza'
             bio:
-                - 'CEO at GreenLionSoft. Android Lead of @MadridMBC.'
+                - 'CEO & Tech Lead at GreenLionSoft.'
+                - 'I'm an Industrial Engineer that started his career designing hardware and software for Air Traffic Control solutions but at the very same time was developing Android apps as a hobby when first devices running Android 1.5 hit the market. Later on I joined Samsung's R&D team as a senior Android Developer and travelled the world helping to develop new Android based solutions and experiences. In 2015 I co-founded -GreenLionSoft- where we mainly develop Android apps that help to consume public open data related to smart cities, transit, pollution, tides, electricity prices, etc...'
         -
             name: 'Saúl Molinero'
             uid: 'saul-molinero'
