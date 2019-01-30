@@ -72,8 +72,8 @@ agenda:
             bio:
                 - 'Alberto is Team Lead at Salenda, a company that is dedicated to software development, mainly in Micronaut, Groovy, Grails, Spring Boot and Angular, and also it is Atlassian Solution Partner. He has been working with Groovy and Grails since 2011, and he is an Atlassian suite lover using all days JIRA, Confluence and the others Atlassian’s tools. He has been speeker at events like Greach, Madrid GUG, Codemotion and others related to the Java ecosystem and its variants.'
         -
-            name: 'Marco Vermuelen'
-            uid: 'marco-vermuelen'
+            name: 'Marco Vermeulen'
+            uid: 'marco-vermeulen'
             twitter: 'marc0der'
             image: 'https://greach.s3.amazonaws.com/marc0der.jpg'
             bio:
@@ -604,7 +604,7 @@ agenda:
             start: '2019-03-30T13:30:00'
             end: '2019-03-30T14:15:00'
             speakers:
-                - 'marco-vermuelen'
+                - 'marco-vermeulen'
             about:
                 - "SDKMAN is the Software Development Kit Manager. It is also the Groovy enVironment Manager of old. Since it was created in 2012, it has undergone many changes to the point that it is a far more diverse tool than at the time of it's inception. However, it's primary purpose remains the same: to make the life of developers less painful!"
                 - "The Groovy enVironment Manager might have outgrown it's name, but it is still as relevant as ever. Today SDKMAN is not only responsible for serving binaries to many JVM communities, it also serves JDK binaries of many different flavours."
