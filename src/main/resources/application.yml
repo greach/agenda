@@ -253,7 +253,7 @@ agenda:
             image: 'https://greach.s3.amazonaws.com/felipefzdz.jpg'
             twitter: 'felipefzdz'
             bio:
-                - 'Felipe Fernández is a software engineer at Gradle, Inc. , working on Gradle Enterprise. In there he had exposure to the whole platform, but lately has been focused on release automation, CI reliability and operations.
+                - 'Felipe Fernández is a software engineer at Gradle, Inc. , working on Gradle Enterprise. In there he had exposure to the whole platform, but lately has been focused on release automation, CI reliability and operations.'
                 - 'Before of Gradle, he worked at Codurance, being an active supporter of the Software Craftsmanship values and practices'
     talks:
         -
