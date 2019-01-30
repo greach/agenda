@@ -248,12 +248,13 @@ agenda:
             bio:
                 - 'Katia Aresti is a software engineer at Red Hat, part of the Infinispan/Datagrid team since 2017. She has been in the field since 2005, most of the time coding as a backend developer in Java and Scala. Katia is very involved in user groups since 2010, she co-organises the french chapter of Duchess since then, and she is very active mentoring and sharing knowledge whenever she can. She is passionate about open-source contributions, dance and acting.'
         -
-            name: 'Felipe Fernandéz'
+            name: 'Felipe Fernández'
             uid: 'felipe-fernandez'
             image: 'https://greach.s3.amazonaws.com/felipefzdz.jpg'
             twitter: 'felipefzdz'
             bio:
-                - "Spanish developer based in Las Palmas de Gran Canaria. I've been working for Gradle as Senior Software Engineer for 2 years on the Gradle Enterprise team. Before of that I used to work for Codurance, a software craftsmanship consultancy located in London."
+                - 'Felipe Fernández is a software engineer at Gradle, Inc. , working on Gradle Enterprise. In there he had exposure to the whole platform, but lately has been focused on release automation, CI reliability and operations.
+                - 'Before of Gradle, he worked at Codurance, being an active supporter of the Software Craftsmanship values and practices'
     talks:
         -
             uid: 'accelerating-ci'
