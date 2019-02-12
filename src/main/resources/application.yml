@@ -43,12 +43,12 @@ agenda:
                 - 'Iván is a Senior Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails and Micronaut teams at Object Computing, Inc. (OCI). He discovered Grails 8 years ago and since then he develops almost exclusively using Groovy and Java. He is the creator of some well known Grails plugins like Postgresql-Extensions.'
                 - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
         -
-            name: 'Guillaume Laforge'
-            uid: 'guillaume-laforge'
-            twitter: 'glaforge'
-            image: 'https://greach.s3.amazonaws.com/glaforge.jpeg'
+            name: 'Ko Turk'
+            uid: 'koturk'
+            twitter: 'KoTurk77'
+            image: 'https://greach.s3.amazonaws.com/koturk.jpeg'
             bio:
-                - 'Apache Groovy co-founder and Developer Advocate for Google Cloud'
+                - 'Ko Turk is a Senior Java Developer at Blue4IT, currently he is working for one of the biggest banks of the Netherlands. He loves to go full stack, creating backend microservices and frontend web applications. Because he likes to know everything about Java, you can find him regularly at the UtrechtJUG or other conferences.'
         -
             name: 'Michael Kutz'
             uid: 'michael-kutz'
@@ -612,8 +612,8 @@ agenda:
             title: 'How To Build a Test Lib for a Microservice Based Web Application with Geb & Spock'
             uid: 'how-to-build-a-test-lib-for-a-microservice-based-web-application-with-geb-spock'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T13:30:00'
-            end: '2019-03-30T14:15:00'
+            start: '2019-03-30T10:15:00'
+            end: '2019-03-30T11:00:00'
             speakers:
                 - 'michael-kutz'
             about:
@@ -622,15 +622,19 @@ agenda:
                 - 'To support these teams, we decided turn our old retired comprehensive test suite into a test library to enable teams to write their own system tests without the need to implement every stupid step in every team.'
                 - "In this talk I'd like to present our lessons learned & developed design patterns from implementing such a test library with Geb & Spock."
         -
-            title: 'A Groovy serverless journey on Google Cloud'
-            uid: 'a-groovy-serverless-journey-on-google-cloud'
+            title: 'The battle of the IDEs'
+            uid: 'the-battle-of-the-ides'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T09:00:00'
-            end: '2019-03-30T09:45:00'
+            start: '2019-03-30T13:30:00'
+            end: '2019-03-30T14:15:00'
             speakers:
-                - 'guillaume-laforge'
+                - 'koturk'
             about:
-                - 'Lucky the Groovy developer with the lovely frameworks and libraries at their disposal to craft their web apps, APIs or microservices. But where should one deploy those apps? Furthermore, if you don’t want to deal with infrastructure, if you want to scale transparently, and pay only for what you use, is it possible to deploy your apps in a “serverless” fashion? In this presentation, we’ll have a look at how to deploy Groovy functions, apps or containerized payloads on Google Cloud Platform (with App Engine and Cloud Functions), as well as discovering the other useful services you can take advantage of for storing data (with Cloud Firestore), messaging between services (with Pub/Sub), or for monitoring (with Stackdriver).'
+                - 'IntelliJ IDEA is the best IDE! Or is it Eclipse? Netbeans perhaps? Or are you working with Emacs/Vi/VSCode or something else?'
+                - 'Do you recognize the discussion with your colleagues? Why you should start using another IDE! The one that they use of course!'
+                - 'In this session I will show you which IDE you should use (or at least try). Not only based on my opinion but also on that of other developers that filled in the research [What is my favourite IDE and why](https://t.co/VqwdM1C9cu).'
+                - 'There are a lot of cool features you definitely need to see!'
+                - 'Please join my talk and find out!'
         -
             title: "Zipfiles on the Fly with Micronaut"
             uid: 'zipfiles-on-the-fly-with-micronaut'
@@ -673,8 +677,8 @@ agenda:
             title: 'Creating Micronaut Configurations'
             uid: 'creating-micronaut-configurations'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T10:15:00'
-            end: '2019-03-30T11:00:00'
+            start: '2019-03-30T09:00:00'
+            end: '2019-03-30T09:45:00'
             speakers:
                 - 'ivan-lopez'
             about:
