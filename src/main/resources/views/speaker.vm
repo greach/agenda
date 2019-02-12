@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 #parse("views/header.vm")
 </head>
-<body>
+<body class="speaker">
 #parse("views/logo.vm")
 #parse("views/speakers-nav.vm")
 <ul class="breadcrumbs">

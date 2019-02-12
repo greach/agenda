@@ -95,6 +95,8 @@ td.talk2 {
 td.talk3 {
     width: 30%;
 }
+
+body.speaker article img,
 ul.speakers li img {
     max-width: 100%;
     overflow: hidden;
@@ -103,7 +105,9 @@ ul.speakers li img {
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-
+body.speaker article img {
+    max-width: 500px !important;
+}
 ul.speakers li a {
     text-decoration: none;
     color: black;
