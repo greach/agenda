@@ -46,7 +46,7 @@ agenda:
             name: 'Ko Turk'
             uid: 'koturk'
             twitter: 'KoTurk77'
-            image: 'https://greach.s3.amazonaws.com/koturk.jpeg'
+            image: 'https://greach.s3.amazonaws.com/koturk.jpg'
             bio:
                 - 'Ko Turk is a Senior Java Developer at Blue4IT, currently he is working for one of the biggest banks of the Netherlands. He loves to go full stack, creating backend microservices and frontend web applications. Because he likes to know everything about Java, you can find him regularly at the UtrechtJUG or other conferences.'
         -
