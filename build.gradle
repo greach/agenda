@@ -10,7 +10,7 @@ plugins {
 apply plugin:"application"
 apply plugin:"groovy"
 
-version "0.13"
+version "0.14"
 group "greachconf"
 
 repositories {
@@ -27,10 +27,13 @@ dependencyManagement {
 dependencies {
     annotationProcessor "io.micronaut:micronaut-inject-java"
     annotationProcessor "io.micronaut:micronaut-validation"
+    compile "io.micronaut.configuration:micronaut-hibernate-validator"
+    compile "io.micronaut:micronaut-validation"
+
     compile "io.micronaut:micronaut-http-client"
     compile "io.micronaut:micronaut-http-server-netty"
     compile "io.micronaut:micronaut-inject"
-    compile "io.micronaut:micronaut-validation"
+
     compile "io.micronaut:micronaut-runtime"
     compileOnly "io.micronaut:micronaut-inject-java"
     runtime "ch.qos.logback:logback-classic:1.2.3"

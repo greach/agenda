@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>${name} ${messages["speakerPageTitle"]}</title>
+    <title>${speaker.name} ${messages["speakerPageTitle"]}</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 #parse("views/header.vm")
 </head>
@@ -13,15 +13,22 @@
     <li>&rarr;</li>
     <li><a href="/speakers">Speakers</a></li>
     <li>&rarr;</li>
-    <li><span>${name}</span></li>
+    <li><span>${speaker.name}</span></li>
 </ul>
 <article>
-    <h1>${name}</h1>
-    <p><a href="https://twitter.com/${twitter}">@${twitter}</a></p>
-    #foreach($bioparagraph in $bio)
+    <h1>${speaker.name}</h1>
+    <p><a href="https://twitter.com/${speaker.twitter}">@${speaker.twitter}</a></p>
+    #foreach($bioparagraph in $speaker.bio)
         <p>${bioparagraph}</p>
     #end
-    <img src="${image}" alt="${name}"/>
+    <img src="${speaker.image}" alt="${speaker.name}"/>
+
+    <h2>Talks</h2>
+    <ul>
+    #foreach($talk in $talks)
+        <li><a class="title" href="/talk/${talk.uid}">${talk.title}</a></li>
+    #end
+    </ul>
 </article>
 </body>
 </html>
