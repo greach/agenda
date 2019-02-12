@@ -35,16 +35,18 @@ public class TalkController {
     public Map<String, Object> show(@NotBlank String uid) {
         Map<String, Object> model = new HashMap<>();
         Talk talk = talkRepository.findTalkByUid(uid);
-        model.put("talk", talk);
-        List<Speaker> speakers = new ArrayList<>();
-        if (talk.getSpeakers() != null) {
-            speakers = talk.getSpeakers()
-                    .stream()
-                    .map(speakerRepository::findSpeakerByUid)
-                    .filter(Objects::nonNull)
-                    .collect(Collectors.toList());
+        if (talk != null) {
+            model.put("talk", talk);
+            List<Speaker> speakers = new ArrayList<>();
+            if (talk.getSpeakers() != null) {
+                speakers = talk.getSpeakers()
+                        .stream()
+                        .map(speakerRepository::findSpeakerByUid)
+                        .filter(Objects::nonNull)
+                        .collect(Collectors.toList());
+            }
+            model.put("speakers", speakers);
         }
-        model.put("speakers", speakers);
         return model;
     }
 }
