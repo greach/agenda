@@ -659,7 +659,7 @@ agenda:
                 - "Let's talk Asciidoctor, Gradle and Groovy. About what's new in the 2.x releases of the Asciidoctor Gradle plugin, about dealing with Gradle workers, serialising closures. This is not just just a talk about new and esciting feastures, but also about the practically of having to deal with real-world issues when writing plugins for Gradle in Groovy."
         -
             title: "What's new in Gradle 5?"
-            uid: 'whats-new-in-gradle-5?'
+            uid: 'whats-new-in-gradle-5'
             track: 'Android, Tests & JVM Langs'
             start: '2019-03-30T09:00:00'
             end: '2019-03-30T09:45:00'
