@@ -6,6 +6,7 @@ import io.micronaut.context.ApplicationContext
 import io.micronaut.http.HttpRequest
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.HttpStatus
+import io.micronaut.http.client.BlockingHttpClient
 import io.micronaut.http.client.HttpClient
 import io.micronaut.http.client.exceptions.HttpClientResponseException
 import io.micronaut.http.uri.UriTemplate
@@ -13,8 +14,6 @@ import io.micronaut.runtime.server.EmbeddedServer
 import spock.lang.AutoCleanup
 import spock.lang.Shared
 import spock.lang.Specification
-
-
 
 class ApiControllerSpec extends Specification {
 
@@ -24,7 +23,11 @@ class ApiControllerSpec extends Specification {
 
     @AutoCleanup
     @Shared
-    HttpClient client = HttpClient.create(embeddedServer.URL)
+    HttpClient httpClient = HttpClient.create(embeddedServer.URL)
+
+    BlockingHttpClient getClient() {
+        httpClient.toBlocking()
+    }
 
     def "can fetch as speaker as JSON at /api/speaker"() {
         given:
@@ -32,7 +35,7 @@ class ApiControllerSpec extends Specification {
         HttpRequest request = HttpRequest.GET(uri)
 
         when:
-        HttpResponse<Speaker> response = client.toBlocking().exchange(request, Speaker)
+        HttpResponse<Speaker> response = client.exchange(request, Speaker)
 
         then:
         response.status() == HttpStatus.OK
@@ -46,7 +49,7 @@ class ApiControllerSpec extends Specification {
         HttpRequest request = HttpRequest.GET(uri)
 
         when:
-        client.toBlocking().exchange(request, Speaker)
+        client.exchange(request, Speaker)
 
         then:
         HttpClientResponseException e = thrown()
@@ -59,7 +62,7 @@ class ApiControllerSpec extends Specification {
         HttpRequest request = HttpRequest.GET(uri)
 
         when:
-        HttpResponse<Talk> response = client.toBlocking().exchange(request, Talk)
+        HttpResponse<Talk> response = client.exchange(request, Talk)
 
         then:
         response.status() == HttpStatus.OK
@@ -73,7 +76,7 @@ class ApiControllerSpec extends Specification {
         HttpRequest request = HttpRequest.GET(uri)
 
         when:
-        client.toBlocking().exchange(request, Talk)
+        client.exchange(request)
 
         then:
         HttpClientResponseException e = thrown()
