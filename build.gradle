@@ -10,11 +10,10 @@ plugins {
 apply plugin:"application"
 apply plugin:"groovy"
 
-version "0.10"
+version "0.11"
 group "greachconf"
 
 repositories {
-    mavenLocal()
     mavenCentral()
     maven { url "https://jcenter.bintray.com" }
 }
