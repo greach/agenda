@@ -617,8 +617,8 @@ agenda:
             title: 'How To Build a Test Lib for a Microservice Based Web Application with Geb & Spock'
             uid: 'how-to-build-a-test-lib-for-a-microservice-based-web-application-with-geb-spock'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T10:15:00'
-            end: '2019-03-30T11:00:00'
+            start: '2019-03-30T09:00:00'
+            end: '2019-03-30T09:45:00'
             speakers:
                 - 'michael-kutz'
             about:
@@ -682,8 +682,8 @@ agenda:
             title: 'Creating Micronaut Configurations'
             uid: 'creating-micronaut-configurations'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T09:00:00'
-            end: '2019-03-30T09:45:00'
+            start: '2019-03-30T10:15:00'
+            end: '2019-03-30T11:00:00'
             speakers:
                 - 'ivan-lopez'
             about:
