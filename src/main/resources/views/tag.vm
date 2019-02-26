@@ -19,7 +19,14 @@
     <h1>${tag} ${messages["talks"]}</h1>
     <ul>
     #foreach($talk in $talks)
-        <li><a class="title" href="/talk/${talk.uid}">${talk.title}</a></li>
+        <li><a class="title" href="/talk/${talk.uid}">${talk.title}</a> by
+            #foreach($speaker in $talk.speakers)
+                ${speaker}
+                #if( $foreach.hasNext ),#end
+            #end
+
+            https://agenda.greachconf.com/talk/${talk.uid}
+        </li>
     #end
     </ul>
 </article>

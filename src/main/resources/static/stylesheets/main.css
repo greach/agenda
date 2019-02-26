@@ -3,8 +3,11 @@ body {
     font-size: 14px;
 }
 
-p {
+p, li {
     font-size: 1.2em;
+}
+li {
+    margin-bottom: 15px;
 }
 .breadcrumbs,
 div.logo,
