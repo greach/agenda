@@ -3,6 +3,8 @@ package greachconf.vm;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -15,8 +17,11 @@ public class Talk {
     @Nonnull
     private String title;
 
-    @Nullable
-    private List<String> about;
+    @Nonnull
+    private List<String> about = new ArrayList<>();
+
+    @Nonnull
+    private List<String> tags = new ArrayList<>();
 
     @Nullable
     private String slides;
@@ -103,12 +108,12 @@ public class Talk {
         this.title = title;
     }
 
-    @Nullable
+    @Nonnull
     public List<String> getAbout() {
         return about;
     }
 
-    public void setAbout(@Nullable List<String> about) {
+    public void setAbout(@Nonnull List<String> about) {
         this.about = about;
     }
 
@@ -119,5 +124,14 @@ public class Talk {
 
     public void setSpeakers(@Nullable Set<String> speakers) {
         this.speakers = speakers;
+    }
+
+    @Nonnull
+    public List<String> getTags() {
+        return this.tags;
+    }
+
+    public void setTags(@Nonnull List<String> tags) {
+        this.tags = tags;
     }
 }

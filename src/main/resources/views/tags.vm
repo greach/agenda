@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${messages["tags"]} | ${messages["pageTitle"]}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+#parse("views/header.vm")
+</head>
+<body class="talks">
+#parse("views/logo.vm")
+#parse("views/speakers-nav.vm")
+<ul class="breadcrumbs">
+    <li><a href="/">${messages["agenda"]}</a></li>
+    <li>&rarr;</li>
+    <li><span>${messages["tags"]}</span></li>
+</ul>
+<article>
+    <h1>${messages["tags"]}</h1>
+#foreach($tag in $tagDensity.keySet())
+    <ul>
+        <li><a class="title" href="/talks/tags/${tag}">${tag} ${tagDensity.get($tag)}</a></li>
+    </ul>
+#end
+</article>
+</body>
+</html>

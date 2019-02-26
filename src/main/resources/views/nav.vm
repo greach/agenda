@@ -2,7 +2,7 @@
     <ul>
         <li><a href="https://greachconf.com/">Homepage</a></li>
         <li><a href="https://greachconf.club">Tickets</a></li>
-        <li class="selected"><a href="https://agenda.greachconf.com/">Agenda</a></li>
+        <li class="selected"><a href="https://agenda.greachconf.com/">${messages["agenda"]}</a></li>
         <li><a href="https://greachconf.com/venue">Venue</a></li>
         <li><a href="https://agenda.greachconf.com/speakers">Speakers</a></li>
         <li><a href="https://greachconf.com/sponsors">Sponsors</a></li>

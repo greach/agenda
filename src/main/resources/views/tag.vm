@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>${speaker.name} ${messages["speakerPageTitle"]}</title>
+    <title>${tag} ${messages["tagPageTitle"]}</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 #parse("views/header.vm")
 </head>
-<body class="speaker">
+<body class="talks">
 #parse("views/logo.vm")
 #parse("views/speakers-nav.vm")
 <ul class="breadcrumbs">
     <li><a href="/">${messages["agenda"]}</a></li>
     <li>&rarr;</li>
-    <li><a href="/speakers">Speakers</a></li>
+    <li><a href="/talks/tags">${messages["tags"]}</a></li>
     <li>&rarr;</li>
-    <li><span>${speaker.name}</span></li>
+    <li><span>${tag}</span></li>
 </ul>
 <article>
-    <h1>${speaker.name}</h1>
-    <p><a href="https://twitter.com/${speaker.twitter}">@${speaker.twitter}</a></p>
-    #foreach($bioparagraph in $speaker.bio)
-        <p>${bioparagraph}</p>
-    #end
-    <img src="${speaker.image}" alt="${speaker.name}"/>
-
-    <h2>${messages["talks"]}</h2>
+    <h1>${tag} ${messages["talks"]}</h1>
     <ul>
     #foreach($talk in $talks)
         <li><a class="title" href="/talk/${talk.uid}">${talk.title}</a></li>

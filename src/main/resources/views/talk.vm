@@ -9,7 +9,7 @@
 #parse("views/logo.vm")
 #parse("views/nav.vm")
 <ul class="breadcrumbs">
-    <li><a href="/">Agenda</a></li>
+    <li><a href="/">${messages["agenda"]}</a></li>
     <li>&rarr;</li>
     <li><span>${talk.title}</span></li>
 </ul>
