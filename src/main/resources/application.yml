@@ -150,8 +150,8 @@ agenda:
             image: 'https://greach.s3.amazonaws.com/pamartineza.jpg'
             twitter: 'pamartineza'
             bio:
-                - 'CEO & Tech Lead at GreenLionSoft.'
-                - "I'm an Industrial Engineer that started his career designing hardware and software for Air Traffic Control solutions but at the very same time was developing Android apps as a hobby when first devices running Android 1.5 hit the market. Later on I joined Samsung's R&D team as a senior Android Developer and travelled the world helping to develop new Android based solutions and experiences. In 2015 I co-founded -GreenLionSoft- where we mainly develop Android apps that help to consume public open data related to smart cities, transit, pollution, tides, electricity prices, etc..."
+        - 'CEO & Tech Lead at GreenLionSoft.'
+        - "I'm an Industrial Engineer that started his career designing hardware and software for Air Traffic Control solutions but at the very same time was developing Android apps as a hobby when first devices running Android 1.5 hit the market. Later on I joined Samsung's R&D team as a senior Android Developer and travelled the world helping to develop new Android based solutions and experiences. In 2015 I co-founded -GreenLionSoft- where we mainly develop Android apps that help to consume public open data related to smart cities, transit, pollution, tides, electricity prices, etc..."
         -
             name: 'Saúl Molinero'
             uid: 'saul-molinero'
@@ -467,13 +467,18 @@ agenda:
             speakers:
                 - 'saul-molinero'
         -
-            title: 'Conquering Google play'
+            title: 'Making a living on Google Play (and other Horror Stories)'
             uid: 'conquering-google-play'
             track: 'Android, Tests & JVM Langs'
             start: '2019-03-29T15:00:00'
             end: '2019-03-29T15:45:00'
             tags:
                 - 'android'
+            about:
+                - "We had heard many times that business ideas are justs solutions to existing problems. I this talk I will explain how accidentaly fixing a problem I encountered myself when I moved to a 'big capital' like Madrid back in 2009 was the point of origin of 'GreenLionSoft', a 2-Guy Company I co-founded 4 years ago."
+                - "Today we can say that we can make a living on developing Android Apps, but it has not been an easy path, the play field has changed a lot in the last 10 years and It will change in the future for sure. We have learned many lessons the hard way in many fields not just related to developing apps but bureaucracy, taxes, monetization and Google Play Dependency. Indeed, last Christmas Google Play terminated our company account, which meant closing our company, but unexpectedly, after dealing many horror and crazy situations with Google we got it reinstantiated back 23 days later."
+                - "At the end to the talk I'll be glad to share with you our experience and start an open discussion or -unconference- with all the public to share experiencies among all of us and answer as much as possible any of your questions or concerns if you are considering living on developing apps."
+                - "See you at GreachConf!"
             speakers:
                 - 'pablo-martinez'
         -
