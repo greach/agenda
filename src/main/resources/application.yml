@@ -628,6 +628,19 @@ agenda:
                 - 'We will start the talk by studying some real-life cases where there was an absolute lack of security or poorly implemented strategies, in situations like consume web services, SSL/TLS certificates; how use JSON Web Tokens next to JSON Web Signature and JSON Web Encryption, not only for Authentication and Authorization processes, if not for Information Exchange too.'
                 - 'Then we will evaluate use some libraries as the SafetyNet APIs like reCAPTCHA; handle permissions in Android; and PaaS technologies for implement User Management, Passwordless and Multifactor Authentication using Firebase or Auth0 Technologies.'
         -
+            title: 'RSocket - Future Reactive Application Protocol'
+            uid: 'rsocket-future-reactive-application-protocol'
+            track: 'Android, Tests & JVM Langs'
+            start: '2019-03-29T12:15:00'
+            end: '2019-03-29T13:00:00'
+            speakers:
+                - 'oleh-dokuka'
+            tags:
+                - 'microservices'
+            about:
+                 - 'Are you doing microservices? Are you frustrated by slow REST? Tired of unreliable gRPC? Do you need faster client-server communication, but don’t want to invent your WS-protocol? The answer is RSocket. RSocket in a new application-level protocol with reactive streams semantic. It will make your system scalable, fast and resilient. Come and learn why RSocket is the future of cross-services communication.'
+                 - 'In this session, you will learn why RSocket is an innovative solution for cross-server communication. The session provides an overview of how we can use RSocket and how we can improve gRPC using RSocket. Finally, we will understand why we should start using RSocket today.'
+        -
             title: 'Spock vs JUnit 5 - Clash of the Titans'
             uid: 'spock-vs-junit5-clash-of-the-titans'
             track: 'Android, Tests & JVM Langs'
