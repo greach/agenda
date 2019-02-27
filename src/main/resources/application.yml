@@ -472,6 +472,8 @@ agenda:
                 - 'android'
             speakers:
                 - 'saul-molinero'
+            about:
+                - 'This talk will explain how a good development flow ensures quality and a low percentage of crashes in a real Android application. In this purpose, we will talk about different a set of tools which contains, among other things, profiling and debugging, offered by Google as by third parties. We will also comment on how to investigate and solve a certain problem thanks to a good error reporting system and a good data analysis.'
         -
             title: 'Making a living on Google Play (and other Horror Stories)'
             uid: 'conquering-google-play'
