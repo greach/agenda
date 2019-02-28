@@ -593,6 +593,9 @@ agenda:
                 - 'kotlin'
             speakers:
                 - 'antonio-leiva'
+            about:
+                - "Have you heard about Kotlin but you don't know how to start? In this workshop, I'll show you how to create a blog from scratch by using Spring & Kotlin."
+                - "No worries, because you don't need to know about any of them. Just come with your computer and the IntelliJ IDE already installed, and I'll show you how to learn the basic concepts of the language in an easy way. Let's have some fun with Kotlin!"
         -
             title: 'Kotlin & Implications in an IoT project'
             uid: 'kotlin-implications-in-an-iot-project'
@@ -620,6 +623,10 @@ agenda:
                 - 'coroutines'
             speakers:
                 - 'antonio-leiva'
+            about:
+                - "Kotlin has become the fastest growing language in the latest years, and even in the Android world it is already established, we're starting to understand how it can help us boost our productivity."
+                - "One of the latest additions to the language is coroutines, a way to write asynchronous code sequentially, dramatically reducing the cognitive load of your code. Coroutines are nice and flexible, but they can be a bit hard to use if you haven't seen them before."
+                - "In this talk, I'll dive into the main concepts of coroutines, why they were created and how you can write your own coroutines to make your code shine."
         -
             title: 'A More Secure World for Android Apps'
             uid: 'a-more-secure-world-for-android-apps'
