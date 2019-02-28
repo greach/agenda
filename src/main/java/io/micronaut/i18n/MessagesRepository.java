@@ -1,11 +1,12 @@
 package io.micronaut.i18n;
 
-import io.micronaut.context.env.PropertySource;
 import io.micronaut.core.io.ResourceLoader;
 import io.micronaut.core.io.scan.ClassPathResourceLoader;
 import io.micronaut.http.HttpRequest;
-import io.micronaut.views.ModelDecorator;
+import io.micronaut.views.ModelAndView;
+import io.micronaut.views.model.ViewModelProcessor;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.PostConstruct;
 import javax.inject.Singleton;
@@ -18,15 +19,15 @@ import java.util.Optional;
 import java.util.Properties;
 
 @Singleton
-public class MessagesRepository implements MessageSource, ModelDecorator {
+public class MessagesRepository implements MessageSource, ViewModelProcessor {
 
+    public static final String KEY_MESSAGES = "messages";
     private final ResourceLoader resourceLoader;
+    private Properties defaultProperties = new Properties();
 
     public MessagesRepository(ClassPathResourceLoader classPathResourceLoader) {
         this.resourceLoader = classPathResourceLoader;
     }
-
-    Properties defaultProperties = new Properties();
 
     @PostConstruct
     void initialize() {
@@ -53,16 +54,6 @@ public class MessagesRepository implements MessageSource, ModelDecorator {
         return (obj instanceof String) ? (String) obj : null;
     }
 
-    @Override
-    public Map<String, Object> modelForRequest(HttpRequest request) {
-        if (defaultProperties == null) {
-            return new HashMap<>();
-        }
-        Map<String, Object> result = new HashMap<>();
-        result.put("messages", propertiesToMap(defaultProperties));
-        return result;
-    }
-
     private Map<String, Object> propertiesToMap(Properties properties) {
         Map<String, Object> result = new HashMap<>();
         for (Object k : defaultProperties.keySet()) {
@@ -71,5 +62,18 @@ public class MessagesRepository implements MessageSource, ModelDecorator {
             }
         }
         return result;
+    }
+
+    @Override
+    public void process(@Nonnull HttpRequest<?> request, @Nonnull ModelAndView<Map<String, Object>> modelAndView) {
+        if (defaultProperties != null) {
+
+        Map<String, Object> viewModel = modelAndView.getModel().orElseGet(() -> {
+            final HashMap<String, Object> newModel = new HashMap<>(1);
+            modelAndView.setModel(newModel);
+            return newModel;
+        });
+        viewModel.putIfAbsent(KEY_MESSAGES, propertiesToMap(defaultProperties));
+        }
     }
 }

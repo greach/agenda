@@ -11,11 +11,11 @@
 <ul class="breadcrumbs">
     <li><a href="/">${messages["agenda"]}</a></li>
     <li>&rarr;</li>
-    <li><span>${talk.title}</span></li>
+    <li>${talk.title}</span></li>
 </ul>
 <article>
     <h1>${talk.title}</h1>
-    <h2>${talk.start}</h2>
+    <p><b>${messages["startDate"]}</b>: <span>${talk.startDate}</span> <b>${messages["startTime"]}</b>: <span>${talk.startTime}</span></p>
     #foreach($paragraph in $talk.about)
         <p>${paragraph}</p>
     #end
