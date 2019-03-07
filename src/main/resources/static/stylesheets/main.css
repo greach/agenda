@@ -6,6 +6,9 @@ body {
 p, li {
     font-size: 1.2em;
 }
+ul.speakers li b {
+    font-size: 14px;
+}
 li {
     margin-bottom: 15px;
 }
