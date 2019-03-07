@@ -29,7 +29,7 @@ deploy:
     tags: true
     branch: master
     repo: greach/agenda
-  zip_file: build/libs/agenda-0.20.jar
+  zip_file: build/libs/agenda-0.21.jar
   bucket_name: "$BUCKETNAME"
 env:
   global:
