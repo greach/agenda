@@ -24,8 +24,14 @@ dependencyManagement {
         mavenBom "io.micronaut:micronaut-bom:$micronautVersion"
     }
 }
-
+configurations {
+    developmentOnly
+}
 dependencies {
+    developmentOnly "io.micronaut:micronaut-runtime-osx"
+    developmentOnly "net.java.dev.jna:jna"
+    developmentOnly "io.methvin:directory-watcher"
+
     annotationProcessor "io.micronaut:micronaut-inject-java"
     annotationProcessor "io.micronaut:micronaut-validation"
     compile "io.micronaut.configuration:micronaut-hibernate-validator"
@@ -58,6 +64,7 @@ dependencies {
     testCompile "io.micronaut:micronaut-inject-java"
     testCompile "io.micronaut.test:micronaut-test-spock:1.0.1"
 }
+run.classpath += configurations.developmentOnly
 
 shadowJar {
     mergeServiceFiles()
