@@ -417,7 +417,7 @@ agenda:
                 - 'micronaut'
                 - 'container'
             speakers:
-                - 'anton-maria-rodrigo-yuste'
+                - 'anton-rodriguez'
             about:
                 - 'Java 11 is just around the corner and it comes with a lot of very needed features to run JVM applications in Docker. The goal of this workshop is to move beyond slide-sized examples of Dockerfiles and to show how to deploy a working Micronaut application using Docker with the proper tuning and limits.'
                 - 'In this session, Anton will build a Docker image with a Java application based in the Micronaut framework. This application will have a very small size following the Docker best practices and take advantage of the GraalVM'
