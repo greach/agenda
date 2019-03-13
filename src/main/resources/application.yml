@@ -324,20 +324,25 @@ agenda:
             end: '2019-03-30T15:30:00'
         -
             uid: 'karumi-stories'
-            title: 'Karumi Stories'
+            title: 'Karumi: Honest Consulting'
             track: 'Android, Tests & JVM Langs'
             start: '2019-03-29T17:15:00'
             end: '2019-03-29T18:00:00'
             speakers:
                 - 'jorge-barroso'
+            about:
+                - 'It has been five years since Karumi was founded, with a clear idea, try to work happy and be proud of our work. We believe that consultancy can be done in a different way to the classic consultancy. In this talk, we will try to talk about our principles, our doubts, our successes and our failures. We will explain how we see the present and the future of the software and we will talk about other companies that share our vision.'
         -
             uid: 'android-keynote'
-            title: 'Keynote'
+            title: 'Kotlin and Spring boot a pleasant experience and some rough edges'
             track: 'Android, Tests & JVM Langs'
             start: '2019-03-29T09:00:00'
             end: '2019-03-29T09:45:00'
             speakers:
                 - 'jorge-barroso'
+            about:
+                - 'In the last months, we have been working on Karumi with Spring boot building web services with Kotlin. The experience has been quite pleasant. I will explain how we have used Kotlin to write quality backend code, how to write tests and how to get the most out of both technologies.'
+                - 'Besides, we will explain some problems we have had in the development of the applications and how we have solved them.'
         -
             title: 'Jhipster Workshop'
             uid: 'jhipster-workshop'
