@@ -280,8 +280,8 @@ agenda:
         -
             uid: 'coffee-break-28'
             title: 'Coffee Break'
-            start: '2019-03-28T16:00:00'
-            end: '2019-03-28T16:15:00'
+            start: '2019-03-28T15:45:00'
+            end: '2019-03-28T16:00:00'
         -
             uid: 'registration'
             title: 'Registration'
@@ -342,8 +342,8 @@ agenda:
             title: 'Jhipster Workshop'
             uid: 'jhipster-workshop'
             track: 'Microservices & JVM Frameworks'
-            start: '2019-03-28T16:15:00'
-            end: '2019-03-28T19:00:00'
+            start: '2019-03-28T16:00:00'
+            end: '2019-03-28T18:30:00'
             tags:
                 - 'jhipster'
                 - 'spring-boot'
@@ -360,7 +360,7 @@ agenda:
             uid: 'observability-workshop'
             track: 'Reactive & Microservices'
             start: '2019-03-28T13:00:00'
-            end: '2019-03-28T16:00:00'
+            end: '2019-03-28T15:45:00'
             tags:
                 - 'microservices'
                 - 'ratpack'
@@ -406,8 +406,8 @@ agenda:
             title: 'Containers In Anger with Micronaut'
             uid: 'containers-in-anger-with-micronaut'
             track: 'Reactive & Microservices'
-            start: '2019-03-28T16:15:00'
-            end: '2019-03-28T19:00:00'
+            start: '2019-03-28T16:00:00'
+            end: '2019-03-28T18:30:00'
             tags:
                 - 'micronaut'
                 - 'container'
@@ -537,7 +537,7 @@ agenda:
             uid: 'create-your-own-blog-using-jbake'
             track: 'Microservices & JVM Frameworks'
             start: '2019-03-28T13:00:00'
-            end: '2019-03-28T16:00:00'
+            end: '2019-03-28T15:45:00'
             tags:
                 - 'jbake'
             speakers:
@@ -549,7 +549,7 @@ agenda:
             uid: 'guide-to-developer-friendly-dsls'
             track: 'Android, Tests & JVM Langs'
             start: '2019-03-28T13:00:00'
-            end: '2019-03-28T16:00:00'
+            end: '2019-03-28T15:45:00'
             tags:
                 - 'groovy'
                 - 'dsl'
@@ -569,8 +569,8 @@ agenda:
             title: 'Build libraries with Kordamp Gradle Plugins'
             uid: 'build-libraries-with-kordamp-gradle-plugins'
             track: 'Android, Tests & JVM Langs'
-            start: '2019-03-28T16:15:00'
-            end: '2019-03-28T19:00:00'
+            start: '2019-03-28T16:00:00'
+            end: '2019-03-28T18:30:00'
             tags:
                 - 'gradle'
             speakers:
