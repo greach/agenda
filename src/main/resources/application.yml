@@ -231,12 +231,14 @@ agenda:
             bio:
                 - 'Founder of Karumi, Android GDE, '
         -
-            name: 'Alvaro Sanchez Mariscal'
+            name: 'Álvaro Sánchez-Mariscal'
             uid: 'alvaro-sanchez-mariscal'
             twitter: 'alvaro_sanchez'
             image: 'https://greach.s3.amazonaws.com/alvaro_sanchez.jpg'
             bio:
-                - "I'm a developer; member of the Grails and Micronaut teams at ObjectComputing. Owner of Salenda."
+                - "Álvaro is a passionate developer and agile enthusiast with over 18 years of experience. He now works as a Senior Software Engineer at [Object Computing (OCI)](https://objectcomputing.com/), the company leading Groovy, Grails and Micronaut open-source development."
+                - "Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, [Salenda](https://www.salenda.es), in 2005, a software factory and Atlassian Gold Solution Partner headquartered in Madrid, Spain. As of today, he is still the company owner. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems."
+                - "Álvaro has spoken in 11 different countries at conferences like Devoxx, GeeCON, JavaLand, JavaZone, Codemotion and Commit Conf. In his spare time, as well as coding and experimenting with new technologies, he likes to spend time with his wife and son, support [CD Leganes football team](https://www.cdleganes.com/), and play paddle tennis."
         -
             name: 'Katia Aresti'
             uid: 'katia-aresti'
