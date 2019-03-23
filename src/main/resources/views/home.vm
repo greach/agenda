@@ -52,7 +52,11 @@
                     #end
                 #end
                 #foreach($item in $timeSlot.getItems())
-                <td class="untrackItem">${item.getTitle()}</td></tr>
+                <td class="untrackItem">${item.getTitle()}
+                    #if(${item.getLocation()})
+                    <span>${item.getLocation()}</span>
+                    #end
+                </td></tr>
                 #end
         #end
         </tbody>

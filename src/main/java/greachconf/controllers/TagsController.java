@@ -56,7 +56,7 @@ public class TagsController {
                         speakersNames.add(speaker.getName());
                     }
                 }
-                TalkRow talkRow = new TalkRow(talk.getUid(), talk.getTitle(), speakersNames);
+                TalkRow talkRow = new TalkRow(talk.getUid(), talk.getTitle(), speakersNames, talk.getLocation());
                 talkRows.add(talkRow);
             }
 

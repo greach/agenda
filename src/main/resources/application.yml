@@ -280,6 +280,12 @@ agenda:
             start: '2019-03-28T12:00:00'
             end: '2019-03-28T13:00:00'
         -
+            uid: 'friday-party'
+            title: 'Beers - La Manuela Olavide'
+            location: '[Calle de Gonzalo de Córdoba, 16, 28010 Madrid](https://www.google.com/maps/place/La+Manuela+Olavide/@40.4323762,-3.7021553,21z/data=!4m5!3m4!1s0x0:0x423e51031d317cf7!8m2!3d40.4323984!4d-3.7021218)'
+            start: '2019-03-29T18:30:00'
+            end: '2019-03-29T22:00:00'
+        -
             uid: 'coffee-break-28'
             title: 'Coffee Break'
             start: '2019-03-28T15:45:00'

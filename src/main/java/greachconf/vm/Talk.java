@@ -1,10 +1,11 @@
 package greachconf.vm;
 
+import greachconf.views.MarkdownUtil;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -40,6 +41,9 @@ public class Talk {
 
     @Nullable
     private String track;
+
+    @Nullable
+    private String location;
 
     public Talk() {
 
@@ -133,5 +137,14 @@ public class Talk {
 
     public void setTags(@Nonnull List<String> tags) {
         this.tags = tags;
+    }
+
+    @Nullable
+    public String getLocation() {
+        return location != null ? MarkdownUtil.htmlFromMarkdown(location) : null;
+    }
+
+    public void setLocation(@Nullable String location) {
+        this.location = location;
     }
 }

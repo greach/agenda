@@ -24,10 +24,12 @@ public class MarkdownViewModelProcessor implements ViewModelProcessor {
     public static final String KEY_ABOUT = "about";
     public static final String KEY_SPEAKER = "speaker";
     public static final String KEY_BIO = "bio";
+    public static final String KEY_LOCATION = "location";
 
     @Override
     public void process(@Nonnull HttpRequest<?> request, @Nonnull ModelAndView<Map<String, Object>> modelAndView) {
         modelAndView.getModel().ifPresent(viewModel -> {
+
             if (viewModel.containsKey(KEY_TALK) &&
                     viewModel.get(KEY_TALK) instanceof Talk) {
                 Map<String, Object> m = new HashMap<>(BeanMap.of(((Talk) viewModel.get(KEY_TALK))));
@@ -36,6 +38,11 @@ public class MarkdownViewModelProcessor implements ViewModelProcessor {
                 m.put(KEY_ABOUT, about.stream()
                         .map(MarkdownUtil::htmlFromMarkdown)
                         .collect(Collectors.toList()));
+                String location = ((Talk) viewModel.get(KEY_TALK)).getLocation();
+                if (location != null) {
+                    m.put(KEY_LOCATION, MarkdownUtil.htmlFromMarkdown(location));
+                }
+
                 viewModel.replace(KEY_TALK, m);
             }
             if (viewModel.containsKey(KEY_SPEAKER) &&

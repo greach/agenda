@@ -18,9 +18,7 @@ public class HomeController {
     @View("home")
     @Get
     public Agenda index() {
-        Agenda agenda = agendaRepository.findAgenda();
-
-        return agenda;
+        return agendaRepository.findAgenda();
     }
 
 }

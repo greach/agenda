@@ -15,11 +15,14 @@ public class TalkRow implements Comparable<TalkRow> {
     @Nullable
     private Set<String> speakers = new HashSet<>();
 
+    @Nullable
+    private String location;
+
     public TalkRow() {
 
     }
 
-    public TalkRow(String uid, String title, Set<String> speakers) {
+    public TalkRow(String uid, String title, Set<String> speakers, String location) {
         this.uid = uid;
         this.title = title;
         this.speakers = speakers;
@@ -55,5 +58,14 @@ public class TalkRow implements Comparable<TalkRow> {
     @Override
     public int compareTo(TalkRow o) {
         return this.getTitle().compareTo(o.getTitle());
+    }
+
+    @Nullable
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(@Nullable String location) {
+        this.location = location;
     }
 }
