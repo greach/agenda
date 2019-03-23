@@ -70,6 +70,15 @@ public class Speaker implements Comparable<Speaker> {
 
     @Override
     public int compareTo(Speaker o) {
-        return getName().compareTo(o.getName());
+        return replaceAccents(getName().toLowerCase()).compareTo(replaceAccents(o.getName().toLowerCase()));
+    }
+
+    String replaceAccents(String str) {
+        return str.replaceAll("á", "a")
+                .replaceAll("é", "e")
+                .replaceAll("ó", "o")
+                .replaceAll("é", "e")
+                .replaceAll("ú", "u");
+
     }
 }
