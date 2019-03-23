@@ -7,13 +7,18 @@
 </head>
 <body class="speaker">
 #parse("views/logo.vm")
-#parse("views/speakers-nav.vm")
+<div class="desktop">
+    #parse("views/speakers-nav.vm")
+</div>
+
 <ul class="breadcrumbs">
+    <li class="mobile"><a href="#bottomMenu">Menu</a></li>
+    <li class="mobile">&rarr;</li>
     <li><a href="/">${messages["agenda"]}</a></li>
     <li>&rarr;</li>
     <li><a href="/speakers">Speakers</a></li>
-    <li>&rarr;</li>
-    <li><span>${speaker.name}</span></li>
+    <li class="desktop">&rarr;</li>
+    <li class="desktop"><span>${speaker.name}</span></li>
 </ul>
 <article>
     <h1>${speaker.name}</h1>
@@ -30,5 +35,9 @@
     #end
     </ul>
 </article>
+<div class="mobile" id="bottomMenu">
+<hr/>
+#parse("views/speakers-nav.vm")
+</div>
 </body>
 </html>

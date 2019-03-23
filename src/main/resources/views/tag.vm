@@ -7,8 +7,12 @@
 </head>
 <body class="talks">
 #parse("views/logo.vm")
-#parse("views/speakers-nav.vm")
+<div class="desktop">
+    #parse("views/speakers-nav.vm")
+</div>
 <ul class="breadcrumbs">
+    <li class="mobile"><a href="#bottomMenu">Menu</a></li>
+    <li class="mobile">&rarr;</li>
     <li><a href="/">${messages["agenda"]}</a></li>
     <li>&rarr;</li>
     <li><a href="/talks/tags">${messages["tags"]}</a></li>
@@ -30,5 +34,9 @@
     #end
     </ul>
 </article>
+<div class="mobile" id="bottomMenu">
+<hr/>
+#parse("views/speakers-nav.vm")
+</div>
 </body>
 </html>

@@ -7,13 +7,54 @@
 </head>
 <body>
 #parse("views/logo.vm")
-#parse("views/nav.vm")
+<div class="desktop">
+    #parse("views/nav.vm")
+</div>
 
 <article>
-    <header><h1>Agenda</h1></header>
+    <header><h1><span class="mobile"><a href="#bottomMenu">Menu</a> &rarr;</span>Agenda</h1></header>
+#foreach( $day in $days)
+    <table class="mobile">
+        <thead>
+            <tr><th colspan="2">${day.getDay().toString()}</th></tr>
+        </thead>
+        #foreach($timeSlot in $day.getTimeSlots())
+            <tr>
+                <td class="timeslot" rowspan="${timeSlot.getTrackTalks().size()}">
+                    <span class="start">${timeSlot.getTimeSlot().getStart()}</span>
+                    <span class="timeSeparator"> - </span>
+                    <span class="end">${timeSlot.getTimeSlot().getEnd()}</span>
+                </td>
+
+                #if(${timeSlot.getTrackTalks()})
+                    #foreach($track in ${day.getTracks()})
+
+                        #if($foreach.index > 0)
+                        <tr>
+                        #end
+
+                        <td class="talk${day.getTracks().size()}">
+                            #if(${timeSlot.getTrackTalks()[$track]})
+                                $track - <a class="title" href="/talk/${timeSlot.getTrackTalks()[$track].uid}">${timeSlot.getTrackTalks()[$track].title}</a>
+                                <span> - </span>
+                                #foreach($speaker in ${timeSlot.getTrackTalks()[$track].getSpeakers()})
+                                    <a class="speaker" href="/speaker/${speaker.uid}">${speaker.getName()}</a>
+                                #end
+                            #end
+                        </td>
+                        </tr>
+                    #end
+                #end
+                #foreach($item in $timeSlot.getItems())
+                    <td colspan="${day.getTracks().size()}" class="untrackItem">${item.getTitle()}</td>
+                #end
+            </tr>
+        #end
+    </table>
+#end
 #foreach( $day in $days)
 
-<table>
+<table class="desktop">
     <thead>
         #set( $colspan = $day.getTracks().size() + 1 )
         <tr><th colspan="${colspan}">${day.getDay().toString()}</th></tr>
@@ -55,5 +96,9 @@
 </table>
 #end
 </article>
+<div class="mobile" id="bottomMenu">
+<hr/>
+#parse("views/nav.vm")
+</div>
 </body>
 </html>

@@ -3,6 +3,29 @@ body {
     font-size: 14px;
 }
 
+a, a:hover, a:visited {
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.mobile {
+    display: block;
+}
+.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 961px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+}
+
 p, li {
     font-size: 1.2em;
 }
@@ -30,8 +53,15 @@ article {
 
 article header {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 961px) {
+    article header {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
 }
 article header h1 {
     font-size: 1.6em;
@@ -51,10 +81,19 @@ th, td {
 .untrackItem {
     background-color: rgba(193,219,70, 0.5);
 }
+nav ul {
+    padding: 0;
+    margin: 0;
+}
 nav li {
-    display: inline;
+    display: inline-block;
     margin-left: 0;
-    padding: 10px 30px;
+    padding: 10px 15px;
+}
+@media screen and (min-width: 961px) {
+    nav li {
+        padding: 10px 30px;
+    }
 }
 nav li.selected a {
     font-weight: bold;

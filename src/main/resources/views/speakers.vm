@@ -7,7 +7,9 @@
 </head>
 <body>
 #parse("views/logo.vm")
-#parse("views/speakers-nav.vm")
+<div class="desktop">
+    #parse("views/speakers-nav.vm")
+</div>
 <article>
     <header>
         <h1>Speakers</h1>
@@ -23,5 +25,9 @@
         </ul>
     #end
 </article>
+<div class="mobile" id="bottomMenu">
+<hr/>
+#parse("views/speakers-nav.vm")
+</div>
 </body>
 </html>
