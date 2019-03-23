@@ -564,6 +564,8 @@ agenda:
                 - 'vladimir-orany'
             about:
                 - 'Creating domain-specific languages in Groovy is extremely easy. It is actually so easy that everyone thinks that they know how to write them. In this session, you will go beyond the trivial builder example and learn what are the common pitfalls in DSL development in Groovy and how to work around them. Discover the patterns which will help you provide better developer experience to your DSL and also which enables static compilation and faster execution.'
+                - '## Technical Requirements'
+                - 'JDK 8 + IDE (IntelliJ IDEA preferred).'
         -
             title: 'Keynote'
             uid: 'keynote-jvm-frameworks'
@@ -638,6 +640,8 @@ agenda:
                 - "Kotlin has become the fastest growing language in the latest years, and even in the Android world it is already established, we're starting to understand how it can help us boost our productivity."
                 - "One of the latest additions to the language is coroutines, a way to write asynchronous code sequentially, dramatically reducing the cognitive load of your code. Coroutines are nice and flexible, but they can be a bit hard to use if you haven't seen them before."
                 - "In this talk, I'll dive into the main concepts of coroutines, why they were created and how you can write your own coroutines to make your code shine."
+                - '## Technical Requirements'
+                - 'Attendees would need a laptop with JDK 8 & IntelliJ-IDEA Community edition or Ultimate'
         -
             title: 'A More Secure World for Android Apps'
             uid: 'a-more-secure-world-for-android-apps'

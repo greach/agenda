@@ -4,10 +4,12 @@ body {
 }
 
 a, a:hover, a:visited {
-    color: blue;
-}
-a:hover {
+    color: rgba(23, 23, 23, 0.8);
     text-decoration: underline;
+}
+
+#bottomMenu {
+    clear: both;
 }
 
 .mobile {
