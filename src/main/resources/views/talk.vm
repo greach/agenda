@@ -17,7 +17,7 @@
     <h1>${talk.title}</h1>
     <p><b>${messages["startDate"]}</b>: <span>${talk.startDate}</span> <b>${messages["startTime"]}</b>: <span>${talk.startTime}</span></p>
     #foreach($paragraph in $talk.about)
-        <p>${paragraph}</p>
+        ${paragraph}
     #end
     <h2>${messages["speakers"]}</h2>
     #foreach($speaker in $speakers)
