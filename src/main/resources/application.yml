@@ -111,7 +111,7 @@ agenda:
             twitter: 'lime_cl'
             image: 'https://greach.s3.amazonaws.com/lime_cl.jpg'
             bio:
-                - ''
+                - 'Antonio is a freelance trainer who helps companies and their Android teams in the transition from Java to Kotlin. He is the author of the book and online course [Kotlin for Android Developers](https://antonioleiva.com/kotlin-android-developers-book/), a Kotlin Trainer Certified by Jetbrains, and shares his learnings at [https://antonioleiva.com](https://antonioleiva.com).'
         -
             name: 'Andres Almiray'
             uid: 'andres-almiray'
