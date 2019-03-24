@@ -603,6 +603,8 @@ agenda:
                 - 'You will learn how to create a powerful but familiar structure to leverage
                    the features found in the Gradle Build Tool. After the workshop you should
                    have a clearer picture on how to build, document and distribute a project.'
+                - '## Technical requirements'
+                - 'Attendees would need a laptop with JDK 8, favorite IDE and/or text editor.'
         -
             title: 'Kotlin Workshop'
             uid: 'kotlin-workshop'
