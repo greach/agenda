@@ -21,6 +21,9 @@ import java.util.Set;
 @Controller("/talks")
 public class TagsController {
 
+    public static final String KEY_TAG = "tag";
+    public static final String KEY_TALKS = "talks";
+    public static final String KEY_TAG_DENSITY = "tagDensity";
     private final TalkRepository talkRepository;
     private final SpeakerRepository speakerRepository;
 
@@ -35,7 +38,7 @@ public class TagsController {
     public Map<String, Object> index() {
         Map<String, Object> model = new HashMap<>();
         Map<String, Integer> tagDensitiy = talkRepository.calculateTagDensity();
-        model.put("tagDensity", tagDensitiy);
+        model.put(KEY_TAG_DENSITY, tagDensitiy);
         return model;
     }
 
@@ -43,7 +46,7 @@ public class TagsController {
     @Get("/tags/{tag}")
     public Map<String, Object> tag(@NotBlank String tag) {
         Map<String, Object> model = new HashMap<>();
-        model.put("tag", tag.toUpperCase());
+        model.put(KEY_TAG, tag.toUpperCase());
         Set<Talk> talks = talkRepository.findTalksByTag(tag);
         List<TalkRow> talkRows = new ArrayList<>(talks.size());
         for (Talk talk : talks) {
@@ -66,7 +69,7 @@ public class TagsController {
 
         }
         Collections.sort(talkRows);
-        model.put("talks", talkRows);
+        model.put(KEY_TALKS, talkRows);
         return model;
     }
 
