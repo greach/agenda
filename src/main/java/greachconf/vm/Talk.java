@@ -45,6 +45,9 @@ public class Talk {
     @Nullable
     private String location;
 
+    @Nullable
+    private String locationLink;
+
     public Talk() {
 
     }
@@ -141,10 +144,19 @@ public class Talk {
 
     @Nullable
     public String getLocation() {
-        return location != null ? MarkdownUtil.htmlFromMarkdown(location) : null;
+        return this.location;
     }
 
     public void setLocation(@Nullable String location) {
         this.location = location;
+    }
+
+    public void setLocationLink(@Nullable String locationLink) {
+        this.locationLink = locationLink;
+    }
+
+    @Nullable
+    public String getLocationLink() {
+        return this.locationLink;
     }
 }

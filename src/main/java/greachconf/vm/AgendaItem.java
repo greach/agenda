@@ -10,11 +10,15 @@ public class AgendaItem {
     @Nullable
     private String location;
 
+    @Nullable
+    private String locationLink;
+
     public AgendaItem() {}
 
-    public AgendaItem(String title, String location) {
+    public AgendaItem(String title, String location, String locationLink) {
         this.title = title;
         this.location = location;
+        this.locationLink = locationLink;
     }
 
     public String getTitle() {
@@ -32,6 +36,15 @@ public class AgendaItem {
 
     public void setLocation(@Nullable String location) {
         this.location = location;
+    }
+
+    @Nullable
+    public String getLocationLink() {
+        return this.locationLink;
+    }
+
+    public void setLocationLink(@Nullable String locationLink) {
+        this.locationLink = locationLink;
     }
 
     @Override

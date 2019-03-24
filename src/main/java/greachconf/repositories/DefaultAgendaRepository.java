@@ -62,7 +62,9 @@ public class DefaultAgendaRepository implements AgendaRepository {
                 .filter(talk -> talk.getStart().toLocalDate().equals(localDate) &&
                         talk.getStart().toLocalTime().equals(timeSlot.getStart()) &&
                         talk.getEnd().toLocalTime().equals(timeSlot.getEnd()))
-                .map(talk -> new AgendaItem(talk.getTitle(), talk.getLocation())).collect(Collectors.toList());
+                .map(talk -> new AgendaItem(talk.getTitle(),
+                        talk.getLocation(),
+                        talk.getLocationLink())).collect(Collectors.toList());
     }
 
     private Map<String, AgendaTalk> findTrackTalksByTimeSlot(@Nonnull LocalDate localDate, @Nonnull TimeSlot timeSlot) {
@@ -96,7 +98,11 @@ public class DefaultAgendaRepository implements AgendaRepository {
                                 .map(speaker -> new AgendaTalkSpeaker(speaker.getUid(),
                                         speaker.getName()))
                                 .collect(Collectors.toList());
-                        return new AgendaTalk(talk.getUid(), talk.getTitle(), speakers, talk.getLocation());
+                        return new AgendaTalk(talk.getUid(),
+                                talk.getTitle(),
+                                speakers,
+                                talk.getLocation(),
+                                talk.getLocationLink());
                     }).findFirst();
             if (agendaTalk.isPresent()) {
                 result.put(track, agendaTalk.get());

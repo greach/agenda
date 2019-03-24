@@ -53,8 +53,14 @@
                 #end
                 #foreach($item in $timeSlot.getItems())
                 <td class="untrackItem">${item.getTitle()}
+                    #if(${item.getLocationLink()})
+                        <a href="${item.getLocationLink()}">
+                    #end
                     #if(${item.getLocation()})
-                    <span>${item.getLocation()}</span>
+                        <span>${item.getLocation()}</span>
+                    #end
+                    #if(${item.getLocationLink()})
+                        </a>
                     #end
                 </td></tr>
                 #end
@@ -97,7 +103,17 @@
         #end
         #end
         #foreach($item in $timeSlot.getItems())
-            <td colspan="${day.getTracks().size()}" class="untrackItem">${item.getTitle()}</td>
+            <td colspan="${day.getTracks().size()}" class="untrackItem">${item.getTitle()}
+                #if(${item.getLocationLink()})
+                <a href="${item.getLocationLink()}">
+                #end
+                #if(${item.getLocation()})
+                    <span>${item.getLocation()}</span>
+                #end
+                #if(${item.getLocationLink()})
+                </a>
+                #end
+            </td>
         #end
     </tr>
     #end

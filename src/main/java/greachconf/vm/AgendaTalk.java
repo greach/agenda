@@ -14,8 +14,12 @@ public class AgendaTalk extends AgendaItem {
 
     public AgendaTalk() {}
 
-    public AgendaTalk(String uid, String title, List<AgendaTalkSpeaker> speakers, String location) {
-        super(title, location);
+    public AgendaTalk(String uid,
+                      String title,
+                      List<AgendaTalkSpeaker> speakers,
+                      String location,
+                      String locationLink) {
+        super(title, location, locationLink);
         this.uid = uid;
         this.speakers = speakers;
     }

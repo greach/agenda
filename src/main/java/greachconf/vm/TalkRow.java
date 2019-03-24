@@ -18,14 +18,23 @@ public class TalkRow implements Comparable<TalkRow> {
     @Nullable
     private String location;
 
+    @Nullable
+    private String locationLink;
+
     public TalkRow() {
 
     }
 
-    public TalkRow(String uid, String title, Set<String> speakers, String location) {
+    public TalkRow(String uid,
+                   String title,
+                   Set<String> speakers,
+                   String location,
+                   String locationLink) {
         this.uid = uid;
         this.title = title;
         this.speakers = speakers;
+        this.location = location;
+        this.locationLink = locationLink;
     }
 
     @Nonnull
@@ -67,5 +76,14 @@ public class TalkRow implements Comparable<TalkRow> {
 
     public void setLocation(@Nullable String location) {
         this.location = location;
+    }
+
+    public void setLocationLink(@Nullable String locationLink) {
+        this.locationLink = locationLink;
+    }
+
+    @Nullable
+    public String getLocationLink() {
+        return this.locationLink;
     }
 }
