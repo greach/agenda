@@ -583,6 +583,13 @@ agenda:
             end: '2019-03-29T09:45:00'
             speakers:
                 - 'andres-almiray'
+            about: 
+                - "The Java space is filled with frameworks. It all started with Struts, the first web framework that made it big in the 
+                  hearts and minds of Java developers worldwide. Tiem has passed and web frameworks have given way to the rise of Microservices, 
+                  for which we also have a good number of framework alterantives"
+                - "So what makes each on of these alternatives tick? How can we be sure we've made the right choice? What looms in the future
+                  of each of these frameworks? Let's find out together answers to these questions, after all solving problems as part of the community
+                  is much more fun and rewarding."
         -
             title: 'Build libraries with Kordamp Gradle Plugins'
             uid: 'build-libraries-with-kordamp-gradle-plugins'
