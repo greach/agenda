@@ -229,7 +229,9 @@ agenda:
             twitter: 'flipper83'
             image: 'https://greach.s3.amazonaws.com/flipper83.jpg'
             bio:
-                - 'Founder of Karumi, Android GDE'
+                - 'Jorge Barroso is the co-founder and Android developer of Karumi. Karumi is an intentionally small software development studio headquartered in Madrid and specialized in developing lean and stable native applications and working with teams for improve their skills.'
+                - 'Before Karumi,  Jorge developed a wide variety of strategic products covering J2ME, Blackberry and especially Android. Right now he is focusing in Backend development. He has obtained the Google Developer Expert on Android.'
+                - 'When Jorge is not Coding, he is most likely making and playing video games. He also brings an intense love for board games.'
         -
             name: 'Álvaro Sánchez-Mariscal'
             uid: 'alvaro-sanchez-mariscal'
