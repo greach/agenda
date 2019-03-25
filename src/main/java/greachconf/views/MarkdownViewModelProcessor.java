@@ -29,9 +29,12 @@ public class MarkdownViewModelProcessor implements ViewModelProcessor {
     @Override
     public void process(@Nonnull HttpRequest<?> request, @Nonnull ModelAndView<Map<String, Object>> modelAndView) {
         modelAndView.getModel().ifPresent(viewModel -> {
+            LOG.trace("model {}", viewModel.getClass().getSimpleName());
 
             if (viewModel.containsKey(KEY_TALK) &&
                     viewModel.get(KEY_TALK) instanceof Talk) {
+                LOG.trace("model is talk");
+
                 Map<String, Object> m = new HashMap<>(BeanMap.of(((Talk) viewModel.get(KEY_TALK))));
 
                 List<String> about = ((Talk) viewModel.get(KEY_TALK)).getAbout();
@@ -47,6 +50,7 @@ public class MarkdownViewModelProcessor implements ViewModelProcessor {
             }
             if (viewModel.containsKey(KEY_SPEAKER) &&
                     viewModel.get(KEY_SPEAKER) instanceof Speaker) {
+                LOG.trace("model is speaker");
                 Map<String, Object> m = new HashMap<>(BeanMap.of(((Speaker) viewModel.get(KEY_SPEAKER))));
 
                 List<String> bio = ((Speaker) viewModel.get(KEY_SPEAKER)).getBio();

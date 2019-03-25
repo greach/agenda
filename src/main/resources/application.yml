@@ -368,7 +368,9 @@ agenda:
                 - 'Let us start with what JHipster is and why do you need it? Followed by creating an application with JHipster.'
                 - 'Then we delve deep into the land of JDL (JHipster Domain Language) and see what we can achieve with that.'
                 - 'Finally we will create a full blown microservices application with JHipster.'
-                - 'Note: Have NPM and Docker installed and ready to use in your machine.'
+                - '## Technical Requirements'
+                - 'Attendees would need a laptop with JDK8, an IDE of their choice, NodeJS 8 and above, Docker to be installed in it.'
+                - 'In detail, follow the [JHipster installation steps](https://www.jhipster.tech/installation/).'
         -
             title: 'Observability workshop'
             uid: 'observability-workshop'
