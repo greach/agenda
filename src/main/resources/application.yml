@@ -390,6 +390,8 @@ agenda:
                 - 'This workshop will be a hands on exploration of observability. There will be a microservice architecture system that we work to debug and add needed insights to. We will have a mix of services written in Ratpack, Micronaut, and Grails all interacting over a mix of methodologies; the setup will model an evolving system maintained by a number of teams.'
                 - 'Work with logging techniques such as dynamic log levels, correlation IDs and formatting tricks. We will add distributed tracing to services, then actually debug issues. Metrics will also be covered. I’ll even introduce a few scenarios of observability gone wrong.'
                 - 'Most of this workshop will be hands on the keyboard.'
+                - '## Technical Requirements'
+                - 'Attendees will need a laptop with JDK 8, docker / docker-compose, and git installed.'
         -
             title: 'How I Automated My Barn with Arduino, Raspberry Pi, Kafka, Docker, Kubernetes, Mongo and the Cloud'
             uid: 'how-i-automated-my-barn-with-arduino-raspberry-pi-kafka-docker-kubernetes-mongo-and-the-cloud'
