@@ -550,6 +550,8 @@ agenda:
                 - '* Find toolkit which will help in verification of the implementation;'
                 - '* Iteratively follow all the rules of Reactive Streams and implement the correct solution;'
                 - '* Compare our solution with modern one'
+                - '## Technical Requirements'
+                - 'JDK 8+, IntelliJ-IDEA.'
         -
             title: 'Create your own blog using Jbake'
             uid: 'create-your-own-blog-using-jbake'
