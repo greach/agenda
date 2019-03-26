@@ -867,6 +867,8 @@ agenda:
                 - '- HTTP services.'
                 - '- Cloud and serverless deployments.'
                 - '- Management & Monitoring.'
+                - '## Technical Requirements'
+                - 'Check [Software Requirements](https://alvarosanchez.github.io/micronaut-workshop-java/) at the Workshop webpage.'
             speakers:
                 - 'alvaro-sanchez-mariscal'
         -
