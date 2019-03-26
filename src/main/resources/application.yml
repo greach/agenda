@@ -523,6 +523,9 @@ agenda:
                 - 'grails'
             speakers:
                 - 'graeme-rocher'
+            about:
+                - "Graeme Rocher, Grails creator, will show what's coming in Grails 4."
+                - 'As a Grails developer, you will learn how to take advantage of Micronaut’s coolest features inside your Grails apps. Whether you want to send messages to Kafka, make HTTP client calls or write WebSockets Micronaut has a great API that is easily usable from your Grails application.'
         -
             title: 'Micronaut State of the Union'
             uid: 'micronaut-state-of-the-union'
