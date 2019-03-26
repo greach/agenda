@@ -1,8 +1,11 @@
 package greachconf.vm;
 
+import greachconf.views.MarkdownUtil;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Speaker implements Comparable<Speaker> {
 
@@ -43,7 +46,8 @@ public class Speaker implements Comparable<Speaker> {
 
     @Nullable
     public List<String> getBio() {
-        return bio;
+        //TODO should not be necessary
+        return bio.stream().map(MarkdownUtil::htmlFromMarkdown).collect(Collectors.toList());
     }
 
     public void setBio(@Nullable List<String> bio) {

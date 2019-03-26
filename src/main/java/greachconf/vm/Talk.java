@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Talk {
 
@@ -117,7 +118,8 @@ public class Talk {
 
     @Nonnull
     public List<String> getAbout() {
-        return about;
+        //TODO should not be necessary
+        return about.stream().map(MarkdownUtil::htmlFromMarkdown).collect(Collectors.toList());
     }
 
     public void setAbout(@Nonnull List<String> about) {
