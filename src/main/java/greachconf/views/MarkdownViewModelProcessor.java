@@ -30,12 +30,16 @@ public class MarkdownViewModelProcessor implements ViewModelProcessor {
     public void process(@Nonnull HttpRequest<?> request, @Nonnull ModelAndView<Map<String, Object>> modelAndView) {
         modelAndView.getModel().ifPresent(viewModel -> {
             if (LOG.isDebugEnabled()) {
-                LOG.debug("markdown process model {}", viewModel.getClass().getSimpleName());
+                LOG.debug("markdown process request {} {} model {}", request.getMethod().toString(), request.getPath(), viewModel.getClass().getSimpleName());
             }
-
+            if (viewModel.containsKey(KEY_TALK)) {
+                if (LOG.isDebugEnabled()) {
+                    LOG.debug("model contains a talk of type: {}", viewModel.get(KEY_TALK).getClass().getSimpleName());
+                }
+            }
             if (viewModel.containsKey(KEY_TALK) && viewModel.get(KEY_TALK) instanceof Talk) {
-                if (LOG.isTraceEnabled()) {
-                    LOG.trace("model is talk");
+                if (LOG.isDebugEnabled()) {
+                    LOG.debug("model is talk");
                 }
 
                 Map<String, Object> m = new HashMap<>(BeanMap.of(((Talk) viewModel.get(KEY_TALK))));
@@ -53,15 +57,15 @@ public class MarkdownViewModelProcessor implements ViewModelProcessor {
             }
             if (viewModel.containsKey(KEY_SPEAKER) &&
                     viewModel.get(KEY_SPEAKER) instanceof Speaker) {
-                if (LOG.isTraceEnabled()) {
-                    LOG.trace("model is speaker");
+                if (LOG.isDebugEnabled()) {
+                    LOG.debug("model is speaker");
                 }
                 Map<String, Object> m = new HashMap<>(BeanMap.of(((Speaker) viewModel.get(KEY_SPEAKER))));
 
                 List<String> bio = ((Speaker) viewModel.get(KEY_SPEAKER)).getBio();
 
-                if (LOG.isTraceEnabled()) {
-                    LOG.trace("bio: {}", bio != null ? String.join(". ", bio) : "bio is null");
+                if (LOG.isDebugEnabled()) {
+                    LOG.debug("bio: {}", bio != null ? String.join(". ", bio) : "bio is null");
                 }
                 if (bio != null) {
                     m.put(KEY_BIO, bio.stream()
