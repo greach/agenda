@@ -11,5 +11,5 @@
     <root level="info">
         <appender-ref ref="STDOUT" />
     </root>
-    <logger name="greachconf" level="INFO"/>
+    <logger name="greachconf" level="DEBUG"/>
 </configuration>

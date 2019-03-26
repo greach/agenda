@@ -29,8 +29,8 @@ public class MarkdownViewModelProcessor implements ViewModelProcessor {
     @Override
     public void process(@Nonnull HttpRequest<?> request, @Nonnull ModelAndView<Map<String, Object>> modelAndView) {
         modelAndView.getModel().ifPresent(viewModel -> {
-            if (LOG.isTraceEnabled()) {
-                LOG.trace("model {}", viewModel.getClass().getSimpleName());
+            if (LOG.isDebugEnabled()) {
+                LOG.debug("markdown process model {}", viewModel.getClass().getSimpleName());
             }
 
             if (viewModel.containsKey(KEY_TALK) && viewModel.get(KEY_TALK) instanceof Talk) {
