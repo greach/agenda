@@ -147,7 +147,7 @@ agenda:
             twitter: 'graemerocher'
             image: 'https://greach.s3.amazonaws.com/graemerocher.jpg'
             bio:
-                - 'Creator of [Grails](http://grails.org) and [Micronaut](http://micronaut.io). Senior Engineer at OCI'
+                - 'Graeme Rocher, co-founder of the [Grails](http://grails.org) and [Micronaut](http://micronaut.io) frameworks and co-author of The Definitive Guide to Grails, serves as Technical Lead for the OCI Grails & Micronaut team. Graeme has worked in the software development field for more than 20 years and has expertise in Grails, Groovy, Web Development, Dynamic Languages, and the JVM.'
         -
             name: 'Pablo A. Martinez'
             uid: 'pablo-martinez'
@@ -533,6 +533,9 @@ agenda:
                 - 'micronaut'
             speakers:
                 - 'graeme-rocher'
+            about:
+                - 'This talk is for developers looking to go beyond the basics with Micronaut. Taking an extensive look at how advanced features like Dependency Injection (DI), Aspect Oriented Programming (AOP) and Ahead of Time (AOT) compilation work, the creator of Micronaut Graeme Rocher will walk attendees through Micronaut’s elegant programming model.'
+                - "Graeme Rocher will present what's new in Micronaut 1.1 and how to get the most of out of the framework."
         -
             title: 'Reactive Hardcore. How to build a Publisher<?> and beyond'
             uid: 'reactive-hardcore-how-to-build-a-publisher-and-beyond'
