@@ -50,7 +50,7 @@ public class Speaker implements Comparable<Speaker> {
     @Nullable
     public List<String> getBio() {
         //TODO should not be necessary
-        return bio.stream().map(MarkdownUtil::htmlFromMarkdown).collect(Collectors.toList());
+        return bio != null ? bio.stream().map(MarkdownUtil::htmlFromMarkdown).collect(Collectors.toList()) : new ArrayList<>();
     }
 
     public void setBio(@Nullable List<String> bio) {
