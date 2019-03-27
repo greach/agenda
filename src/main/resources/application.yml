@@ -438,6 +438,9 @@ agenda:
                 - 'In this session, Anton will build a Docker image with a Java application based in the Micronaut framework. This application will have a very small size following the Docker best practices and take advantage of the GraalVM'
                 - 'The Docker image will be deployed in Kubernetes and scaled to demonstrate how powerful is nowadays the JVM in conjunction with Docker and Kubernetes. Then we will expose application and JVM metrics and they will be consumed by Prometheus, a system that records time-series data (telemetry) for monitoring and alerting, and we’ll use Graphana to query and render metrics from the application pods.'
                 - 'Along the way, we’ll discover the most common mistakes working with Docker and the JVM and how to avoid them.'
+                - '## Technical Requirements'
+                - 'Attendees would need a laptop with Virtualbox, JDK 8 and a Java IDE. The Virtualbox VM with Docker and Kubernetes would be shared during the workshop using USB sticks. Detailed information about how to import it and configure it will be also provided.'
+                - 'In the workshop attendees will code some features to integrate a micronaut application with kubernetes. The base project and detailed instructions can be downloaded from [antonmry/micronaut-app](https://github.com/antonmry/micronaut-app) and imported in the IDE to avoid download the dependencies during the workshop.'
         -
             title: 'Micronaut performance'
             uid: 'micronaut-performance'
