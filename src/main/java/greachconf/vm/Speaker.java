@@ -1,12 +1,15 @@
 package greachconf.vm;
 
 import greachconf.views.MarkdownUtil;
+import io.micronaut.core.annotation.Introspected;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Introspected
 public class Speaker implements Comparable<Speaker> {
 
     @Nonnull

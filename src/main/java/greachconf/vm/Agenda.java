@@ -1,9 +1,12 @@
 package greachconf.vm;
 
+import io.micronaut.core.annotation.Introspected;
+
 import javax.annotation.Nonnull;
 import java.util.Collections;
 import java.util.List;
 
+@Introspected
 public class Agenda {
 
     @Nonnull

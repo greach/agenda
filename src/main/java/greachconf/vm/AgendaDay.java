@@ -1,5 +1,7 @@
 package greachconf.vm;
 
+import io.micronaut.core.annotation.Introspected;
+
 import javax.annotation.Nonnull;
 import java.time.LocalDate;
 import java.util.Collections;
@@ -8,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Introspected
 public class AgendaDay implements Comparable<AgendaDay> {
 
     @Nonnull
