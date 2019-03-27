@@ -370,7 +370,7 @@ agenda:
                 - 'Let us start with what JHipster is and why do you need it? Followed by creating an application with JHipster.'
                 - 'Then we delve deep into the land of JDL (JHipster Domain Language) and see what we can achieve with that.'
                 - 'Finally we will create a full blown microservices application with JHipster.'
-                - '## Technical Requirements'
+                - '### Technical Requirements'
                 - 'Attendees would need a laptop with JDK8, an IDE of their choice, NodeJS 8 and above, Docker to be installed in it.'
                 - 'In detail, follow the [JHipster installation steps](https://www.jhipster.tech/installation/).'
         -
@@ -390,7 +390,7 @@ agenda:
                 - 'This workshop will be a hands on exploration of observability. There will be a microservice architecture system that we work to debug and add needed insights to. We will have a mix of services written in Ratpack, Micronaut, and Grails all interacting over a mix of methodologies; the setup will model an evolving system maintained by a number of teams.'
                 - 'Work with logging techniques such as dynamic log levels, correlation IDs and formatting tricks. We will add distributed tracing to services, then actually debug issues. Metrics will also be covered. I’ll even introduce a few scenarios of observability gone wrong.'
                 - 'Most of this workshop will be hands on the keyboard.'
-                - '## Technical Requirements'
+                - '### Technical Requirements'
                 - 'Attendees will need a laptop with JDK 8, docker / docker-compose, and git installed.'
         -
             title: 'How I Automated My Barn with Arduino, Raspberry Pi, Kafka, Docker, Kubernetes, Mongo and the Cloud'
@@ -558,7 +558,7 @@ agenda:
                 - '* Find toolkit which will help in verification of the implementation;'
                 - '* Iteratively follow all the rules of Reactive Streams and implement the correct solution;'
                 - '* Compare our solution with modern one'
-                - '## Technical Requirements'
+                - '### Technical Requirements'
                 - 'JDK 8+, IntelliJ-IDEA.'
         -
             title: 'Create your own blog using Jbake'
@@ -572,6 +572,8 @@ agenda:
                 - 'mario-garcia'
             about:
                 - "In this workshop I'll be showing you how to create your own blog using JBake, change its look and feel, and finally, if there're time to do it, to publish your first blog entry in Github pages using Travis CI."
+                - '### Technical Requirements'
+                - "Attendees should have at least installed, JDK 8 and GIT. It would be advisable to have installed [sdkman](https://sdkman.io), latest [Jbake](https://jbake.org/) version  to speed things up, and Gradle 5.0."
         -
             title: 'Guide to Developer-Friendly DSLs'
             uid: 'guide-to-developer-friendly-dsls'
@@ -585,7 +587,7 @@ agenda:
                 - 'vladimir-orany'
             about:
                 - 'Creating domain-specific languages in Groovy is extremely easy. It is actually so easy that everyone thinks that they know how to write them. In this session, you will go beyond the trivial builder example and learn what are the common pitfalls in DSL development in Groovy and how to work around them. Discover the patterns which will help you provide better developer experience to your DSL and also which enables static compilation and faster execution.'
-                - '## Technical Requirements'
+                - '### Technical Requirements'
                 - 'JDK 8 + IDE (IntelliJ IDEA preferred).'
         -
             title: 'Keynote'
@@ -639,7 +641,7 @@ agenda:
             about:
                 - "Have you heard about Kotlin but you don't know how to start? In this workshop, I'll show you how to create a blog from scratch by using Spring & Kotlin."
                 - "No worries, because you don't need to know about any of them. Just come with your computer and the IntelliJ IDE already installed, and I'll show you how to learn the basic concepts of the language in an easy way. Let's have some fun with Kotlin!"
-                - '## Technical Requirements'
+                - '### Technical Requirements'
                 - 'Attendees would need a laptop with JDK 8 & IntelliJ-IDEA Community edition or Ultimate'
         -
             title: 'Kotlin & Implications in an IoT project'
@@ -875,7 +877,7 @@ agenda:
                 - '- HTTP services.'
                 - '- Cloud and serverless deployments.'
                 - '- Management & Monitoring.'
-                - '## Technical Requirements'
+                - '### Technical Requirements'
                 - 'Check [Software Requirements](https://alvarosanchez.github.io/micronaut-workshop-java/) at the Workshop webpage.'
             speakers:
                 - 'alvaro-sanchez-mariscal'
