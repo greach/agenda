@@ -331,6 +331,7 @@ agenda:
         -
             uid: 'closure'
             title: 'Closure'
+            track: 'Microservices & JVM Frameworks'
             start: '2019-03-30T15:20:00'
             end: '2019-03-30T15:30:00'
         -
