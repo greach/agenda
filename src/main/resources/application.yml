@@ -1,914 +1,545 @@
 micronaut:
-    io:
-        watch:
-            paths: src/main
-            restart: true
-    application:
-        name: agenda
-    router:
-        static-resources:
-            default:
-                enabled: true
-                mapping: /**
-                paths:
-                    - classpath:static
-endpoints:
-    health:
+  application:
+    name: GreachConf
+---
+micronaut:
+  router:
+    static-resources:
+      default:
         enabled: true
-    info:
-        enabled: true
-        sensitive: false
-        git:
-          enabled: true
+        paths:
+          - 'classpath:public'
+        mapping: '/**'
 agenda:
-    speakers:
-        -
-            name: 'Sendil Kumar'
-            uid: 'sendil-kumar'
-            image: 'https://greach.s3.amazonaws.com/sendil-kumar.jpg'
-            twitter: 'sendilkumarn'
-            bio:
-                - 'Sendil Kumar is a Full-stack developer at Xebialabs working on our devops platform. In my free time, I work on open source projects and passionate about open source software. I am also a part of the JHipster and the Webpack team and involved in making developers life easy and better.'
-            website: 'https://sendilkumarn.js.org'
-        -
-            name: 'Jeff Beck'
-            uid: 'jeff-beck'
-            image: 'https://greach.s3.amazonaws.com/jeff-beck.jpg'
-            twitter: 'beckje01'
-            bio:
-                - 'Jeff is an active member of the local Groovy and Cassandra communities as well as an open source contributor. Contributing to Ratpack in his free time.'
-                - 'He has been working in IoT and microservices for the last 4 years at SmartThing. While working on the platform he has been involved with many of the cloud security efforts.'
-        -
-            name: 'Iván López'
-            uid: 'ivan-lopez'
-            twitter: 'ilopmar'
-            image: 'https://greach.s3.amazonaws.com/ilopmar.png'
-            bio:
-                - 'Iván is a Senior Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails and Micronaut teams at Object Computing, Inc. (OCI). He discovered Grails 8 years ago and since then he develops almost exclusively using Groovy and Java. He is the creator of some well known Grails plugins like Postgresql-Extensions.'
-                - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
-        -
-            name: 'Ko Turk'
-            uid: 'koturk'
-            twitter: 'KoTurk77'
-            image: 'https://greach.s3.amazonaws.com/koturk.jpg'
-            bio:
-                - 'Ko Turk is a Senior Java Developer at Blue4IT, currently he is working for one of the biggest banks of the Netherlands. He loves to go full stack, creating backend microservices and frontend web applications. Because he likes to know everything about Java, you can find him regularly at the UtrechtJUG or other conferences.'
-        -
-            name: 'Michael Kutz'
-            uid: 'michael-kutz'
-            image: 'https://greach.s3.amazonaws.com/MichaKutz.jpg'
-            twitter: 'MichaKutz'
-            bio:
-                - "I'm working as a professional software developer since 2009. Working in Agile software projects practicing continuous delivery and deployment, I developed a strong focus on QA, testing and test automation."
-                - "Since 2014 he works for REWE digital as a Developer in Test. In 2018 her became the company's first Quality Engineer helping the autonomous development teams to improve and extend their automated tests, to refine their continuous delivery and deployment pipelines and generally to optimize their development process regarding QA."
-        -
-            name: 'Mary Grygleski'
-            uid: 'mary-grygleski'
-            twitter: 'mgrygles'
-            image: 'https://greach.s3.amazonaws.com/mgrygles.jpg'
-            bio:
-                - "Mary is currently a Java Developer Advocate for IBM's Digital Business Group, specializing in Reactive Java systems. She has been riding the software tech waves since 1989, starting with Unix and C, then set sail for Java, open source, and web in the new Millennium, and now venturing into reactive, mobile, and the DevOps space. In her previous incarnations, she worked for several technology product companies in the Route 128 Boston Technology Corridor as well the San Francisco Bay Area. She now resides in the Greater Chicago area, and is an Executive Board member and the Director of Meetings for the Chicago Java Users Group (CJUG). Mary continues to be amazed by how software innovations can dramatically transform our lives. She can't wait to see what the next tech wave will be like."
-        -
-            name: 'Alberto de Avila'
-            uid: 'alberto-de-avila'
-            twitter: 'alberto_deavila'
-            image: 'https://greach.s3.amazonaws.com/alberto_deavila.jpeg'
-            bio:
-                - 'Alberto is Team Lead at Salenda, a company that is dedicated to software development, mainly in Micronaut, Groovy, Grails, Spring Boot and Angular, and also it is Atlassian Solution Partner. He has been working with Groovy and Grails since 2011, and he is an Atlassian suite lover using all days JIRA, Confluence and the others Atlassian’s tools. He has been speeker at events like Greach, Madrid GUG, Codemotion and others related to the Java ecosystem and its variants.'
-        -
-            name: 'Marco Vermeulen'
-            uid: 'marco-vermeulen'
-            twitter: 'marc0der'
-            image: 'https://greach.s3.amazonaws.com/marc0der.jpg'
-            bio:
-                - 'Marco Vermeulen is a South African Software Developer who works and lives in London. He is passionate about writing well crafted code, driven and guided by tests. As a proponent of BDD, he has successfully applied this technique in the Enterprise as well as on Open Source Projects. He is an avid supporter of OSS and is the creator of SDKMAN, the Software Development Kit Manager.'
-        -
-            name: 'Schalk Cronjé'
-            uid: 'schalk-cronje'
-            twitter: 'ysb33r'
-            image: 'https://greach.s3.amazonaws.com/ysb33r.jpg'
-            bio:
-                - 'Schalk Cronjé is a long-time Groovy fan and creator of a number f Groovy libraries.. He is very well known for his extensive knowledge on Gradle and he is also the person behind in the @DailyGradle Twitter account. He is active member of the Asciidoctor community and is currently the leading maintainer on the Asciidoctor Gradle plugin.'
-                - 'He has 30yrs of experience in the software industry and now linves and works from Andorra in the Pyrenees mountains.'
-        -
-            name: 'Jacob Aae Mikkelsen'
-            uid: 'jacob-aae-mikkelsen'
-            twitter: 'JacobAae'
-            image: 'https://greach.s3.amazonaws.com/JacobAae.jpg'
-            bio:
-                - 'Jacob is a senior solution architect working in a startup fintect company in Denmark: Cardlay. While still hands-on, scaling microservices and microservice architechture is part of the job.'
-                - "He’s been on the crew arranging GR8conf Europe for several years, and as a hobby on the side, Jacob has for multiple years taught courses at the University of Southern Denmark, including a course on “Web development with Groovy and Grails”."
-        -
-            name: 'Marcin Zajączkowski'
-            uid: 'marcin-zajączkowski'
-            twitter: 'SolidSoftBlog'
-            image: 'https://greach.s3.amazonaws.com/SolidSoftBlog.jpg'
-            bio:
-                - 'Experienced architect aiming for high quality solutions. Very engaged in evangelising Software Craftsmanship, Clean Code and Test-Driven Development as a conference speaker and trainer. An expert in deployment automation with Continuous Delivery and Continuous Inspection of Code Quality. An enthusiast of Reactive Systems and broadly defined concurrency. Besides, an open source author and a contributor, a blogger and a trainer.'
-        -
-            name: 'Antonio Leiva'
-            uid: 'antonio-leiva'
-            twitter: 'lime_cl'
-            image: 'https://greach.s3.amazonaws.com/lime_cl.jpg'
-            bio:
-                - 'Antonio is a freelance trainer who helps companies and their Android teams in the transition from Java to Kotlin. He is the author of the book and online course [Kotlin for Android Developers](https://antonioleiva.com/kotlin-android-developers-book/), a Kotlin Trainer Certified by Jetbrains, and shares his learnings at [https://antonioleiva.com](https://antonioleiva.com).'
-        -
-            name: 'Andres Almiray'
-            uid: 'andres-almiray'
-            twitter: 'aalmiray'
-            image: 'https://greach.s3.amazonaws.com/aalmiray.jpg'
-            bio:
-                - 'JSR377 Spec lead, Groovy aficionado, Griffon project lead, Java Champion, JCP EC, Hackergarten, Developer Advocate at Gradle'
-        -
-            name: 'Vladimir Orany'
-            uid: 'vladimir-orany'
-            twitter: 'musketyr'
-            image: 'https://greach.s3.amazonaws.com/musketyr.jpeg'
-            bio:
-                - 'Vladimir is Test Facilitator at agorapulse. He is interested in code quality, domain-specific languages, cloud computing and writing magical code using AST transformations. He is the creator of Spreadsheet Builder, Gru & Dru frameworks.'
-
-        -
-            name: 'Mario Garcia'
-            uid: 'mario-garcia'
-            twitter: 'marioggar'
-            image: 'https://greach.s3.amazonaws.com/marioggar.jpg'
-            bio:
-                - "I'm a software developer currently working for Kaleidos.net ,a small consulting company based in Madrid. Although I've been always related to the JVM world, nowadays you could find me either creating a REST or GraphQL APIs or programming a React application to consume those APIs. I also like to do some work out from time to time because I think too many hours in front of my laptop can't be healthy at all."
-        -
-            name: 'Oleh Dokuka'
-            uid: 'oleh-dokuka'
-            twitter: 'OlehDokuka'
-            image: 'https://greach.s3.amazonaws.com/OlehDokuka.jpg'
-            bio:
-                - 'Mainly Java Software Engineer / Consultant focused on distributed systems development adopting ReactiveManifesto and ReactiveProgramming techniques. Opensource geek, the active contributor of ProjectReactor. Along with that, Public speaker and Author of the book "Reactive Programming is Spring 5.0'
-        -
-            name: 'Graeme Rocher'
-            uid: 'graeme-rocher'
-            twitter: 'graemerocher'
-            image: 'https://greach.s3.amazonaws.com/graemerocher.jpg'
-            bio:
-                - 'Graeme Rocher, co-founder of the [Grails](http://grails.org) and [Micronaut](http://micronaut.io) frameworks and co-author of The Definitive Guide to Grails, serves as Technical Lead for the OCI Grails & Micronaut team. Graeme has worked in the software development field for more than 20 years and has expertise in Grails, Groovy, Web Development, Dynamic Languages, and the JVM.'
-        -
-            name: 'Pablo A. Martinez'
-            uid: 'pablo-martinez'
-            image: 'https://greach.s3.amazonaws.com/pamartineza.jpg'
-            twitter: 'pamartineza'
-            bio:
-                - 'CEO & Tech Lead at GreenLionSoft.'
-                - "I'm an Industrial Engineer that started his career designing hardware and software for Air Traffic Control solutions but at the very same time was developing Android apps as a hobby when first devices running Android 1.5 hit the market. Later on I joined Samsung's R&D team as a senior Android Developer and travelled the world helping to develop new Android based solutions and experiences. In 2015 I co-founded -GreenLionSoft- where we mainly develop Android apps that help to consume public open data related to smart cities, transit, pollution, tides, electricity prices, etc..."
-        -
-            name: 'Saúl Molinero'
-            uid: 'saul-molinero'
-            twitter: '_saulmm'
-            image: 'https://greach.s3.amazonaws.com/_saulmm.jpg'
-            bio:
-                - 'I usually talk about android development'
-            website: 'http://saulmm.github.io'
-        -
-            name: 'Bruno Verachten'
-            uid: 'bruno-verachten'
-            twitter: 'Poddingue'
-            image: 'https://greach.s3.amazonaws.com/Poddingue.jpg'
-            bio:
-                - 'Father of two, husband of one, geek in denial, fond of handheld devices since 1989 and permie.'
-        -
-            name: 'Alberto Barón'
-            uid: 'alberto-baron'
-            twitter: 'albertoBaron1'
-            image: 'https://greach.s3.amazonaws.com/albertoBaron1.jpeg'
-            bio:
-                - 'My name is Alberto, senior developer at Salenda for 4 years, working every day with Groovy, Grails, Java and not for a long time, with Micronaut.'
-                - 'Moreover, I try to improve myself learning other ecosystems such us mobile and attending or even preparing talks in events like Greach, T3chfest or Codemotion.'
-        -
-            name: 'Miguel Ángel García Gómez'
-            uid: 'miguel-angel-garcia-gomez'
-            twitter: 'MiguelAngelGG82'
-            image: 'https://greach.s3.amazonaws.com/MiguelAngelGG82.png'
-            bio:
-                - ''
-        -
-            name: 'Anton Rodriguez'
-            uid: 'anton-rodriguez'
-            twitter: 'antonmry'
-            image: 'https://greach.s3.amazonaws.com/antonmry.jpg'
-            bio:
-                - 'Antón is a Software Engineer who specializes in JVM development, performance tuning, and distributed systems, mainly in the telecom sector. In his current role as Technical Director in Optare, he helps to define the technological strategy in conjunction with the development team of each project: pipeline, tools, and key development procedures.'
-                - 'He also co-organizes the Vigo and Coruña Java User Groups (VigoJUG & CoruñaJUG) and sometimes he speaks at international conferences as JBCNConf (Barcelona), Geecon (Krakow), SpringIO (Barcelona), TADSummit (Istanbul), Librecon (Santiago de Compostela), etc.'
-        -
-            name: 'Kevin Wittek'
-            uid: 'kevin-wittek'
-            twitter: 'kiview'
-            image: 'https://greach.s3.amazonaws.com/kiview.jpg'
-            bio:
-                - 'Testcontainers co-maintainer and Testcontainers-Spock author. Software Craftsman and testing fan. Loves to play the electric guitar and is a musician in his second life. Found his own company during his university years, developing mobile apps and client-server applications, which lead to his discovery of Grails and the Groovy ecosystem. Fell in love with TDD because of Spock.'
-                - 'Nowadays Kevin is working as a Software Engineer at codecentric AG and focuses on topics such as software craftsmanship, infrastructure as code and continuous integration pipelines, trying to make the world a better place one container at a time.'
-        -
-            name: 'Todd Sharp'
-            uid: 'todd-sharp'
-            twitter: 'recursivecodes'
-            image: 'https://greach.s3.amazonaws.com/recursivecodes.jpg'
-        -
-            name: 'Mercedes Wyss'
-            uid: 'mercedes-wyss'
-            twitter: 'itrjwyss'
-            image: 'https://greach.s3.amazonaws.com/itrjwyss.jpg'
-            bio:
-                - 'Mercedes Wyss is a software engineer with more than seven years of experience in the backend, frontend and Android development using Java and Kotlin. Currently, she is a CTO at Produactivity, a startup based in Guatemala.'
-                - 'She was previously organizing meetings in Guatemala Java Users Group from 2012 to 2016. Now she has two years an a half focusing on increasing women’s participation in STEAM by running a JDuchess Chapter in Guatemala and is the leader of a Google community (Devs+502).'
-                - 'She is an Oracle Groundbreaker Ambassador and an Auth0 Ambassador, she also has a Duke’s Choice Award in Educational Outreach.'
-        -
-            name: 'Nicolás Patarino'
-            uid: 'nicolas-patarino'
-            image: 'https://greach.s3.amazonaws.com/npatarino.jpg'
-            twitter: 'npatarino'
-            bio:
-                - "Nico is an Argentinian, porteño, Android and Kotlin Lover. Dreamer. First of his name. He broke code in companies like Sun Microsystems, Qualcomm, Heineken or Idealista, now he's breaking code at Tuenti. He's also disorganizing the Madrid Android Developer Group community."
-        -
-            name: 'Jorge Barroso'
-            uid: 'jorge-barroso'
-            twitter: 'flipper83'
-            image: 'https://greach.s3.amazonaws.com/flipper83.jpg'
-            bio:
-                - 'Jorge Barroso is the co-founder and Android developer of Karumi. Karumi is an intentionally small software development studio headquartered in Madrid and specialized in developing lean and stable native applications and working with teams for improve their skills.'
-                - 'Before Karumi,  Jorge developed a wide variety of strategic products covering J2ME, Blackberry and especially Android. Right now he is focusing in Backend development. He has obtained the Google Developer Expert on Android.'
-                - 'When Jorge is not Coding, he is most likely making and playing video games. He also brings an intense love for board games.'
-        -
-            name: 'Álvaro Sánchez-Mariscal'
-            uid: 'alvaro-sanchez-mariscal'
-            twitter: 'alvaro_sanchez'
-            image: 'https://greach.s3.amazonaws.com/alvaro_sanchez.jpg'
-            bio:
-                - "Álvaro is a passionate developer and agile enthusiast with over 18 years of experience. He now works as a Senior Software Engineer at [Object Computing (OCI)](https://objectcomputing.com/), the company leading Groovy, Grails and Micronaut open-source development."
-                - "Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, [Salenda](https://www.salenda.es), in 2005, a software factory and Atlassian Gold Solution Partner headquartered in Madrid, Spain. As of today, he is still the company owner. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems."
-                - "Álvaro has spoken in 11 different countries at conferences like Devoxx, GeeCON, JavaLand, JavaZone, Codemotion and Commit Conf. In his spare time, as well as coding and experimenting with new technologies, he likes to spend time with his wife and son, support [CD Leganes football team](https://www.cdleganes.com/), and play paddle tennis."
-        -
-            name: 'Katia Aresti'
-            uid: 'katia-aresti'
-            twitter: 'karesti'
-            image: 'https://greach.s3.amazonaws.com/karesti.jpg'
-            bio:
-                - 'Katia Aresti is a software engineer at Red Hat, part of the Infinispan/Datagrid team since 2017. She has been in the field since 2005, most of the time coding as a backend developer in Java and Scala. Katia is very involved in user groups since 2010, she co-organises the french chapter of Duchess since then, and she is very active mentoring and sharing knowledge whenever she can. She is passionate about open-source contributions, dance and acting.'
-        -
-            name: 'Felipe Fernández'
-            uid: 'felipe-fernandez'
-            image: 'https://greach.s3.amazonaws.com/felipefzdz.jpg'
-            twitter: 'felipefzdz'
-            bio:
-                - 'Felipe Fernández is a software engineer at Gradle, Inc. , working on Gradle Enterprise. In there he had exposure to the whole platform, but lately has been focused on release automation, CI reliability and operations.'
-                - 'Before of Gradle, he worked at Codurance, being an active supporter of the Software Craftsmanship values and practices'
-    talks:
-        -
-            uid: 'accelerating-ci'
-            title: 'Accelerating CI'
-            start: '2019-03-29T16:15:00'
-            end: '2019-03-29T17:00:00'
-            track: 'Microservices & JVM Frameworks'
-            tags:
-                - 'gradle'
-                - 'ci'
-            speakers:
-                - 'felipe-fernandez'
-            about:
-                - 'Accelerating CI has dramatic effects: tightening the feedback loop for developers, delivering changes to production faster, and reducing CI resources costs.'
-                - "In this talk, we'll see different patterns to optimize CI:"
-                - '- Collecting key metrics to detect regressions, pinpoint bottlenecks, and confirm improvements'
-                - '- Setting up an efficient pipeline structure'
-                - "- Establishing environmental build agent patterns"
-                - '- Leveraging caches to avoid unnecessary build work'
-                - 'Most of the talk will be based on our experience while developing Gradle Enterprise in a highly productive team of fifteen people.'
-        -
-            uid: 'lunch-break-28'
-            title: 'Lunch Break'
-            start: '2019-03-28T12:00:00'
-            end: '2019-03-28T13:00:00'
-        -
-            uid: 'friday-party'
-            title: 'Beers - La Manuela Olavide'
-            location: 'Calle de Gonzalo de Córdoba, 16, 28010 Madrid'
-            location-link: 'https://www.google.com/maps/place/La+Manuela+Olavide/@40.4323762,-3.7021553,21z/data=!4m5!3m4!1s0x0:0x423e51031d317cf7!8m2!3d40.4323984!4d-3.7021218'
-            start: '2019-03-29T18:30:00'
-            end: '2019-03-29T22:00:00'
-        -
-            uid: 'coffee-break-28'
-            title: 'Coffee Break'
-            start: '2019-03-28T15:45:00'
-            end: '2019-03-28T16:00:00'
-        -
-            uid: 'registration'
-            title: 'Registration'
-            start: '2019-03-29T08:00:00'
-            end: '2019-03-29T08:45:00'
-        -
-            uid: 'welcome'
-            title: 'Welcome to Greach 2019'
-            start: '2019-03-29T08:45:00'
-            end: '2019-03-29T09:00:00'
-        -
-            uid: 'coffee-break-29'
-            title: 'Coffee Break'
-            start: '2019-03-29T10:45:00'
-            end: '2019-03-29T11:15:00'
-        -
-            uid: 'lunch-break-29'
-            title: 'Lunch Break'
-            start: '2019-03-29T13:00:00'
-            end: '2019-03-29T14:00:00'
-        -
-            uid: 'coffee-break-29-2'
-            title: 'Coffee Break'
-            start: '2019-03-29T15:45:00'
-            end: '2019-03-29T16:15:00'
-        -
-            uid: 'coffee-break-30'
-            title: 'Coffee Break'
-            start: '2019-03-30T09:45:00'
-            end: '2019-03-30T10:15:00'
-        -
-            uid: 'lunch-break-30'
-            title: 'Lunch Break'
-            start: '2019-03-30T12:30:00'
-            end: '2019-03-30T13:30:00'
-        -
-            uid: 'closure'
-            title: 'Closure'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T15:20:00'
-            end: '2019-03-30T15:30:00'
-        -
-            uid: 'karumi-stories'
-            title: 'Karumi: Honest Consulting'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T17:15:00'
-            end: '2019-03-29T18:00:00'
-            speakers:
-                - 'jorge-barroso'
-            about:
-                - 'It has been five years since Karumi was founded, with a clear idea, try to work happy and be proud of our work. We believe that consultancy can be done in a different way to the classic consultancy. In this talk, we will try to talk about our principles, our doubts, our successes and our failures. We will explain how we see the present and the future of the software and we will talk about other companies that share our vision.'
-        -
-            uid: 'android-keynote'
-            title: 'Kotlin and Spring boot a pleasant experience and some rough edges'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T09:00:00'
-            end: '2019-03-29T09:45:00'
-            speakers:
-                - 'jorge-barroso'
-            about:
-                - 'In the last months, we have been working on Karumi with Spring boot building web services with Kotlin. The experience has been quite pleasant. I will explain how we have used Kotlin to write quality backend code, how to write tests and how to get the most out of both technologies.'
-                - 'Besides, we will explain some problems we have had in the development of the applications and how we have solved them.'
-        -
-            title: 'Jhipster Workshop'
-            uid: 'jhipster-workshop'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-28T16:00:00'
-            end: '2019-03-28T18:30:00'
-            tags:
-                - 'jhipster'
-                - 'spring-boot'
-                - 'microservices'
-            speakers:
-                - 'sendil-kumar'
-            about:
-                - 'Let us start with what JHipster is and why do you need it? Followed by creating an application with JHipster.'
-                - 'Then we delve deep into the land of JDL (JHipster Domain Language) and see what we can achieve with that.'
-                - 'Finally we will create a full blown microservices application with JHipster.'
-                - '### Technical Requirements'
-                - 'Attendees would need a laptop with JDK8, an IDE of their choice, NodeJS 8 and above, Docker to be installed in it.'
-                - 'In detail, follow the [JHipster installation steps](https://www.jhipster.tech/installation/).'
-        -
-            title: 'Observability workshop'
-            uid: 'observability-workshop'
-            track: 'Reactive & Microservices'
-            start: '2019-03-28T13:00:00'
-            end: '2019-03-28T15:45:00'
-            tags:
-                - 'microservices'
-                - 'ratpack'
-                - 'micronaut'
-                - 'grails'
-            speakers:
-              - 'jeff-beck'
-            about:
-                - 'This workshop will be a hands on exploration of observability. There will be a microservice architecture system that we work to debug and add needed insights to. We will have a mix of services written in Ratpack, Micronaut, and Grails all interacting over a mix of methodologies; the setup will model an evolving system maintained by a number of teams.'
-                - 'Work with logging techniques such as dynamic log levels, correlation IDs and formatting tricks. We will add distributed tracing to services, then actually debug issues. Metrics will also be covered. I’ll even introduce a few scenarios of observability gone wrong.'
-                - 'Most of this workshop will be hands on the keyboard.'
-                - '### Technical Requirements'
-                - 'Attendees will need a laptop with JDK 8, docker / docker-compose, and git installed.'
-        -
-            title: 'How I Automated My Barn with Arduino, Raspberry Pi, Kafka, Docker, Kubernetes, Mongo and the Cloud'
-            uid: 'how-i-automated-my-barn-with-arduino-raspberry-pi-kafka-docker-kubernetes-mongo-and-the-cloud'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T14:30:00'
-            end: '2019-03-30T15:15:00'
-            tags:
-                - 'raspberry-pi'
-                - 'kubernetes'
-                - 'container'
-            speakers:
-                - 'todd-sharp'
-            about:
-                - 'A few years ago I created a small system to automate some tasks in our barn where we keep pet potbelly pig and our chickens.  Simple things, like scheduling when the lights turn on and off, temperature monitoring and a webcam.  It was nice to automate those things, but the best part for me was being able to tinker with the sensors and devices and learn new libraries, frameworks and languages.'
-                - 'I’ve recently re-imagined the system as a way to learn more new technologies.  I’ve created a prototype version to demonstrate how I might build it again if I were to start over from scratch and in this session we’ll look at that model and learn about the hardware and software used in it.  At it’s core, the system uses an Arduino, Raspberry Pi and various pumps, solenoids, motors and sensors to simulate the automation of certain tasks like filling a water bowl, opening and closing doors, monitoring environment and turning on and off lights on demand or via schedule.  The hardware runs a Groovy based program which interfaces with Kafka for messaging to both store sensor data in a MongoDB instance as well as receive commands for remotely performing certain tasks on demand.  The persisted data is formatted and displayed on a web application running in a Docker container that is deployed to a cloud-based Kubernetes cluster.'
-                - 'We’ll look at both the hardware and software that power this system and how I’ve used the project as a playground for learning new technologies, languages and frameworks.'
-        -
-            title: '(Automated) Security Testing in a DevOps world'
-            uid: 'automated-security-testing-in-a-devops-world'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T11:15:00'
-            end: '2019-03-30T12:00:00'
-            tags:
-                - 'security'
-                - 'devOps'
-            speakers:
-                - 'kevin-wittek'
-            about:
-                - 'A successful DevOps culture should value the topic security as a self-evident aspect of a holistic software development life cycle. Just as we’ve learned that topics such as testing, operations or design are best tackled in a cross functional team as a part of an integrated development process, we now must understand, that an over-the-shoulder approach regarding security doesn’t work in times of continuous delivery and continuous deployment.'
-                - 'We will be showing how to integrate static analysis, as well as dynamic application security testing into a Java build pipeline, using open source tools like OWASP Dependency Check, OWASP ZAP, FindBugs, Docker, Testcontainers and Gitlab. There will be no silver bullets presented in this talk, but we will find out why we should care about security in our applications and what challenges are still lying ahead of us.'
-        -
-            title: 'Containers In Anger with Micronaut'
-            uid: 'containers-in-anger-with-micronaut'
-            track: 'Reactive & Microservices'
-            start: '2019-03-28T16:00:00'
-            end: '2019-03-28T18:30:00'
-            tags:
-                - 'micronaut'
-                - 'container'
-            speakers:
-                - 'anton-rodriguez'
-            about:
-                - 'Java 11 is just around the corner and it comes with a lot of very needed features to run JVM applications in Docker. The goal of this workshop is to move beyond slide-sized examples of Dockerfiles and to show how to deploy a working Micronaut application using Docker with the proper tuning and limits.'
-                - 'In this session, Anton will build a Docker image with a Java application based in the Micronaut framework. This application will have a very small size following the Docker best practices and take advantage of the GraalVM'
-                - 'The Docker image will be deployed in Kubernetes and scaled to demonstrate how powerful is nowadays the JVM in conjunction with Docker and Kubernetes. Then we will expose application and JVM metrics and they will be consumed by Prometheus, a system that records time-series data (telemetry) for monitoring and alerting, and we’ll use Graphana to query and render metrics from the application pods.'
-                - 'Along the way, we’ll discover the most common mistakes working with Docker and the JVM and how to avoid them.'
-                - '## Technical Requirements'
-                - 'Attendees would need a laptop with Virtualbox, JDK 8 and a Java IDE. The Virtualbox VM with Docker and Kubernetes would be shared during the workshop using USB sticks. Detailed information about how to import it and configure it will be also provided.'
-                - 'In the workshop attendees will code some features to integrate a micronaut application with kubernetes. The base project and detailed instructions can be downloaded from [antonmry/micronaut-app](https://github.com/antonmry/micronaut-app) and imported in the IDE to avoid download the dependencies during the workshop.'
-        -
-            title: 'Micronaut performance'
-            uid: 'micronaut-performance'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T12:15:00'
-            end: '2019-03-30T12:30:00'
-            tags:
-                - 'graalvm'
-                - 'micronaut'
-            speakers:
-                - 'miguel-angel-garcia-gomez'
-            about:
-                - 'Micronaut is fast at startup time but... how faster is it? If you want to know the startup time, memory consumption comparing with other frameworks and using GRAALVM this is your talk.'
-        -
-            title: 'Analyze your code with SonarLint for IntelliJ'
-            uid: 'analyze-your-code-with-sonarlint-for-intellij'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T12:15:00'
-            end: '2019-03-30T12:30:00'
-            tags:
-                - 'code-analysis'
-            speakers:
-                - 'alberto-baron'
-            about:
-                - 'Do you work on projects with a huge technical debt? Do you pass adequate quality controls? In this lightning we will let you know SonarLint, a tool which will analyze our code before uploading it to a production environment.'
-        -
-            title: 'The Android device farm that fits in a (cloudy) pocket'
-            uid: 'the-android-device-farm-that-fits-in-a-cloudy-pocket'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T16:15:00'
-            end: '2019-03-29T17:00:00'
-            tags:
-                - 'android'
-                - 'testing'
-            speakers:
-                - 'bruno-verachten'
-            about:
-                - 'Android developers are facing a common problem: how to test our applications on many devices without sacrificing too much time or money?'
-                - 'How to build and test automatically our applications for each commit?'
-                - 'How can we find those devices inside the company, whatever its size may be?'
-                - 'Could there be a directory somewhere that lists those available devices?'
-                - 'Could we use a device remotely and share it with other developers as if it were in the cloud?'
-                - 'What if you could answer all these questions with the help of a low cost device farm that fits into a pocket? A pocket full of clouds...'
-                - 'Poddingue, our proposal, aims to tackle this problem thanks to Docker, HypriotOS, Armbian, Gitlab CI and OpenSTF. It’s an internal solution made of OSS readily available, but it has not yet been publicly announced as a whole.'
-                - 'This is a feedback about an idea on its way to production, a long journey full of different feelings : horror, happiness, suspense, boredom...'
-                - 'Why should I come?'
-                - "This presentation won’t be too technical ; it is opened to anybody who has an interest into Android, exotic hardware or continuous integration, as long as you can stand a bad sense of humour. At the end of the talk, you should know how to build your own cloudy pocket farm of Android devices and how to use it to test your applications within your ci pipeline."
-                - 'And as I am cheap, you will also be surprised at how little money you need to build it.'
-        -
-            title: 'Android Dev Tools and Workflows'
-            uid: 'android-dev-tools-and-workflows'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T12:15:00'
-            end: '2019-03-29T13:00:00'
-            tags:
-                - 'android'
-            speakers:
-                - 'saul-molinero'
-            about:
-                - 'This talk will explain how a good development flow ensures quality and a low percentage of crashes in a real Android application. In this purpose, we will talk about different a set of tools which contains, among other things, profiling and debugging, offered by Google as by third parties. We will also comment on how to investigate and solve a certain problem thanks to a good error reporting system and a good data analysis.'
-        -
-            title: 'Making a living on Google Play (and other Horror Stories)'
-            uid: 'conquering-google-play'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T15:00:00'
-            end: '2019-03-29T15:45:00'
-            tags:
-                - 'android'
-            about:
-                - "We had heard many times that business ideas are justs solutions to existing problems. I this talk I will explain how accidentaly fixing a problem I encountered myself when I moved to a 'big capital' like Madrid back in 2009 was the point of origin of 'GreenLionSoft', a 2-Guy Company I co-founded 4 years ago."
-                - "Today we can say that we can make a living on developing Android Apps, but it has not been an easy path, the play field has changed a lot in the last 10 years and It will change in the future for sure. We have learned many lessons the hard way in many fields not just related to developing apps but bureaucracy, taxes, monetization and Google Play Dependency. Indeed, last Christmas Google Play terminated our company account, which meant closing our company, but unexpectedly, after dealing many horror and crazy situations with Google we got it reinstantiated back 23 days later."
-                - "At the end to the talk I'll be glad to share with you our experience and start an open discussion or -unconference- with all the public to share experiencies among all of us and answer as much as possible any of your questions or concerns if you are considering living on developing apps."
-                - "See you at GreachConf!"
-            speakers:
-                - 'pablo-martinez'
-        -
-            title: 'Grails State of the Union'
-            uid: 'grails-state-of-theunion'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-29T17:15:00'
-            end: '2019-03-29T18:00:00'
-            tags:
-                - 'grails'
-            speakers:
-                - 'graeme-rocher'
-            about:
-                - "Graeme Rocher, Grails creator, will show what's coming in Grails 4."
-                - 'As a Grails developer, you will learn how to take advantage of Micronaut’s coolest features inside your Grails apps. Whether you want to send messages to Kafka, make HTTP client calls or write WebSockets Micronaut has a great API that is easily usable from your Grails application.'
-        -
-            title: 'Micronaut State of the Union'
-            uid: 'micronaut-state-of-the-union'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-29T10:00:00'
-            end: '2019-03-29T10:45:00'
-            tags:
-                - 'micronaut'
-            speakers:
-                - 'graeme-rocher'
-            about:
-                - 'This talk is for developers looking to go beyond the basics with Micronaut. Taking an extensive look at how advanced features like Dependency Injection (DI), Aspect Oriented Programming (AOP) and Ahead of Time (AOT) compilation work, the creator of Micronaut Graeme Rocher will walk attendees through Micronaut’s elegant programming model.'
-                - "Graeme Rocher will present what's new in Micronaut 1.1 and how to get the most of out of the framework."
-        -
-            title: 'Reactive Hardcore. How to build a Publisher<?> and beyond'
-            uid: 'reactive-hardcore-how-to-build-a-publisher-and-beyond'
-            track: 'Reactive & Microservices'
-            start: '2019-03-28T09:00:00'
-            end: '2019-03-28T12:00:00'
-            tags:
-                - 'reactive'
-            speakers:
-                - 'oleh-dokuka'
-            about:
-                - 'The more popular Reactive Programming/Libraries become, the more often we have to deal with those techniques and solutions. Sometimes we have to deal just with smoothies API of Reactive Extensions, sometimes we have to dive into the internals of those libraries, or sometimes we have to build our own implementation. Nevertheless, understanding of the basics patterns, behavior that is hidden inside the most of Reactive Libraries, Tool-Kits / Best Practice might simplify our – life with / debugging of / implementation of Reactive Library.'
-                - 'Usually reading a tone of papers and blogs about the internals of Reactive Libraries, specific rules of Reactive Streams Specification or simply grasping the source code becomes hardcore. Hence, we will summarize all important by implementing own `Publisher<>` in Java.'
-                - 'What will we do to learn? We will:'
-                - '* Remind the sense and importance of Reactive Streams Specification;'
-                - '* Naively implement our first solution and fail of course;'
-                - '* Find toolkit which will help in verification of the implementation;'
-                - '* Iteratively follow all the rules of Reactive Streams and implement the correct solution;'
-                - '* Compare our solution with modern one'
-                - '### Technical Requirements'
-                - 'JDK 8+, IntelliJ-IDEA.'
-        -
-            title: 'Create your own blog using Jbake'
-            uid: 'create-your-own-blog-using-jbake'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-28T13:00:00'
-            end: '2019-03-28T15:45:00'
-            tags:
-                - 'jbake'
-            speakers:
-                - 'mario-garcia'
-            about:
-                - "In this workshop I'll be showing you how to create your own blog using JBake, change its look and feel, and finally, if there're time to do it, to publish your first blog entry in Github pages using Travis CI."
-                - '### Technical Requirements'
-                - "Attendees should have at least installed, JDK 8 and GIT. It would be advisable to have installed [sdkman](https://sdkman.io), latest [Jbake](https://jbake.org/) version  to speed things up, and Gradle 5.0."
-        -
-            title: 'Guide to Developer-Friendly DSLs'
-            uid: 'guide-to-developer-friendly-dsls'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-28T13:00:00'
-            end: '2019-03-28T15:45:00'
-            tags:
-                - 'groovy'
-                - 'dsl'
-            speakers:
-                - 'vladimir-orany'
-            about:
-                - 'Creating domain-specific languages in Groovy is extremely easy. It is actually so easy that everyone thinks that they know how to write them. In this session, you will go beyond the trivial builder example and learn what are the common pitfalls in DSL development in Groovy and how to work around them. Discover the patterns which will help you provide better developer experience to your DSL and also which enables static compilation and faster execution.'
-                - '### Technical Requirements'
-                - 'JDK 8 + IDE (IntelliJ IDEA preferred).'
-        -
-            title: 'Keynote'
-            uid: 'keynote-jvm-frameworks'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-29T09:00:00'
-            end: '2019-03-29T09:45:00'
-            speakers:
-                - 'andres-almiray'
-            about: 
-                - "The Java space is filled with frameworks. It all started with Struts, the first web framework that made it big in the 
-                  hearts and minds of Java developers worldwide. Tiem has passed and web frameworks have given way to the rise of Microservices, 
-                  for which we also have a good number of framework alterantives"
-                - "So what makes each on of these alternatives tick? How can we be sure we've made the right choice? What looms in the future
-                  of each of these frameworks? Let's find out together answers to these questions, after all solving problems as part of the community
-                  is much more fun and rewarding."
-        -
-            title: 'Build libraries with Kordamp Gradle Plugins'
-            uid: 'build-libraries-with-kordamp-gradle-plugins'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-28T16:00:00'
-            end: '2019-03-28T18:30:00'
-            tags:
-                - 'gradle'
-            speakers:
-                - 'andres-almiray'
-            about:
-                - 'Would you like to build a library that follows the typical Maven
-                   conventions (such as publication to Maven Central) but you don’t know how
-                   to structure your Gradle build to generate docs, distribute it or perform
-                   code analysis?'
-                - 'Join Andres Almiray, Developer Advocate at Gradle Inc, to learn about
-                   the Kordamp Gradle plugins, a project which provides a set of Gradle plugins that
-                   define a conventional structure and many features commonly found in Maven
-                   builds.'
-                - 'You will learn how to create a powerful but familiar structure to leverage
-                   the features found in the Gradle Build Tool. After the workshop you should
-                   have a clearer picture on how to build, document and distribute a project.'
-                - '## Technical requirements'
-                - 'Attendees would need a laptop with JDK 8, favorite IDE and/or text editor.'
-        -
-            title: 'Kotlin Workshop'
-            uid: 'kotlin-workshop'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-28T09:00:00'
-            end: '2019-03-28T12:00:00'
-            tags:
-                - 'kotlin'
-            speakers:
-                - 'antonio-leiva'
-            about:
-                - "Have you heard about Kotlin but you don't know how to start? In this workshop, I'll show you how to create a blog from scratch by using Spring & Kotlin."
-                - "No worries, because you don't need to know about any of them. Just come with your computer and the IntelliJ IDE already installed, and I'll show you how to learn the basic concepts of the language in an easy way. Let's have some fun with Kotlin!"
-                - '### Technical Requirements'
-                - 'Attendees would need a laptop with JDK 8 & IntelliJ-IDEA Community edition or Ultimate'
-        -
-            title: 'Kotlin & Implications in an IoT project'
-            uid: 'kotlin-implications-in-an-iot-project'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T14:30:00'
-            end: '2019-03-30T15:15:00'
-            tags:
-                - 'kotlin'
-                - 'iot'
-            speakers:
-                - 'mercedes-wyss'
-            about:
-                - 'Develop IoT solutions with Kotlin is possible thanks to the incorporation to Kotlin as a first class programming language to Android and the becoming of Android Things, an optimized version of Android for embedded devices. This talk is looking for explore the aspects around IoT projects, Hardware, Security, Server Side, Data Analysis from the hand of Android Things and Kotlin.'
-                - 'The Internet of Things is a technology that has been echoing for some time. Arriving to generate interesting and attractive solutions. It usually happens that those who develop this type of solutions know about the Hardware, or they only have knowledge of the Software side. This talk seeks to explore all those aspects around IoT in the hand of a real project for monitoring fishbowls (something that you can implement at home).'
-                - 'In the hardware side, we will use sensors and different technologies for handle the information obtained from these (Raspberry PI, Arduino, etc). Since we want to show how to use Kotlin for develop IoT solutions, we will use Android Things with Kotlin and Raspberry PI.'
-                - 'The server side, using Serverless or IoT cloud solutions, options to analyze our information. Finally, is important take some considerations over the security aspects in IoT projects, although there are not yet 100% solid solutions, there are already efforts to solve this.'
-        -
-            title: 'Kotlin coroutines'
-            uid: 'kotlin-coroutines'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T14:00:00'
-            end: '2019-03-29T14:45:00'
-            tags:
-                - 'kotlin'
-                - 'coroutines'
-            speakers:
-                - 'antonio-leiva'
-            about:
-                - "Kotlin has become the fastest growing language in the latest years, and even in the Android world it is already established, we're starting to understand how it can help us boost our productivity."
-                - "One of the latest additions to the language is coroutines, a way to write asynchronous code sequentially, dramatically reducing the cognitive load of your code. Coroutines are nice and flexible, but they can be a bit hard to use if you haven't seen them before."
-                - "In this talk, I'll dive into the main concepts of coroutines, why they were created and how you can write your own coroutines to make your code shine."
-        -
-            title: 'A More Secure World for Android Apps'
-            uid: 'a-more-secure-world-for-android-apps'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T11:15:00'
-            end: '2019-03-30T12:00:00'
-            tags:
-                - 'android'
-                - 'security'
-            speakers:
-                - 'mercedes-wyss'
-            about:
-                - 'In the world of development, security is sometimes a subject that does not receive the importance it should have. This talk has as objective touch some points for make Android Apps more secure.'
-                - 'We will start the talk by studying some real-life cases where there was an absolute lack of security or poorly implemented strategies, in situations like consume web services, SSL/TLS certificates; how use JSON Web Tokens next to JSON Web Signature and JSON Web Encryption, not only for Authentication and Authorization processes, if not for Information Exchange too.'
-                - 'Then we will evaluate use some libraries as the SafetyNet APIs like reCAPTCHA; handle permissions in Android; and PaaS technologies for implement User Management, Passwordless and Multifactor Authentication using Firebase or Auth0 Technologies.'
-        -
-            title: 'RSocket - Future Reactive Application Protocol'
-            uid: 'rsocket-future-reactive-application-protocol'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T10:15:00'
-            end: '2019-03-30T11:00:00'
-            speakers:
-                - 'oleh-dokuka'
-            tags:
-                - 'microservices'
-            about:
-                 - 'Are you doing microservices? Are you frustrated by slow REST? Tired of unreliable gRPC? Do you need faster client-server communication, but don’t want to invent your WS-protocol? The answer is RSocket. RSocket in a new application-level protocol with reactive streams semantic. It will make your system scalable, fast and resilient. Come and learn why RSocket is the future of cross-services communication.'
-                 - 'In this session, you will learn why RSocket is an innovative solution for cross-server communication. The session provides an overview of how we can use RSocket and how we can improve gRPC using RSocket. Finally, we will understand why we should start using RSocket today.'
-        -
-            title: 'Spock vs JUnit 5 - Clash of the Titans'
-            uid: 'spock-vs-junit5-clash-of-the-titans'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T11:15:00'
-            end: '2019-03-29T12:00:00'
-            tags:
-                - 'spock'
-                - 'junit'
-                - 'testing'
-            speakers:
-                - 'marcin-zajączkowski'
-            about:
-                - 'Spock was a game changer for all the people struggling with unit testing in JUnit 4. Compact syntax, parameterized tests or flexibility to mention just a few advantages. Over 10 years after JUnit 4.0, the brand new, written from scratch, Java 8 optimized JUnit 5 has been released. Is it still worth to write tests in Spock? During my presentation I will compare selected areas of Spock and JUnit 5 to give you an overview how the situation looks like in 2019. I will try to answer the question if its time for Spock to fade into oblivion or maybe quite the opposite it is still light years ahead of JUnit 5.'
-        -
-            title: "It's a bird, it's a plane, no it's SDKMAN!"
-            uid: 'its-a-bird-its-a-plane-no-its-sdkman'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T13:30:00'
-            end: '2019-03-30T14:15:00'
-            tags:
-                - 'sdkman'
-            speakers:
-                - 'marco-vermeulen'
-            about:
-                - "SDKMAN is the Software Development Kit Manager. It is also the Groovy enVironment Manager of old. Since it was created in 2012, it has undergone many changes to the point that it is a far more diverse tool than at the time of it's inception. However, it's primary purpose remains the same: to make the life of developers less painful!"
-                - "The Groovy enVironment Manager might have outgrown it's name, but it is still as relevant as ever. Today SDKMAN is not only responsible for serving binaries to many JVM communities, it also serves JDK binaries of many different flavours."
-                - "This talk will look at where we came from, the current state of the project as well as the what the future holds for SDKMAN. We will take a dive into the current architecture, the technologies which make up our backend and how we provision our instances with Terraform and Ansible. We will also look into the exciting Go re-write that is currently underway, which will take us away from the current bash CLI."
-                - "If you really don't know what SDKMAN is, or if you would like to have a peak under the hood at what it does or how it does it, this talk is a must for you!"
-        -
-            title: 'GRAALVM with Groovy & Kotlin'
-            uid: 'graalvm-with-groovy-kotlin'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-29T15:00:00'
-            end: '2019-03-29T15:45:00'
-            tags:
-                - 'graalvm'
-                - 'groovy'
-                - 'kotlin'
-            speakers:
-                - 'alberto-de-avila'
-            about:
-                - 'Have you heard about GRAALVM? Maybe yes, but, how can we use it? In this talk we are going to see how to create images to execute our JVM applications faster and what are the GRAALVM limitations when using Groovy or Kotlin as program languagues'
-        -
-            title: 'Reactive for the Impatient - A Gentle Intro to Reactive Programming and Systems'
-            uid: 'reactive-for-the-impatient-a-gentle-intro-to-reactive-programming-and-systems'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-29T12:15:00'
-            end: '2019-03-29T13:00:00'
-            tags:
-                - 'reactive'
-            speakers:
-                - 'mary-grygleski'
-            about:
-                - 'As Java is an object-oriented language that inherently supports the imperative programming style, asynchronicity presents a challenge that can turn the code into nightmare.  One way to deal with the complexity of asynchronicity is to introduce reactivity onto the coding level (reactive programming), and/or to handle it on the design and architecture level (reactive systems design).'
-        -
-            title: 'How To Build a Test Lib for a Microservice Based Web Application with Geb & Spock'
-            uid: 'how-to-build-a-test-lib-for-a-microservice-based-web-application-with-geb-spock'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T09:00:00'
-            end: '2019-03-30T09:45:00'
-            tags:
-                - 'geb'
-                - 'spock'
-                - 'testing'
-            speakers:
-                - 'michael-kutz'
-            about:
-                - "At REWE digital we are building & maintaining a Microservice based e-commerce web application. Our service teams work quite autonomous & are responsible for their own services' quality. They decide which measures are appropriate & efficient in order ensure no bugs in production. Many have a reasonable code coverage via unit tests, a good lot of service tests –including UI tests– & a sufficient monitoring & alerting system."
-                - 'However, several teams felt the need for a more integrated testing of the whole system to prevent CSS clashes, errors due to interface changes or eventual inconsistency disasters & many many unforeseen issues.'
-                - 'To support these teams, we decided turn our old retired comprehensive test suite into a test library to enable teams to write their own system tests without the need to implement every stupid step in every team.'
-                - "In this talk I'd like to present our lessons learned & developed design patterns from implementing such a test library with Geb & Spock."
-        -
-            title: 'The battle of the IDEs'
-            uid: 'the-battle-of-the-ides'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T13:30:00'
-            end: '2019-03-30T14:15:00'
-            tags:
-                - 'ide'
-            speakers:
-                - 'koturk'
-            about:
-                - 'IntelliJ IDEA is the best IDE! Or is it Eclipse? Netbeans perhaps? Or are you working with Emacs/Vi/VSCode or something else?'
-                - 'Do you recognize the discussion with your colleagues? Why you should start using another IDE! The one that they use of course!'
-                - 'In this session I will show you which IDE you should use (or at least try). Not only based on my opinion but also on that of other developers that filled in the research [What is my favourite IDE and why](https://t.co/VqwdM1C9cu).'
-                - 'There are a lot of cool features you definitely need to see!'
-                - 'Please join my talk and find out!'
-        -
-            title: "Zipfiles on the Fly with Micronaut"
-            uid: 'zipfiles-on-the-fly-with-micronaut'
-            start: '2019-03-30T08:10:00'
-            end: '2019-03-30T08:50:00'
-            track: 'Microservices & JVM Frameworks'
-            tags:
-                - 'micronaut'
-                - 'reactive'
-            speakers:
-                - 'jacob-aae-mikkelsen'
-            about:
-                - 'If you have a collection of photos that your users can download in a zip file, you have many different options for the user experience. Most of these involve the user to wait for the zip to be produced in the background.'
-                - 'In the presentation, I will take you through the steps of creating the zip fly on the fly, using reactive programming with backpressure in micronaut. Doing it this way, we can limit the memory usage, even with many clients downloading on a slow connection.'
-                - 'An introduction to reactive programming and backpressure is included!'
-        -
-            title: "What's new in Asciidoctor"
-            uid: 'whats-new-in-asciidoctor'
-            start: '2019-03-30T08:10:00'
-            end: '2019-03-30T08:50:00'
-            track: 'Android, Tests & JVM Langs'
-            tags:
-                - 'asciidoctor'
-                - 'documentation'
-            speakers:
-                - 'schalk-cronje'
-            about:
-                - "Let's talk Asciidoctor, Gradle and Groovy. About what's new in the 2.x releases of the Asciidoctor Gradle plugin, about dealing with Gradle workers, serialising closures. This is not just just a talk about new and esciting feastures, but also about the practically of having to deal with real-world issues when writing plugins for Gradle in Groovy."
-        -
-            title: "What's new in Gradle 5?"
-            uid: 'whats-new-in-gradle-5'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-30T09:00:00'
-            end: '2019-03-30T09:45:00'
-            tags:
-                - 'gradle'
-            speakers:
-                - 'andres-almiray'
-            about:
-                - "Gradle continues to evolve to bring faster, precise and reproducible builds tailored to your needs. In particular, we'll focus on what Gradle 5 brings to the game:"
-                - '- statically-typed Kotlin-based DSL'
-                - '- faster builds (incremental builds, incremental annotation processing, ...)'
-                - '- fine-grained transitive dependency management (dependency locking, version alignment, ...)'
-                - '- new plugin APIs'
-                - '- and much more!'
-                - "Don't wait, upgradle your build!"
-        -
-            title: 'Creating Micronaut Configurations'
-            uid: 'creating-micronaut-configurations'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-30T10:15:00'
-            end: '2019-03-30T11:00:00'
-            tags:
-                - 'micronaut'
-            speakers:
-                - 'ivan-lopez'
-            about:
-                - 'Micronaut provides out-of-the-box integrations with a lot of tools and third-party libraries: Consul, Eureka, Hibernate, Kafka, Mongo, Micrometer, Zipkin, Hystrix, Swagger,... But sometimes this is not enough and you need to integrate with a new one.'
-                - 'In this talk, we will discuss the different options that we have to create a new configuration for Micronaut: bean factories, conditional beans, configuration properties,... and you will learn how to make the most out of it.'
-        -
-            title: 'When Clean Architecture met Kotlin: A love story'
-            uid: 'when-clean-architecture-met-kotlin-a-love-story'
-            track: 'Android, Tests & JVM Langs'
-            start: '2019-03-29T10:00:00'
-            end: '2019-03-29T10:45:00'
-            tags:
-                - 'kotlin'
-            speakers:
-                - 'nicolas-patarino'
-            about:
-                - 'Kotlin, a modern language bursts into the community when developers have been perfecting what they call Clean Architecture for years, some potions and spells with which to increase the power of testability and become independent of evil external agents and cruel frameworks.'
-        -
-            title: 'Learn Micronaut: a reactive microservices framework for the JVM'
-            uid: 'micronaut-workshop'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-28T09:00:00'
-            tags:
-                - 'micronaut'
-            end: '2019-03-28T12:00:00'
-            about:
-                - 'Micronaut is a modern, JVM-based, full stack microservices framework designed for building modular, easily testable Microservice applications in Java, Kotlin or Groovy. Micronaut is developed by the creators of Grails and takes inspiration from lessons learnt over the years building real-world applications from monoliths to microservices using Spring, Spring Boot and Grails.'
-                - 'This instructor-led workshop covers building a couple of microservices using Java, Gradle, JPA with H2 and MongoDB and Consul. It also covers the basic features of Micronaut, such as:'
-                - '- Dependency Injection and Inversion of Control (IoC).'
-                - '- Configuration system.'
-                - '- HTTP services.'
-                - '- Cloud and serverless deployments.'
-                - '- Management & Monitoring.'
-                - '### Technical Requirements'
-                - 'Check [Software Requirements](https://alvarosanchez.github.io/micronaut-workshop-java/) at the Workshop webpage.'
-            speakers:
-                - 'alvaro-sanchez-mariscal'
-        -
-            title: 'Boosting your applications with distributed caches/datagrids'
-            uid: 'boosting-your-applications-with-distributed-caches-datagrids'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-29T11:15:00'
-            end: '2019-03-29T12:00:00'
-            tags:
-                - 'cache'
-                - 'microservices'
-            speakers:
-                - 'katia-aresti'
-            about:
-                - "Infinispan is an inmemory datagrid/distributed cache whose life started in October 2008. Now in 2019 Infinispan 10 is available and is a powerful tool with many features that can help you build great applications and microservices. After two years as a developer in the team, moving around in meetups and conferences, what I have found is that many developers still don't know what distributed caches and inmemory datagrids are."
-                - "How can Infinispan boost the performance? Which are the use cases, good practices and patterns to implement modern and reactive architectures? Is Infinispan reactive itself? Which are the frameworks that are supported by Infinispan? How can we use it with containers and Kubernetes/Openshift?"
-        -
-            title: 'AWS + MN = BFF'
-            uid: 'aws-mn-bff'
-            track: 'Microservices & JVM Frameworks'
-            start: '2019-03-29T14:00:00'
-            end: '2019-03-29T14:45:00'
-            tags:
-                - 'micronaut'
-                - 'aws'
-            speakers:
-                - 'vladimir-orany'
-            about:
-                - 'Go beyond standard integration provided by Micronaut core libraries and unleash the power of other AWS services. In this session, you get familiar with Agorapulse Micronaut Libraries which is a collection of tools providing data services for DynamoDB, declarative clients for Kinesis, Simple Notification Service (SNS), Simple Queue Service (SQS) and easier integration for Simple Storage Service S3 and Simple Email Service. You will also learn how to develop applications for AWS API Gateway with Proxy integration using standard Micronaut HTTP capabilities.'
+  speakers:
+    -
+      name: 'Sergio del Amo'
+      uid: 'sdelamo'
+      twitter: 'sdelamo'
+      image: '/images/sergiodelamo.jpg'
+      company-name: 'Object Computing'
+      company-link: 'https://objectcomputing.com'
+      company-image: '/images/oci.svg'
+      bio: 'Member of [grails](https://grails.org) & [micronaut](https://micronaut.io) team at
+            [OCI](https://objectcomputing.com), curator of the newsletter [Groovy Calamari](http://groovycalamari.com) and [Greach Conf](https://greachconf.com) organizer.'
+    -
+      name: 'Leonard Brünings'
+      uid: 'leonard-brunings'
+      twitter: 'spockframework'
+      image: '/images/leonard-brunings.jpeg'
+      bio: 'Leonard is a Java/Groovy developer and has been contributing over 15 years to open source. In 2015 Leonard took the lead of the Spock project, when the original author had to leave the project.'
+    -
+      name: 'Gytis Trikleris'
+      uid: 'gytis-trikleris'
+      twitter: 'gytis_t'
+      company-name: 'Red Hat'
+      company-link: 'https://www.redhat.com/en'
+      company-image: '/images/red-hat.svg'
+      image: '/images/gytis.jpg'
+      bio: 'Gytis has been working at Red Hat for the past 8 years and currently is a part of a RHOAR Spring Boot team. There he tries to adapt Red Hat technologies for Spring Boot users and to improve their experience on OpenShift and Kubernetes. He is a contributor to RHOAR, EAP, Spring Boot and other open source projects.'
+    - name: 'Aurea Muñoz'
+      uid: 'aurea-munoz'
+      company-name: 'Red Hat'
+      company-link: 'https://www.redhat.com/en'
+      company-image: '/images/red-hat.svg'
+      twitter: 'auritamh'
+      image: '/images/aureamunoz.jpg'
+      bio: 'Aurea works for Red Hat developing in Java with a focus on the integration of Spring Boot & Spring Cloud technology within the Red Hat Middleware portfolio.'
+    -
+      name: 'Pablo Ruiz Múzquiz'
+      uid: 'pablo-ruiz-muzquiz'
+      twitter: 'diacritica'
+      company-name: 'Kaleidos'
+      company-link: 'https://kaleidos.net'
+      company-image: '/images/kaleidos.png'
+      image: '/images/pabloruizmuquiz.jpg'
+      bio: 'CEO at [Kaleidos](https://kaleidos.net).'
+    -
+      name: 'Marcos F. Lobo'
+      uid: 'marcos-lobo'
+      twitter: 'arrayexception'
+      image: '/images/blank.png'
+      bio: 'Team Lead in a Software Engineers team at [Nexthink](www.nexthink.com). Active worker for important open source projects such as OpenStack (Horizon, Keystone, Mistral, Magnum, Murano), The CentOS Project, RDO Project and Fedora Project. '
+    -
+      name: 'Ralf D. Müller'
+      uid: 'ralfdmueller'
+      twitter: 'ralfdmueller'
+      company-name: 'DB Systel'
+      company-link: 'https://www.dbsystel.de/'
+      company-image: '/images/dbsystel.png'
+      image: '/images/ralf.jpg'
+      bio: 'Ralf is an open source enthusiast. Creator of docToolchain.'
+      link: 'https://rdmueller.github.io/'
+    -
+      name: 'Andrés Almiray'
+      uid: 'andres-almiray'
+      twitter: 'aalmiray'
+      link: 'http://andresalmiray.com/'
+      company-image: '/images/oracle.svg'
+      company-link: 'https://www.oracle.com/'
+      company-name: 'Oracle'
+      image: '/images/aalmiray.jpg'
+      bio: 'JSR377 Spec lead, Groovy aficionado, Griffon project lead, Java Champion, JCP EC, Hackergarten. Senior Principal Product Manager for Oracle.'
+    -
+      name: 'Trisha Gee'
+      uid: 'trisha-gee'
+      twitter: 'trisha_gee'
+      company-name: 'JetBrains'
+      company-link: 'https://www.jetbrains.com/'
+      company-image: '/images/jetbrains.svg'
+      image: '/images/trishagee.jpg'
+      bio: 'Trisha has expertise in Java high performance systems, is passionate about community in tech, and dabbles with Open Source development'
+      link: 'https://trishagee.github.io'
+    -
+      name: 'David Bonilla'
+      uid: 'david-bonilla'
+      twitter: 'david_bonilla'
+      company-name: 'Manfred'
+      company-link: 'https://www.getmanfred.com/'
+      company-image: '/images/manfred.jpg'
+      image: '/images/davidbonilla.jpg'
+      bio: 'David is the founder of Manfred, a company exploring the technical recruitment niche with a candidate-centric approach. Writer at [Bonilista](http://eepurl.com/eqGj6), [Tarugoconf](http://www.tarugoconf.com/) organizer.'
+      link: 'https://bonillaware.com'
+    -
+      name: 'Michael Kutz'
+      uid: 'michael-kutz'
+      twitter: 'michakutz'
+      company-name: 'Rewe digital'
+      company-link: 'https://www.rewe-digital.com/'
+      company-image: '/images/rewe.jpg'
+      image: '/images/michakutz.jpg'
+      bio: 'Michael loves to write working software and I hate fixing bugs. Hence I developed a strong focus on test automation, continuous delivery/deployment and agile principals.'
+      link: 'https://michael-kutz.de/'
+    -
+      name: 'Antón Rodriguez'
+      uid: 'anton-rodriguez'
+      twitter: 'antonmry'
+      company-name: 'Inditex'
+      company-link: 'https://www.inditex.com/'
+      company-image: '/images/inditex.svg'
+      image: '/images/anton.jpg'
+      bio: 'Antón is a Data Engineer at Inditex. He specializes in JVM development, performance tuning, and distributed systems. He co-organizes the Vigo and Coruña Java User Groups.'
+      link: 'http://www.galiglobal.com'
+    -
+      name: 'Vladimír Oraný'
+      uid: 'vladimir-orany'
+      company-name: 'AgoraPulse'
+      company-link: 'https://www.agorapulse.com/'
+      company-image: '/images/agora.png'
+      twitter: 'musketyr'
+      image: '/images/musketyr.jpg'
+      bio: 'Vladimir is Test Facilitator at Agorapulse. He is interested in code quality, domain-specific languages, cloud computing and writing magical code using AST transformations.'
+      link: 'https://medium.com/@musketyr'
+    -
+      name: 'Jorge Aguilera'
+      uid: 'jorge-aguilera'
+      twitter: 'jagedn'
+      company-image: '/images/puravida.jpg'
+      company-link: 'https://www.puravida-software.com/'
+      company-name: 'Pura Vida'
+      image: '/images/jorgeaguilera.jpg'
+      bio: 'Groovy and Grails enthusiast. He enjoys creating bots and assistants.'
+      link: 'https://jorge.aguilera.soy'
+    -
+      name: 'Eduardo Sánchez'
+      uid: 'eduardo-sanchez'
+      twitter: 'edusanchezcon'
+      company-image: '/images/autentia.png'
+      company-link: 'https://autentia.com/'
+      company-name: 'Autentia'
+      image: '/images/eduardosanchez.jpg'
+      bio: 'Software Engineer at Autentia. He enjoys learning about low level programming and JVM internals.'
+    -
+      name: 'Jerónimo López'
+      uid: 'jeronimo-lopez'
+      twitter: 'jerolba'
+      image: '/images/jeronimolopez.jpg'
+      company-image: '/images/clarity.png'
+      company-link: 'https://clarity.ai/'
+      company-name: 'Clarity'
+      bio: 'Backend Developer at Clarity.'
+      link: 'https://www.jerolba.com/'
+    -
+      name: 'Jacob Ae Mikkelsen'
+      uid: 'jacob-ae-mikkelsen'
+      company-image: '/images/cardlay.png'
+      company-link: 'https://www.cardlay.com/'
+      company-name: 'Cardlay'
+      twitter: 'jacobAae'
+      image: '/images/jacobaae.jpg'
+      bio: 'Jacob is a senior solution architect working in a startup fintect company in Denmark: Cardlay. While still hands-on, scaling microservices and microservice architechture is part of the job.'
+      link: 'http://grydeske.dk'
+    -
+      name: 'Denys Makogon'
+      uid: 'denys-makogon'
+      twitter: 'denis_makogon'
+      company-image: '/images/oracle.svg'
+      company-link: 'https://www.oracle.com/'
+      company-name: 'Oracle'
+      image: '/images/denismakogon.jpg'
+      bio: 'Developer advocate at Oracle, Denys concentrates on product development along with bringing well-designed and production-ready integration with cloud solutions.'
+      link: 'https://medium.com/@denismakogon'
+    -
+      name: 'Iván López'
+      uid: 'ivan-lopez'
+      twitter: 'ilopmar'
+      company-name: 'Object Computing'
+      company-link: 'https://objectcomputing.com'
+      company-image: '/images/oci.svg'
+      image: '/images/ilopmar.png'
+      bio:
+        - 'Iván is a Senior Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails and Micronaut teams at Object Computing, Inc. (OCI). He discovered Grails 8 years ago and since then he develops almost exclusively using Groovy and Java. He is the creator of some well known Grails plugins like Postgresql-Extensions.'
+        - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
+  talks:
+    -
+      uid: 'quarkus-for-spring-developers'
+      title: 'Quarkus for Spring developers'
+      start: '2020-03-27T11:15:00'
+      end: '2020-03-27T12:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'management'
+      speakers:
+        - 'aurea-munoz'
+        - 'gytis-trikleris'
+      about:
+        - 'Ever wondered how you could create truly micro microservices using your favorite Spring APIs?'
+        - 'The arrival of Quarkus 1.0 brings an innovative platform for developing Linux container- and kubernetes-native Java microservices. With Quarkus, developers don’t have to set aside their existing knowledge because it includes Spring API compatibility, brought to Quarkus by the same engineers that bring Spring Boot support too.'
+        - 'This session will show you how Quarkus speaks Spring by live coding a Quarkus application using some of the most popular Spring features which will then be converted to GraalVM native image and deployed and scaled up in milliseconds on Kubernetes and OpenShift. Don''t miss it!'
+    -
+      uid: 'discovering-quarkus-subatomic-supersonic-java-in-action'
+      title: 'Discovering Quarkus: Subatomic Supersonic Java in Action'
+      start: '2020-03-26T11:15:00'
+      end: '2020-03-26T12:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'management'
+      speakers:
+        - 'aurea-munoz'
+        - 'gytis-trikleris'
+      about:
+        - 'Microservices, rapid scalability & high density deployment platforms like Kubernetes require apps with low memory usage and fast boot time.'
+        - 'Java was born in the mid-1990s and has nearly 20 years of optimizations for running highly dynamic monolithic applications that assumed sole ownership of (virtualized) host CPU and memory. However, we now live in a world dominated by the cloud, mobile, IoT, and open source, where containers, Kubernetes, microservices, reactive, Function-as-a-Service (FaaS), and cloud-native application development can deliver higher levels of productivity and efficiency.'
+        - 'The goal of Quarkus is to make Java a leading platform in Kubernetes and serverless environments, while offering developers a unified reactive and imperative programming model to optimally address a wider range of distributed application architectures.'
+        - 'Come learn how Quarkus works, explore live reload, GraalVM native compilation and more in this introduction to the project. Since Quarkus is better lived than talked, expect a demo session!'
+    -
+      uid: 'keynote'
+      title: 'Keynote'
+      start: '2020-03-26T09:00:00'
+      end: '2020-03-26T09:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'management'
+      speakers:
+        - 'sdelamo'
+      about:
+        - 'TBD.'
+    -
+      uid: 'closing'
+      title: 'Conference Closing'
+      start: '2020-03-28T16:00:00'
+      end: '2020-03-28T16:15:00'
+      track: 'Auditorium'
+      tags:
+        - 'management'
+      speakers:
+        - 'sdelamo'
+      about:
+        - 'TBD.'
+    -
+      uid: 'spock-a-logical-way-of-testing'
+      title: 'Spock: A Logical Way of Testing'
+      start: '2020-03-28T09:00:00'
+      end: '2020-03-28T09:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'management'
+      speakers:
+        - 'leonard-brunings'
+      about:
+        - 'TBD.'
+    -
+      uid: 'managing-software-projects-with-taiga'
+      title: 'Managing Software Projects with Taiga'
+      start: '2020-03-27T14:30:00'
+      end: '2020-03-27T14:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'management'
+      speakers:
+        - 'pablo-ruiz-muzquiz'
+      about:
+        - 'TBD.'
+    -
+      uid: 'spock-geb-and-asciidoc'
+      title: 'Spock, Geb and AsciiDoc - from test to specification and back again'
+      start: '2020-03-26T17:15:00'
+      end: '2020-03-26T18:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'spock'
+        - 'asciidoc'
+        - 'geb'
+      speakers:
+        - 'ralfdmueller'
+      about:
+        - 'In this talk we will see how to develop and deploy a telegram bot from scratch using Micronaut either with groovy or with java. We will see the basic architecture to build a bot as well as different platforms where deploy it. You will learn how to send messages, accept commands and react to them.'
+    -
+      uid: 'when-micronaut-met-telegram'
+      title: 'When Micronaut met Telegram'
+      start: '2020-03-26T15:00:00'
+      end: '2020-03-26T15:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'micronaut'
+      speakers:
+        - 'jorge-aguilera'
+      about:
+        - 'In this talk we will see how to develop and deploy a telegram bot from scratch using Micronaut either with groovy or with java. We will see the basic architecture to build a bot as well as different platforms where deploy it. You will learn how to send messages, accept commands and react to them.'
+    -
+      uid: 'jvm-tuning-what-you-must-know-before-going-into-production'
+      title: 'JVM tuning: what you must know before going into production'
+      start: '2020-03-28T15:00:00'
+      end: '2020-03-28T15:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'business'
+      speakers:
+        - 'eduardo-sanchez'
+      about:
+        - 'You finally have your application finished, with all unit and integration tests green. Is that enough? You''d rather like to be sure that the performance and memory footprint is the best one for the production environment and loads.'
+        - 'In this talk we’ll see most common load test types. I’ll explain how memory is managed by the JVM and how the Garbage Collector and JIT Compiler work. I’ll also show how to find and solve most common memory leaks and bottlenecks using tools such as Eclipse Memory Analyzer and Java Flight Recorder, with some practical examples.'
+    -
+      uid: 'the-micronaut-an-unexpected-journey'
+      title: 'The Micronaut: An Unexpected Journey'
+      start: '2020-03-28T10:00:00'
+      end: '2020-03-28T10:45:00'
+      track: 'Meetup Room'
+      tags:
+        - 'micronaut'
+        - 'kubernetes'
+        - 'azure'
+        - 'docker'
+      speakers:
+        - 'marcos-lobo'
+      about:
+        - 'I will introduce the problems, solutions, performance and different situations in the journey to put in real production several microservices, all of them implemented over pure Micronaut Framework, managing huge volume of data and requests, all of them deployed in the Azure''s cloud via Docker and Kubernetes'
+        - 'I will explain why Micronaut frameworks works of us (Nexthink company) and how it makes a difference in terms of development speed and performance.'
+        - 'Also, I will drive the talk to explain what at Nexthink we do in terms of CI/CD for the Micronaut microservices.'
+    -
+      uid: 'testing-micronaut-applications'
+      title: 'Testing Micronaut applications'
+      start: '2020-03-26T14:00:00'
+      end: '2020-03-26T14:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'micronaut'
+        - 'testing'
+      speakers:
+        - 'ivan-lopez'
+      about:
+        - 'Let''s talk about testing! We all know that it''s important to test our applications but some times it''s not that simple.'
+        - 'Micronaut allows running an embedded server to execute end-to-end functional tests pretty fast, but how do we actually take advantage of all the features and possibilities the framework provides?'
+        - 'In this talk you will learn different approaches to test your Micronaut applications. You will see how easy is to keep everything organized, mock external servers, use different configurations for every test and many more things.'
+        - 'If you want to improve your testing skills, this is your talk!'
+    -
+      uid: 'nonfunctional-requirements-the-often-forgotten-ones'
+      title: 'Nonfunctional Requirements - the Often Forgotten Ones'
+      start: '2020-03-28T12:15:00'
+      end: '2020-03-28T13:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'business'
+      speakers:
+        - 'jacob-ae-mikkelsen'
+      about:
+        - 'Functional requirements are easy, they come nicely defined in stories and epics, and they are usually quite easy to validate.'
+        - 'But then comes production, and users start to operate the system, wreaking havoc in the system. Maybe we forgot, or was too busy to do penetration testing, load testing, ensure sane logging and check our backup.'
+        - 'In this presentation we will see a few tools and strategies for doing load testing, penetration testing and discuss some of the other nonfunctional requirements we tend to forget.'
+        - 'Some keywords: DevSecOps, Gatling, Encryption'
+    -
+      uid: 'take-control-of-your-professional-career'
+      title: 'Take Control of your Professional Career'
+      start: '2020-03-27T16:15:00'
+      end: '2020-03-27T17:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'business'
+      speakers:
+        - 'david-bonilla'
+      about:
+        - 'TBD'
+    -
+      uid: 'mastering-spreadsheet-generation'
+      title: 'Mastering Spreadsheet Generation'
+      start: '2020-03-28T11:15:00'
+      end: '2020-03-28T12:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'spreadsheet'
+      speakers:
+        - 'vladimir-orany'
+      about:
+        - 'Business users love spreadsheet files as much as the developers hate doing so. MS Excel will never die but many companies has replaced it with Google Sheets. Let''s take a look together how to generate documents with rich content full of colors, different borders and fonts, filters and more.'
+        - 'Spreadsheet Builder provides declarative DSL to create Excel and Google Sheets files with grace. The DSL for writing spreadsheets is mirrored in query language to read spreadsheets which can be used to import or test generated files more easily. After a short introduction, the framework will be presented in live examples.'
+    -
+      uid: 'leveraging-micronaut-in-grails-4'
+      title: 'Leveraging Micronaut in Grails 4'
+      start: '2020-03-26T10:00:00'
+      end: '2020-03-26T10:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'micronaut'
+        - 'grails'
+      speakers:
+        - 'vladimir-orany'
+      about:
+        - 'Upgrading to Grails 4 is such a simple task so you might not notice that you are now standing on the shoulders of micronauts. Let''s take a look together how to fully leverage Micronaut in a Grails application to benefit from the unique symbiosis.'
+#    -
+#      uid: 'everything-you-need-to-know-about-kafka-streams'
+#      title: 'Everything you need to know about Kafka Streams'
+#      start: '2020-03-26T10:00:00'
+#      end: '2020-03-26T10:45:00'
+#      track: 'Auditorium'
+#      tags:
+#        - 'kafka'
+#        - 'database'
+#      speakers:
+#        - 'anton-rodriguez'
+#      about:
+#        - 'Would you like to learn stream processing within the Kafka platform?. In this easy-to-follow workshop, you’ll explore real-world examples to collect, transform, and aggregate data, work with multiple processors, and handle real-time events. You’ll even dive into streaming SQL with KSQL!. Practical to the very end, it will finish with testing and operational aspects, such as monitoring and debugging.'
+    -
+      uid: 'kafka-and-databases-a-love-story'
+      title: 'Kafka and databases: a love story'
+      start: '2020-03-28T10:00:00'
+      end: '2020-03-28T10:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'kafka'
+        - 'database'
+      speakers:
+        - 'anton-rodriguez'
+      about:
+        - 'In this talk, Anton will share his experience scaling beyond individual teams into larger, department- and company-sized architectures, using event streams as a source of truth and how to build service ecosystems that blend event-driven and request-driven interfaces using a replayable log and Kafka’s Streams API. He will also explore how event collaboration and event sourcing patterns increase safety and recoverability in production databases.'
+    -
+      uid: 'live-after-java-8'
+      title: 'Live after Java 8'
+      start: '2020-03-27T09:00:00'
+      end: '2020-03-27T09:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'java'
+      speakers:
+        - 'trisha-gee'
+      about:
+        - ''
+    -
+      uid: '6-signs-you-have-no-clue-about-modern-java'
+      title: '6 signs you have no clue about modern Java'
+      start: '2020-03-27T10:00:00'
+      end: '2020-03-27T10:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'java'
+      speakers:
+        - 'denys-makogon'
+      about:
+        - 'There''s a strong feeling that people don''t upgrade their Java version because they are scared of what''s going on with newer Java releases, especially after that moment when the release cadence has changed. So many OpenJDK projects have an open target, which makes people feel like there''s nothing happening with them because delivery time takes years, and so on. It feels like you are one of those developers, team leaders, managers who stuck with older versions of Java for certain reasons. And only things you have heard about modern Java that are freighting you so much? Let me ask you a few questions:'
+        - '- How good you know modern Java?'
+        - '- How good you know modern Java features?'
+        - '- Aren’t you afraid of it yet?'
+        - 'If you are one of those then this talk is for you (and your manager). In this talk. I’d like to talk 6 signs that you have no idea of what’s going on with modern Java:'
+        - '- Java modules, no thank you;'
+        - '- Java is not good for the cloud;'
+        - '- JavaFX is dead;'
+        - ' - OpenJDK projects (Valhalla, Loom, Panama) are cool, but no visual progress so far;'
+        - ' - Java is not evolving; - GraalVM will replace Java HotSpot VM'
+    -
+      uid: 'griffon-state-of-the-union'
+      title: 'Griffon: State of the Union'
+      start: '2020-03-28T11:15:00'
+      end: '2020-03-28T12:00:00'
+      track: 'Meetup Room'
+      tags:
+        - 'griffon'
+      speakers:
+        - 'andres-almiray'
+      about:
+        - 'Griffon is the desktop application development platform for the JVM. Born inside the Groovy community it has grown out of its shell to reach out to Java and Kotlin developers alike. In this session we''ll discover what are its key features and strengths as well as current state and future plans.'
+    -
+      uid: 'build-and-deploy-micronaut-applications-to-the-cloud'
+      title: 'Build and Deploy Micronaut Applications to the Cloud'
+      start: '2020-03-26T12:15:00'
+      end: '2020-03-26T13:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'micronaut'
+        - 'cloud'
+      speakers:
+        - 'andres-almiray'
+      about:
+        - 'Bill Gates once said 640k should be enough for anyone. History showed that wasn''t the case for a while. But with the advent of Cloud computing we have to rethink how big our applications should be, as well as how quickly they must be ready to start serving requests. Enter Micronaut, a refreshing framework that can be used to build traditional web applications as well as tiny microservices and anything in between. In this workshop you''ll get started with the basics, domain design, database acces, view scaffolding, monitoring, and more.'
+    -
+      uid: 'intellij-tips'
+      title: 'IntelliJ Tips'
+      start: '2020-03-27T12:15:00'
+      end: '2020-03-27T13:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'ide'
+      speakers:
+        - 'trisha-gee'
+      about:
+        - ''
+    -
+      uid: 'persist-with-jFleet'
+      title: 'Persist with JFleet'
+      start: '2020-03-27T14:00:00'
+      end: '2020-03-27T14:15:00'
+      track: 'Auditorium'
+      tags:
+        - 'persistence'
+        - 'java'
+        - 'jdbc'
+      speakers:
+        - 'jeronimo-lopez'
+      about:
+        - 'TBD'
+    - uid: 'coffee-break-day1-1'
+      title: 'Coffee Break'
+      start: '2020-03-26T10:45:00'
+      end: '2020-03-26T11:15:00'
+    - uid: 'coffee-break-day3-1'
+      title: 'Coffee Break'
+      start: '2020-03-28T10:45:00'
+      end: '2020-03-28T11:15:00'
+    -
+      uid: 'coffee-break-day2-1'
+      title: 'Coffee Break'
+      start: '2020-03-27T10:45:00'
+      end: '2020-03-27T11:15:00'
+    -
+      uid: 'lunch-break-day2-2'
+      title: 'Lunch Break'
+      start: '2020-03-27T13:00:00'
+      end: '2020-03-27T14:00:00'
+    -
+      uid: 'lunch-break-day1-1'
+      title: 'Lunch Break'
+      start: '2020-03-26T13:00:00'
+      end: '2020-03-26T14:00:00'
+    -
+      uid: 'lunch-break-day3-1'
+      title: 'Lunch Break'
+      start: '2020-03-28T13:00:00'
+      end: '2020-03-28T14:00:00'
+    -
+      uid: 'coffee-break-day1-2'
+      title: 'Coffee Break'
+      start: '2020-03-26T15:45:00'
+      end: '2020-03-26T16:15:00'
+    -
+      uid: 'coffee-break-day2-2'
+      title: 'Coffee Break'
+      start: '2020-03-27T15:45:00'
+      end: '2020-03-27T16:15:00'

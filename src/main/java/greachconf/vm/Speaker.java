@@ -27,6 +27,18 @@ public class Speaker implements Comparable<Speaker> {
     @Nullable
     private String image;
 
+    @Nullable
+    private String companyImage;
+
+    @Nullable
+    private String companyName;
+
+    @Nullable
+    private String companyLink;
+
+    @Nullable
+    private String link;
+
     public Speaker() {}
 
     @Nonnull
@@ -73,6 +85,42 @@ public class Speaker implements Comparable<Speaker> {
 
     public void setImage(@Nullable String image) {
         this.image = image;
+    }
+
+    @Nullable
+    public String getCompanyImage() {
+        return companyImage;
+    }
+
+    public void setCompanyImage(@Nullable String companyImage) {
+        this.companyImage = companyImage;
+    }
+
+    @Nullable
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(@Nullable String companyName) {
+        this.companyName = companyName;
+    }
+
+    @Nullable
+    public String getCompanyLink() {
+        return companyLink;
+    }
+
+    public void setCompanyLink(@Nullable String companyLink) {
+        this.companyLink = companyLink;
+    }
+
+    @Nullable
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(@Nullable String link) {
+        this.link = link;
     }
 
     @Override

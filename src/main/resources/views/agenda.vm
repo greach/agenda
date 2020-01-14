@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Agenda | Micronaut Conference | Greach 2020 - 26th, 27th, 28th March</title>
+    <meta name="keywords" content="Micronaut, Grails, Spring boot, Geb, Ratpack, Griffon, Android, Gradle, Groovy, Kotlin, Spock, Madrid, Greach, Conference"/>
+    <meta name="description" content="Agenda for Greach conference (26th, 27th, 28th March 2020)."/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="robots" content="all"/>
+    <link rel="stylesheet" href="/stylesheets/main.css"/>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-85538544-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</head>
+<body id="agenda">
+<nav class="wrapper">
+    <div id="logo" class="noprint alignleft" role="banner">
+        <a href="/"><img src="/images/logo.png" width="200" alt="Greach"/></a>
+    </div>
+    <div class="alignright noprint">
+        <a href="/speakers/index.html">Speakers</a>
+        <a href="/agenda/index.html" class="current_page_item">Agenda</a>
+        <a href="/venue/index.html">Venue</a>
+        <a href="/tickets/index.html">Tickets</a>
+        <a href="/faq/index.html"><abbr title="Frequently Asked Questions">FAQ</abbr></a>
+        <a href="/sponsors/index.html">Sponsors</a>
+        <a href="/coc/index.html"><abbr title="Code of Conduct">COC</abbr></a>
+        <a href="https://twitter.com/greachconf" title="Go to Twitter Greach profile"><img src="/images/twitter.svg" height="15" alt="Twitter @greachconf"/></a>
+    </div>
+</nav>
+<div class="wrapper">
+
+
+    <div class="clear">
+
+        <article>
+            <h1>Agenda</h1>
+            #foreach( $day in $days)
+                <table class="mobile">
+                    <thead>
+                    <tr><th colspan="2">${day.getDay().toString()}</th></tr>
+                    </thead>
+                <tr>
+                    #foreach($timeSlot in $day.getTimeSlots())
+                    <tr>
+                        #set( $rowspan = $timeSlot.getTrackTalks().size())
+                        #if ($rowspan == 0)
+                            #set( $rowspan = 1)
+                        #end
+
+                        <td class="timeslot" rowspan="$rowspan">
+                            <span class="start">${timeSlot.getTimeSlot().getStart()}</span>
+                            <span class="timeSeparator"> - </span>
+                            <span class="end">${timeSlot.getTimeSlot().getEnd()}</span>
+                        </td>
+
+                        #if(${timeSlot.getTrackTalks()})
+                            #foreach($track in ${day.getTracks()})
+
+                                #if($foreach.index > 0)
+                                <tr>
+                                #end
+
+                                <td class="talk${day.getTracks().size()}">
+                                    #if(${timeSlot.getTrackTalks()[$track]})
+                                        $track - <a class="title" href="/talk/${timeSlot.getTrackTalks()[$track].uid}/index.html">${timeSlot.getTrackTalks()[$track].title}</a>
+                                        <span> - </span>
+                                        #foreach($speaker in ${timeSlot.getTrackTalks()[$track].getSpeakers()})
+                                            <a class="speaker" href="/speaker/${speaker.uid}/index.html">${speaker.getName()}</a>
+                                        #end
+                                    #end
+                                </td>
+                            </tr>
+                            #end
+                        #end
+                        #foreach($item in $timeSlot.getItems())
+                            <td class="untrackItem">${item.getTitle()}
+                                #if(${item.getLocationLink()})
+                                <a href="${item.getLocationLink()}">
+                                #end
+                                #if(${item.getLocation()})
+                                    <span>${item.getLocation()}</span>
+                                #end
+                                #if(${item.getLocationLink()})
+                                </a>
+                                #end
+                            </td></tr>
+                        #end
+                    #end
+                    </tbody>
+                </table>
+            #end
+            #foreach( $day in $days)
+
+                <table class="desktop">
+                    <thead>
+                        #set( $colspan = $day.getTracks().size() + 1 )
+                    <tr><th colspan="${colspan}">${day.getDay().toString()}</th></tr>
+                    <tr>
+                        <th class="timeslot"></th>
+                        #foreach($track in $day.getTracks())
+                            <th class="track${day.getTracks().size()}">$track</th>
+                        #end
+                    </tr>
+                    </thead>
+                    <tbody>
+                        #foreach($timeSlot in $day.getTimeSlots())
+                        <tr>
+                            <td class="timeslot">
+                                <span class="start">${timeSlot.getTimeSlot().getStart()}</span>
+                                <span class="timeSeparator"> - </span>
+                                <span class="end">${timeSlot.getTimeSlot().getEnd()}</span>
+                            </td>
+                            #if(${timeSlot.getTrackTalks()})
+                                #foreach($track in ${day.getTracks()})
+                                    <td class="talk${day.getTracks().size()}">
+                                        #if(${timeSlot.getTrackTalks()[$track]})
+                                            <a class="title" href="/talk/${timeSlot.getTrackTalks()[$track].uid}/index.html">${timeSlot.getTrackTalks()[$track].title}</a>
+                                            <span> - </span>
+                                            #foreach($speaker in ${timeSlot.getTrackTalks()[$track].getSpeakers()})
+                                                <a class="speaker" href="/speaker/${speaker.uid}/index.html">${speaker.getName()}</a>
+                                            #end
+                                        #end
+                                    </td>
+                                #end
+                            #end
+                            #foreach($item in $timeSlot.getItems())
+                                <td colspan="${day.getTracks().size()}" class="untrackItem">${item.getTitle()}
+                                    #if(${item.getLocationLink()})
+                                    <a href="${item.getLocationLink()}">
+                                    #end
+                                    #if(${item.getLocation()})
+                                        <span>${item.getLocation()}</span>
+                                    #end
+                                    #if(${item.getLocationLink()})
+                                    </a>
+                                    #end
+                                </td>
+                            #end
+                        </tr>
+                        #end
+
+                    </tbody>
+                </table>
+            #end
+        </article>
+
+    </div>
+
+    <footer class="clear">
+        <ul>
+            <li><a href="mailto:delamos@greachconf.com" title="Open your mail client with the recipient populated with the Greach email address">Email</a></li>
+            <li><a title="Open Greach Conference Youtube Channel" href="https://www.youtube.com/user/TheGreachChannel">Youtube</a></li>
+            <li><a title="Open Greach Conference Twitter profile" href="https://twitter.com/greachconf">Twitter</a></li>
+            <li><a title="Open Greach Conference Twitter profile" href="https://www.instagram.com/greachconf/">Instagram</a></li>
+        </ul>
+        <p>Madrid JVM Conf SL - B19325992 - Calle Maestro José Simón 1 3G 19004 Guadalajara, Spain</p>
+    </footer>
+</div>
+</div>
+
+<div id="spinner" class="spinner" style="display: none;">Loading ...</div>
+
+</body>
+</html>

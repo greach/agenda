@@ -31,6 +31,6 @@ class MessageSourceSpec extends Specification {
 
         then:
         message
-        message == 'Agenda | Greach 2019'
+        message.contains 'Agenda | Greach 2'
     }
 }

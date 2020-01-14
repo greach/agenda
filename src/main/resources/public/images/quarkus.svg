@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>quarkus</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="quarkus" fill-rule="nonzero">
+            <polygon id="Path" fill="#4695EB" points="125.05 33.6 95.61 50.59 125.05 67.59"></polygon>
+            <polygon id="Path" fill="#FF004A" points="66.17 33.6 66.17 67.59 95.61 50.59"></polygon>
+            <polygon id="Path" fill="#FFFFFF" points="125.05 67.59 95.61 50.59 66.17 67.59 95.61 84.59"></polygon>
+            <polygon id="Path" fill="#4695EB" points="35.13 87.36 64.57 104.36 64.57 70.37"></polygon>
+            <polygon id="Path" fill="#FF004A" points="64.57 138.35 94.01 121.36 64.57 104.36"></polygon>
+            <polygon id="Path" fill="#FFFFFF" points="64.57 70.37 64.57 104.36 94.01 121.36 94.01 87.36"></polygon>
+            <polygon id="Path" fill="#4695EB" points="126.65 138.35 126.65 104.36 97.21 121.36"></polygon>
+            <polygon id="Path" fill="#FF004A" points="156.09 87.36 126.65 70.37 126.65 104.36"></polygon>
+            <polygon id="Path" fill="#FFFFFF" points="97.21 121.36 126.65 104.36 126.65 70.37 97.21 87.36"></polygon>
+            <path d="M159.5,0 L31.72,0 C14.2220462,0.0494373021 0.0494373021,14.2220462 0,31.72 L0,159.5 C0.0494373021,176.997954 14.2220462,191.170563 31.72,191.22 L119.23,191.22 L95.61,133.85 L78.48,170.07 L31.72,170.07 C25.9138745,169.994586 21.2254137,165.306126 21.15,159.5 L21.15,31.72 C21.2254137,25.9138745 25.9138745,21.2254137 31.72,21.15 L159.5,21.15 C165.306126,21.2254137 169.994586,25.9138745 170.07,31.72 L170.07,159.5 C169.994586,165.306126 165.306126,169.994586 159.5,170.07 L131.77,170.07 L140.48,191.22 L159.48,191.22 C176.977954,191.170563 191.150563,176.997954 191.2,159.5 L191.2,31.72 C191.150619,14.2298226 176.990143,0.060412126 159.5,0 Z" id="Path" fill="#4695EB"></path>
+        </g>
+    </g>
+</svg>

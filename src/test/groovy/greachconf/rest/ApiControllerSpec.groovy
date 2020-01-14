@@ -29,20 +29,6 @@ class ApiControllerSpec extends Specification {
         httpClient.toBlocking()
     }
 
-    def "can fetch as speaker as JSON at /api/speaker"() {
-        given:
-        String uri = speakerUri('katia-aresti')
-        HttpRequest request = HttpRequest.GET(uri)
-
-        when:
-        HttpResponse<Speaker> response = client.exchange(request, Speaker)
-
-        then:
-        response.status() == HttpStatus.OK
-        response.body()
-        response.body().name == 'Katia Aresti'
-    }
-
     def "fetching a non existing speaker returns 404"() {
         given:
         String uri = speakerUri('bogus')
@@ -54,20 +40,6 @@ class ApiControllerSpec extends Specification {
         then:
         HttpClientResponseException e = thrown()
         e.response.status() == HttpStatus.NOT_FOUND
-    }
-
-    def "can fetch as talk as JSON at /api/talk"() {
-        given:
-        String uri = talkUri('micronaut-workshop')
-        HttpRequest request = HttpRequest.GET(uri)
-
-        when:
-        HttpResponse<Talk> response = client.exchange(request, Talk)
-
-        then:
-        response.status() == HttpStatus.OK
-        response.body()
-        response.body().title == 'Micronaut Workshop'
     }
 
     def "fetching a non existing talk returns 404"() {

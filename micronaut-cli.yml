@@ -1,5 +1,5 @@
 profile: service
-defaultPackage: greachconf
+defaultPackage: com.greachconf
 ---
 testFramework: spock
 sourceLanguage: java

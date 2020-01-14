@@ -22,12 +22,13 @@ public class SpeakerController {
         this.speakerRepository = speakerRepository;
     }
 
-    @Get
+    @Get("/index.html")
     @View("speakers")
     public Map<String, Object> index() {
         Map<String, Object> model = new HashMap<>();
         List<Speaker> speakers = speakerRepository.findAllSpeakers();
         Collections.sort(speakers);
+
         model.put("speakers", speakers);
         return model;
     }

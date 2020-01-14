@@ -32,7 +32,7 @@ public class TalkController {
     }
 
     @View("talk")
-    @Get("/{uid}")
+    @Get("/{uid}/index.html")
     public Map<String, Object> show(@NotBlank String uid) {
         Map<String, Object> model = new HashMap<>();
         Talk talk = talkRepository.findTalkByUid(uid);

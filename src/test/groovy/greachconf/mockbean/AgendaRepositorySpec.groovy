@@ -1,6 +1,12 @@
 package greachconf.mockbean
 
+import com.greachconf.SpeakerPage
+import greachconf.repositories.AgendaRepository
 import greachconf.vm.Agenda
+import greachconf.vm.AgendaDay
+import greachconf.vm.AgendaTalk
+import greachconf.vm.AgendaTalkSpeaker
+import greachconf.vm.AgendaTimeSlot
 import io.micronaut.context.ApplicationContext
 import io.micronaut.http.HttpRequest
 import io.micronaut.http.client.BlockingHttpClient
@@ -9,8 +15,6 @@ import io.micronaut.runtime.server.EmbeddedServer
 import spock.lang.AutoCleanup
 import spock.lang.Shared
 import spock.lang.Specification
-
-import java.time.LocalDate
 
 class AgendaRepositorySpec extends Specification {
 
@@ -29,12 +33,34 @@ class AgendaRepositorySpec extends Specification {
 
     def "Agenda bean exists"() {
         when:
-        Agenda agenda = client.retrieve(HttpRequest.GET("/api/agenda"), Agenda)
+        String agendaJson = client.retrieve(HttpRequest.GET("/api/agenda"), String)
 
         then:
-        agenda
-        agenda.days.size() == 2
-        agenda.days.find { it.day == LocalDate.of(2019, 3, 29) }
-        agenda.days.find { it.day == LocalDate.of(2019, 3, 28) }
+        agendaJson
+
+        cleanup:
+        save('build/dist/api', 'agenda.json', agendaJson)
+        AgendaRepository agendaRepository = embeddedServer.applicationContext.getBean(AgendaRepository)
+        Agenda agenda = agendaRepository.findAgenda()
+            for (AgendaDay agendaDay : agenda.days) {
+                for (AgendaTimeSlot agendaTimeSlot : agendaDay.timeSlots) {
+                    for (AgendaTalk talk : agendaTimeSlot.trackTalks.values()) {
+                        String talkJson = client.retrieve(HttpRequest.GET("/api/talk/${talk.uid}"), String)
+                        save('build/dist/api/talk/', talk.uid +'.json', talkJson)
+                        for (AgendaTalkSpeaker agendaTalkSpeaker : talk.getSpeakers()) {
+                            String speakerJson = client.retrieve(HttpRequest.GET("/api/speaker/$agendaTalkSpeaker.uid"), String)
+                            save('build/dist/api/speaker/', agendaTalkSpeaker.uid +'.json', speakerJson)
+                        }
+                    }
+                }
+            }
+        }
+
+    private void save(String f, String file, String json) {
+        File folder = new File(f)
+        folder.mkdirs()
+        File jsonFile = new File(folder, "/"+ file)
+        jsonFile.createNewFile()
+        jsonFile.text = json
     }
 }

@@ -1,6 +1,6 @@
 package greachconf.beanexists
 
-import greachconf.controllers.HomeController
+import greachconf.controllers.AgendaController
 import io.micronaut.context.ApplicationContext
 import spock.lang.AutoCleanup
 import spock.lang.Shared
@@ -12,8 +12,8 @@ class HomeControllerSpec extends Specification {
     @Shared
     ApplicationContext applicationContext = ApplicationContext.run()
 
-    def "HomeController bean exists"() {
+    def "AgendaController bean exists"() {
         expect:
-        applicationContext.containsBean(HomeController)
+        applicationContext.containsBean(AgendaController)
     }
 }

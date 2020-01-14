@@ -2,27 +2,44 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.firefox.FirefoxOptions
-import org.openqa.selenium.safari.SafariDriver
+import org.openqa.selenium.htmlunit.HtmlUnitDriver
+
+reportsDir = new File("build/reports")
+// default is to use htmlunit
+driver = {
+    HtmlUnitDriver htmlUnitDriver = new HtmlUnitDriver()
+    htmlUnitDriver.javascriptEnabled = true
+    htmlUnitDriver
+}
 
 environments {
 
-    // You need to configure in Safari -> Develop -> Allowed Remote Automation
-    safari {
-        driver = { new SafariDriver() }
+    htmlUnit {
+        driver = {
+            HtmlUnitDriver htmlUnitDriver = new HtmlUnitDriver()
+            htmlUnitDriver.javascriptEnabled = true
+            htmlUnitDriver
+        }
     }
 
+    // run via “./gradlew -Dgeb.env=chrome iT”
     chrome {
         driver = { new ChromeDriver() }
     }
 
+    // run via “./gradlew -Dgeb.env=chromeHeadless iT”
     chromeHeadless {
         driver = {
             ChromeOptions o = new ChromeOptions()
+            o.addArguments('no-sandbox')
             o.addArguments('headless')
+            o.addArguments('start-maximized')
+            o.addArguments('window-size=1920,1080')
             new ChromeDriver(o)
         }
     }
 
+    // run via “./gradlew -Dgeb.env=firefoxHeadless iT”
     firefoxHeadless {
         driver = {
             FirefoxOptions o = new FirefoxOptions()
@@ -31,6 +48,7 @@ environments {
         }
     }
 
+    // run via “./gradlew -Dgeb.env=firefox iT”
     firefox {
         driver = { new FirefoxDriver() }
     }
