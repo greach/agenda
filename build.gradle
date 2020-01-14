@@ -257,3 +257,11 @@ tasks.withType(GroovyCompile) {
 tasks.withType(Test) {
     jvmArgs = jvmOpenModulesArgs
 }
+
+tasks.register('zipDist', Zip) { task ->
+    task.group("build")
+    task.dependsOn tasks.named('check')
+    task.archiveFileName = "dist.zip"
+    task.destinationDirectory = file("$buildDir")
+    task.from("$buildDir/dist")
+}

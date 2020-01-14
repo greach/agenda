@@ -6,15 +6,15 @@ phases:
       java: corretto11
   build:
     commands:
-      - ./gradlew check --rerun-tasks --scan
+      - ./gradlew zipDist --rerun-tasks --scan
   post_build:
     finally:
       - rm -f  /root/.gradle/caches/modules-2/modules-2.lock
       - rm -fr /root/.gradle/caches/*/plugin-resolution/
 artifacts:
   files:
-    - '**/*'
-  base-directory: 'build/dist'
+    - 'dist.zip'
+  base-directory: 'build'
 cache:
   paths:
     - '/root/.gradle/caches/**/*' 
