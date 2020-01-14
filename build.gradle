@@ -10,8 +10,8 @@ version "0.1"
 group "com.greachconf"
 
 ext {
-    distPath = projectDir.absolutePath + "/build/dist"
-    reportsPath =  projectDir.absolutePath + "/build/reports/com/greachconf"
+    distPath = file("build/dist").absolutePath
+    reportsPath =  file("build/reports/com/greachconf").absolutePath
     drivers = ['chrome','chromeHeadless', 'firefox', 'firefoxHeadless', 'htmlUnit']
 }
 
@@ -161,7 +161,7 @@ tasks.register('copyTalkPages') { task ->
     }
     task.mustRunAfter('test')
 }
-check.finalizedBy('copyTalkPages')
+check.dependsOn('copyTalkPages')
 tasks.register('copySpeakerPages') { task ->
     task.doLast {
         File dir = new File(reportsPath + '/SpeakerSpec')
@@ -178,7 +178,7 @@ tasks.register('copySpeakerPages') { task ->
     }
     task.mustRunAfter('test')
 }
-check.finalizedBy('copySpeakerPages')
+check.dependsOn('copySpeakerPages')
 
 def jvmOpenModulesArgs = [
         "--add-opens=java.management/com.sun.jmx.mbeanserver=ALL-UNNAMED",
