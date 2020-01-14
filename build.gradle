@@ -10,8 +10,6 @@ version "0.1"
 group "com.greachconf"
 
 ext {
-    distPath = file("build/dist").absolutePath
-    reportsPath =  file("build/reports/com/greachconf").absolutePath
     drivers = ['chrome','chromeHeadless', 'firefox', 'firefoxHeadless', 'htmlUnit']
 }
 
@@ -113,13 +111,12 @@ check.dependsOn('copyStaticWebsite')
 
 tasks.register('copyAgendaPage') { task ->
     task.doLast {
-        File dir = new File(reportsPath + '/AgendaSpec')
+        File dir = project.file("build/reports/com/greachconf/AgendaSpec")
         dir.eachFile { file ->
-            String path = distPath + '/agenda'
-            File outputDir = new File(path)
+            File outputDir = project.file("build/dist/agenda")
             outputDir.mkdirs()
 
-            File output = new File("${path}/index.html")
+            File output = project.file("build/dist/agenda/index.html")
             output.createNewFile()
             output.text = file.text
         }
@@ -130,13 +127,12 @@ check.dependsOn('copyAgendaPage')
 
 tasks.register('copySpeakersPage') { task ->
     task.doLast {
-        File dir = new File(reportsPath + '/SpeakersSpec')
+        File dir = file("build/reports/com/greachconf/SpeakersSpec")
         dir.eachFile { file ->
-            String path = distPath + '/speakers'
-            File outputDir = new File(path)
+            File outputDir = project.file("build/dist/speakers")
             outputDir.mkdirs()
 
-            File output = new File("${path}/index.html")
+            File output = project.file("build/dist/speakers/index.html")
             output.createNewFile()
             output.text = file.text
         }
@@ -147,14 +143,12 @@ check.dependsOn('copySpeakersPage')
 
 tasks.register('copyTalkPages') { task ->
     task.doLast {
-        File dir = new File(reportsPath + '/TalkSpec')
+        File dir = file("build/reports/com/greachconf/TalkSpec")
         dir.eachFile { file ->
             String name = file.name.replaceAll('.html', '')
-
-            String path = distPath + "/talk/$name"
-            File outputDir = new File(path)
+            File outputDir = project.file("build/dist/talk/$name")
             outputDir.mkdirs()
-            File output = new File("${path}/index.html")
+            File output = project.file("build/dist/talk/${name}/index.html")
             output.createNewFile()
             output.text = file.text
         }
@@ -164,14 +158,13 @@ tasks.register('copyTalkPages') { task ->
 check.dependsOn('copyTalkPages')
 tasks.register('copySpeakerPages') { task ->
     task.doLast {
-        File dir = new File(reportsPath + '/SpeakerSpec')
+        File dir = file("build/reports/com/greachconf/SpeakerSpec")
         dir.eachFile { file ->
             String name = file.name.replaceAll('.html', '')
 
-            String path = distPath + "/speaker/$name"
-            File outputDir = new File(path)
+            File outputDir = project.file("build/dist/speaker/$name")
             outputDir.mkdirs()
-            File output = new File("${path}/index.html")
+            File output = project.file("build/dist/speaker/${name}/index.html")
             output.createNewFile()
             output.text = file.text
         }
