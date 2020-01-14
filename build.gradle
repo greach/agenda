@@ -184,7 +184,7 @@ tasks.register('copySpeakerPages') { task ->
             output.text = file.text
         }
     }
-    task.mustRunAfter('copySpeakerPages')
+    task.mustRunAfter('copyStaticWebsite')
     task.dependsOn('test')
 }
 check.dependsOn('copySpeakerPages')
