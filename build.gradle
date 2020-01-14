@@ -265,3 +265,13 @@ tasks.register('zipDist', Zip) { task ->
     task.destinationDirectory = file("$buildDir")
     task.from("$buildDir/dist")
 }
+
+tasks.register('verifyAgendaExists') { task ->
+    task.doLast {
+        if (!new File(buildDir.absolutePath + "/dist/agenda/index.html").exists()) {
+            throw new GradleException("Agenda file does not exist")
+        }
+    }
+
+}
+zipDist.finalizedBy('verifyAgendaExists')
