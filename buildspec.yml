@@ -6,7 +6,7 @@ phases:
       java: corretto11
   build:
     commands:
-      - ./gradlew check  --scan
+      - ./gradlew check --rerun-tasks --scan
   post_build:
     finally:
       - rm -f  /root/.gradle/caches/modules-2/modules-2.lock
