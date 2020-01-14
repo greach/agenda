@@ -112,6 +112,9 @@ check.dependsOn('copyStaticWebsite')
 tasks.register('copyAgendaPage') { task ->
     task.doLast {
         File dir = project.file("build/reports/com/greachconf/AgendaSpec")
+        if (!dir.exists()) {
+            throw new GradleException("AgendaSpec folder does not exist")
+        }
         dir.eachFile { file ->
             File outputDir = project.file("build/dist/agenda")
             outputDir.mkdirs()
@@ -121,13 +124,17 @@ tasks.register('copyAgendaPage') { task ->
             output.text = file.text
         }
     }
-    task.mustRunAfter('test')
+    task.mustRunAfter('copyStaticWebsite')
+    task.dependsOn('test')
 }
 check.dependsOn('copyAgendaPage')
 
 tasks.register('copySpeakersPage') { task ->
     task.doLast {
         File dir = file("build/reports/com/greachconf/SpeakersSpec")
+        if (!dir.exists()) {
+            throw new GradleException("SpeakersSpec folder does not exist")
+        }
         dir.eachFile { file ->
             File outputDir = project.file("build/dist/speakers")
             outputDir.mkdirs()
@@ -137,13 +144,17 @@ tasks.register('copySpeakersPage') { task ->
             output.text = file.text
         }
     }
-    task.mustRunAfter('test')
+    task.mustRunAfter('copyStaticWebsite')
+    task.dependsOn('test')
 }
 check.dependsOn('copySpeakersPage')
 
 tasks.register('copyTalkPages') { task ->
     task.doLast {
         File dir = file("build/reports/com/greachconf/TalkSpec")
+        if (!dir.exists()) {
+            throw new GradleException("TalkSpec folder does not exist")
+        }
         dir.eachFile { file ->
             String name = file.name.replaceAll('.html', '')
             File outputDir = project.file("build/dist/talk/$name")
@@ -153,12 +164,16 @@ tasks.register('copyTalkPages') { task ->
             output.text = file.text
         }
     }
-    task.mustRunAfter('test')
+    task.mustRunAfter('copyStaticWebsite')
+    task.dependsOn('test')
 }
 check.dependsOn('copyTalkPages')
 tasks.register('copySpeakerPages') { task ->
     task.doLast {
         File dir = file("build/reports/com/greachconf/SpeakerSpec")
+        if (!dir.exists()) {
+            throw new GradleException("SpeakerSpec folder does not exist")
+        }
         dir.eachFile { file ->
             String name = file.name.replaceAll('.html', '')
 
@@ -169,7 +184,8 @@ tasks.register('copySpeakerPages') { task ->
             output.text = file.text
         }
     }
-    task.mustRunAfter('test')
+    task.mustRunAfter('copySpeakerPages')
+    task.dependsOn('test')
 }
 check.dependsOn('copySpeakerPages')
 
