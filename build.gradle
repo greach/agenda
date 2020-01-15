@@ -273,10 +273,6 @@ tasks.register('verifyAgendaExists') { task ->
         if (!file("build/dist/agenda/index.html").exists()) {
             throw new GradleException("Agenda file does not exist")
         }
-        if (System.getenv('CODEBUILD_SRC_DIR')!=null && !file(System.getenv('CODEBUILD_SRC_DIR') + "/build/dist/agenda/index.html").exists()) {
-            throw new GradleException("Agenda file does not exist")
-        }
-
     }
 
 }

@@ -57,10 +57,9 @@ class AgendaRepositorySpec extends Specification {
         }
 
     private void save(String f, String file, String json) {
-        String folderPath = (System.getenv('CODEBUILD_SRC_DIR') != null) ? System.getenv('CODEBUILD_SRC_DIR') + '/' +  f  : f
-        File folder = new File(folderPath)
+        File folder = new File(f)
         folder.mkdirs()
-        File jsonFile = new File(folderPath, "/" + file)
+        File jsonFile = new File(f, "/" + file)
         jsonFile.createNewFile()
         jsonFile.text = json
     }
