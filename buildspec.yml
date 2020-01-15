@@ -6,7 +6,7 @@ phases:
       java: corretto11
   build:
     commands:
-      - ./gradlew clean zipDist --rerun-tasks --console=plain --scan
+      - ./gradlew check --rerun-tasks --console=plain --scan
   post_build:
     finally:
       - rm -f  /root/.gradle/caches/modules-2/modules-2.lock
