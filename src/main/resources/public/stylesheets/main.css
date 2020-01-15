@@ -235,7 +235,7 @@ body#speakers .column {
 	overflow: auto;
 }
 body#speakers .column h2 {	
-	font-size: 1.1em;
+	font-size: 0.95em;
 }
 @media screen and (min-width: 680px) {
 	body#speakers .column {

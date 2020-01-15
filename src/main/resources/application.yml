@@ -13,6 +13,18 @@ micronaut:
 agenda:
   speakers:
     -
+      name: 'Álvaro Sánchez-Mariscal'
+      uid: 'alvaro-sanchez-mariscal'
+      twitter: 'alvaro_sanchez'
+      image: '/images/alvaro_sanchez.jpg'
+      company-name: 'Object Computing'
+      company-link: 'https://objectcomputing.com'
+      company-image: '/images/oci.svg'
+      bio:
+        - "Álvaro is a passionate developer and agile enthusiast with over 18 years of experience. He now works as a Senior Software Engineer at [Object Computing (OCI)](https://objectcomputing.com/), the company leading Groovy, Grails and Micronaut open-source development."
+        - "Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, [Salenda](https://www.salenda.es), in 2005, a software factory and Atlassian Gold Solution Partner headquartered in Madrid, Spain. As of today, he is still the company owner. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems."
+        - "Álvaro has spoken in 11 different countries at conferences like Devoxx, GeeCON, JavaLand, JavaZone, Codemotion and Commit Conf. In his spare time, as well as coding and experimenting with new technologies, he likes to spend time with his wife and son, support [CD Leganes football team](https://www.cdleganes.com/), and play paddle tennis."
+    -
       name: 'Sergio del Amo'
       uid: 'sdelamo'
       twitter: 'sdelamo'
@@ -191,6 +203,18 @@ agenda:
         - 'Iván is a Senior Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails and Micronaut teams at Object Computing, Inc. (OCI). He discovered Grails 8 years ago and since then he develops almost exclusively using Groovy and Java. He is the creator of some well known Grails plugins like Postgresql-Extensions.'
         - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
   talks:
+    -
+      uid: 'micronaut-and-kubernetes'
+      title: 'Micronaut and Kubernetes'
+      start: '2020-03-27T15:00:00'
+      end: '2020-03-27T15:45:00'
+      track: 'Auditorium'
+      tags:
+        - 'micronaut'
+      speakers:
+        - 'alvaro-sanchez-mariscal'
+      about:
+        - ''
     -
       uid: 'quarkus-for-spring-developers'
       title: 'Quarkus for Spring developers'
