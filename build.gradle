@@ -267,14 +267,6 @@ tasks.withType(Test) {
     jvmArgs = jvmOpenModulesArgs
 }
 
-tasks.register('zipDist', Zip) { task ->
-    task.group("build")
-    task.dependsOn tasks.named('check')
-    task.archiveFileName = "dist.zip"
-    task.destinationDirectory = file("$buildDir")
-    task.from("$buildDir/dist")
-}
-
 tasks.register('verifyAgendaExists') { task ->
     task.doLast {
 
@@ -288,4 +280,4 @@ tasks.register('verifyAgendaExists') { task ->
     }
 
 }
-zipDist.finalizedBy('verifyAgendaExists')
+check.finalizedBy('verifyAgendaExists')

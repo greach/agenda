@@ -13,8 +13,8 @@ phases:
       - rm -fr /root/.gradle/caches/*/plugin-resolution/
 artifacts:
   files:
-    - 'dist.zip'
-  base-directory: 'build'
+    - '**/*'
+  base-directory: 'build/dist'
 cache:
   paths:
     - '/root/.gradle/caches/**/*' 
