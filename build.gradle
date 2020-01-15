@@ -105,9 +105,9 @@ if (System.getProperty('geb.env') != null) {
 tasks.register('copyStaticWebsite', Copy) { task ->
     task.from(file("src/main/resources/public"))
     task.into(file("build/dist"))
-    task.mustRunAfter('test')
 }
 check.dependsOn('copyStaticWebsite')
+test.mustRunAfter('copyStaticWebsite')
 
 tasks.register('copyAgendaPage') { task ->
     task.doLast {
