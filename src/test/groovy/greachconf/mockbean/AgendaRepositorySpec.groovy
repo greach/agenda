@@ -46,10 +46,10 @@ class AgendaRepositorySpec extends Specification {
                 for (AgendaTimeSlot agendaTimeSlot : agendaDay.timeSlots) {
                     for (AgendaTalk talk : agendaTimeSlot.trackTalks.values()) {
                         String talkJson = client.retrieve(HttpRequest.GET("/api/talk/${talk.uid}"), String)
-                        save('build/dist/api/talk/', talk.uid +'.json', talkJson)
+                        save('build/dist/api/talk', talk.uid +'.json', talkJson)
                         for (AgendaTalkSpeaker agendaTalkSpeaker : talk.getSpeakers()) {
                             String speakerJson = client.retrieve(HttpRequest.GET("/api/speaker/$agendaTalkSpeaker.uid"), String)
-                            save('build/dist/api/speaker/', agendaTalkSpeaker.uid +'.json', speakerJson)
+                            save('build/dist/api/speaker', agendaTalkSpeaker.uid +'.json', speakerJson)
                         }
                     }
                 }
@@ -57,9 +57,10 @@ class AgendaRepositorySpec extends Specification {
         }
 
     private void save(String f, String file, String json) {
-        File folder = new File(f)
+        String folderPath = (System.getenv('CODEBUILD_SRC_DIR') != null) ? System.getenv('CODEBUILD_SRC_DIR') + '/' +  f  : f
+        File folder = new File(folderPath)
         folder.mkdirs()
-        File jsonFile = new File(folder, "/"+ file)
+        File jsonFile = new File(folderPath, "/" + file)
         jsonFile.createNewFile()
         jsonFile.text = json
     }

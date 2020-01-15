@@ -4,7 +4,8 @@ import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.firefox.FirefoxOptions
 import org.openqa.selenium.htmlunit.HtmlUnitDriver
 
-reportsDir = new File("build/reports")
+reportsDir = (System.getenv('CODEBUILD_SRC_DIR') != null) ? new File(System.getenv('CODEBUILD_SRC_DIR')+ "/build/reports")  : new File("build/reports")
+
 // default is to use htmlunit
 driver = {
     HtmlUnitDriver htmlUnitDriver = new HtmlUnitDriver()
