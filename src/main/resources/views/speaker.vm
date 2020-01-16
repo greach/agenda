@@ -57,7 +57,7 @@
             <h2>${messages["talks"]}</h2>
             <ul>
                 #foreach($talk in $talks)
-                    <li><a class="title" href="/talk/${talk.uid}">${talk.title}</a></li>
+                    <li><a class="title" href="/talk/${talk.uid}/index.html">${talk.title}</a></li>
                 #end
             </ul>
         </article>

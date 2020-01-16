@@ -13,6 +13,13 @@ micronaut:
 agenda:
   speakers:
     -
+      name: 'Szymon Stepniak'
+      uid: 'szymon-stepniak'
+      twitter: 'wololock'
+      image: '/images/wololock.jpg'
+      bio:
+        - "I write Groovy code on a daily basis at [Upwork.com](http://upwork.com/), where I lead the CI/CD pipeline product team. I try to solve problems without writing a single line of code, but when I have to, I use Groovy, Java, or Haskell. Blogger, Stack Overflow Jedi, Toruń Java User Group founder, bedroom guitar player."
+    -
       name: 'Álvaro Sánchez-Mariscal'
       uid: 'alvaro-sanchez-mariscal'
       twitter: 'alvaro_sanchez'
@@ -25,6 +32,24 @@ agenda:
         - "Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, [Salenda](https://www.salenda.es), in 2005, a software factory and Atlassian Gold Solution Partner headquartered in Madrid, Spain. As of today, he is still the company owner. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems."
         - "Álvaro has spoken in 11 different countries at conferences like Devoxx, GeeCON, JavaLand, JavaZone, Codemotion and Commit Conf. In his spare time, as well as coding and experimenting with new technologies, he likes to spend time with his wife and son, support [CD Leganes football team](https://www.cdleganes.com/), and play paddle tennis."
     -
+      name: 'Nicolas Frankel'
+      uid: 'nicolas-frankel'
+      twitter: 'nicolas_frankel'
+      image: '/images/nicolas_frankel.jpg'
+      bio: 'Developer Advocate with 15+ years experience consulting for many different customers, in a wide range of contexts (such as telecoms, banking, insurances, large retail and public sector). Usually working on Java/Java EE and Spring technologies, but with focused interests like Rich Internet Applications, Testing, CI/CD and DevOps. Currently working for Hazelcast. Also double as a teacher in universities and higher education schools, a trainer and triples as a book author.'
+    -
+      name: 'Alberto Grande'
+      uid: 'alberto-grande'
+      twitter: 'alberto_grande'
+      image: '/images/albertogrande.jpg'
+      bio: 'Computer Engineer, passionate about technology. Interested in development, distributed architectures and Cloud systems.'
+    -
+      name: 'Schalk Cronjé'
+      uid: 'schalk-cronje'
+      twitter: 'ysb33r'
+      image: '/images/schalk-cronje.jpeg'
+      bio: 'Schalk describes himself as the glue man. He glues tech together to produce great pipelines so that others can flow their work. He is the author of two books on Gradle plugin development and also sits on the steering committees of both the Agile Testing Alliance and the DevOps++ Alliance. He has recently thrown his weight behind Jobble Inc. where he has already brought painful manual deployments down to multiple pain free deployments per day across multiple products.'
+    -
       name: 'Sergio del Amo'
       uid: 'sdelamo'
       twitter: 'sdelamo'
@@ -32,8 +57,7 @@ agenda:
       company-name: 'Object Computing'
       company-link: 'https://objectcomputing.com'
       company-image: '/images/oci.svg'
-      bio: 'Member of [grails](https://grails.org) & [micronaut](https://micronaut.io) team at
-            [OCI](https://objectcomputing.com), curator of the newsletter [Groovy Calamari](http://groovycalamari.com) and [Greach Conf](https://greachconf.com) organizer.'
+      bio: 'Member of [grails](https://grails.org) & [micronaut](https://micronaut.io) team at [OCI](https://objectcomputing.com), curator of the newsletter [Groovy Calamari](http://groovycalamari.com) and [Greach Conf](https://greachconf.com) organizer.'
     -
       name: 'Leonard Brünings'
       uid: 'leonard-brunings'
@@ -162,6 +186,16 @@ agenda:
       image: '/images/eduardosanchez.jpg'
       bio: 'Software Engineer at Autentia. He enjoys learning about low level programming and JVM internals.'
     -
+      name: 'Bob Dahlberg'
+      uid: 'bob-dahlberg'
+      twitter: 'mr_bob'
+      image: '/images/blank.png'
+      bio:
+        - 'I''m the Tech Lead Mobile at Qvik in Sweden.'
+        - 'Mostly doing Kotlin and Android and trying to be helpful.'
+        - 'I have been a developer since I started my first company in high school. I''ve built large campaign frameworks, several video players and chats, streaming services, mobile apps, and microservices to support them. At the moment my main languages are Kotlin, Java, and Scala and my main platforms are Android and AWS. I''ve always been an asynchronous programmer since day one and was used to work both reactive and functional before it became hip.'
+      link: 'http://www.challengeaccepted.se'
+    -
       name: 'Jerónimo López'
       uid: 'jeronimo-lopez'
       twitter: 'jerolba'
@@ -204,6 +238,44 @@ agenda:
         - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
   talks:
     -
+      uid: 'Stream Processing Essentials'
+      title: 'Stream Processing Essentials'
+      start: '2020-03-26T14:45:00'
+      end: '2020-03-26T17:00:00'
+      track: 'Room Green'
+      tags:
+        - 'hazelcast'
+      speakers:
+        - 'nicolas-frankel'
+      about:
+        - 'Take your first steps to understanding and start working with stream processing! By the end of the course, you will be able to build and run distributed streaming pipelines in Java:'
+        - 'Explain when to use streaming Design a streaming application from the building blocks Transform, match, correlate and aggregate continuous data Scale, deploy, and operate streaming apps'
+        - 'We will also cover the advantages and disadvantages of the stream processing technologies available when approaching real-world problems.'
+    -
+      uid: 'over-two-hundred-ci-cd-pipelines'
+      title: 'Over two hundred CI/CD pipelines and a single Jenkins Shared Library - a case study'
+      start: '2020-03-28T15:00:00'
+      end: '2020-03-28T15:45:00'
+      track: 'Meetup Room'
+      tags:
+        - 'micronaut'
+      speakers:
+        - 'szymon-stepniak'
+      about:
+        - 'Everyone knows Jenkins. Everyone (most probably) worked with Jenkins jobs at least once. Many already know that Jenkins supports pipeline as a code approach. Some might hear about Jenkins Shared Libraries, a way to share the common pipeline code between multiple pipelines. But not many people had an opportunity to implement and maintain Jenkins Shared Library used by hundreds of active Jenkins pipelines. In this talk, I want to show you the journey that Upwork, a global online freelancing platform, went from a Jenkins v1 freestyle jobs to the Jenkins 2 declarative pipelines delivered as a shared library. I will show you the mistakes we made, the tools we used to automate the shared library releasing process, and some numbers and metrics that helped us make the right decisions. '
+    -
+      uid: 'becoming-a-better-groovy-programmer'
+      title: 'Becoming a better Groovy programmer - a warrior''s path'
+      start: '2020-03-27T17:15:00'
+      end: '2020-03-27T18:00:00'
+      track: 'Auditorium'
+      tags:
+        - 'micronaut'
+      speakers:
+        - 'szymon-stepniak'
+      about:
+        - 'The one thing I admire in programming is that it is not a skill that you acquire, and you''re done. It is a journey. A never-ending process of learning new things and moving what you already know to the next level. In this talk, I would like to share with you a few ready-to-implement ideas that will help you improve your Groovy knowledge, become a problem solver, and what is even more important - enjoy that ride. If you feel that you stuck with the learning progress and you don''t know how to overcome it, this talk might help you get out of the impasse. I guarantee that you will learn something new either way. Are you in?'
+    -
       uid: 'micronaut-and-kubernetes'
       title: 'Micronaut and Kubernetes'
       start: '2020-03-27T15:00:00'
@@ -218,8 +290,8 @@ agenda:
     -
       uid: 'quarkus-for-spring-developers'
       title: 'Quarkus for Spring developers'
-      start: '2020-03-27T11:15:00'
-      end: '2020-03-27T12:00:00'
+      start: '2020-03-28T10:15:00'
+      end: '2020-03-28T10:45:00'
       track: 'Auditorium'
       tags:
         - 'management'
@@ -233,8 +305,8 @@ agenda:
     -
       uid: 'discovering-quarkus-subatomic-supersonic-java-in-action'
       title: 'Discovering Quarkus: Subatomic Supersonic Java in Action'
-      start: '2020-03-26T11:15:00'
-      end: '2020-03-26T12:00:00'
+      start: '2020-03-27T11:00:00'
+      end: '2020-03-27T11:45:00'
       track: 'Auditorium'
       tags:
         - 'management'
@@ -247,10 +319,24 @@ agenda:
         - 'The goal of Quarkus is to make Java a leading platform in Kubernetes and serverless environments, while offering developers a unified reactive and imperative programming model to optimally address a wider range of distributed application architectures.'
         - 'Come learn how Quarkus works, explore live reload, GraalVM native compilation and more in this introduction to the project. Since Quarkus is better lived than talked, expect a demo session!'
     -
+      uid: 'microsevices-architectures-staying-alive-while-trying'
+      title: 'Microsevices architectures: staying alive while trying'
+      start: '2020-03-27T09:45:00'
+      end: '2020-03-27T10:30:00'
+      track: 'Meetup Room'
+      tags:
+        - 'management'
+      speakers:
+        - 'alberto-grande'
+      about:
+        - 'Microservices based architectures growth has been unstoppable in recent years. Large companies such as Netflix or Amazon use these architectures as the solution to their huge systems, becoming the reference for thousands of companies that yearn for the capabilities demonstrated by two giants.'
+        - 'How is it possible that the implementation of these technologies can sink your business? How can the scalability or resilience capabilities of these architectures become counterproductive?'
+        - 'In this talk we will discuss about the analysis, the definition and the design of a microservice architecture. We will try to decompose a monolith using the strangler pattern analyzing its consequences.'
+    -
       uid: 'keynote'
       title: 'Keynote'
-      start: '2020-03-26T09:00:00'
-      end: '2020-03-26T09:45:00'
+      start: '2020-03-27T09:00:00'
+      end: '2020-03-27T09:30:00'
       track: 'Auditorium'
       tags:
         - 'management'
@@ -258,6 +344,19 @@ agenda:
         - 'sdelamo'
       about:
         - 'TBD.'
+    -
+      uid: '10-gradle-plugins-to-improve-your-cloud-life'
+      title: '10 Gradle Plugins to Improve Your Cloud Life'
+      start: '2020-03-27T14:05:00'
+      end: '2020-03-27T14:50:00'
+      track: 'Meetup Room'
+      tags:
+        - 'gradle'
+      speakers:
+        - 'schalk-cronje'
+      about:
+        - 'There are many tools around to help with building pipelines and infrastructure, but keeping them together and easily managed is not always that easy. With infrastructure-as-code as objective, one soon realises that Gradle is an excellent pipeline orchestration tool.'
+        - 'In this talk I will show why this is true but demonstring 10 Gradle plugins that you might not even know about, but will accelerate developer productivity. This includes things as simple as CI control up to full infrastructure deployment.'
     -
       uid: 'closing'
       title: 'Conference Closing'
@@ -273,20 +372,44 @@ agenda:
     -
       uid: 'spock-a-logical-way-of-testing'
       title: 'Spock: A Logical Way of Testing'
-      start: '2020-03-28T09:00:00'
-      end: '2020-03-28T09:45:00'
-      track: 'Auditorium'
+      start: '2020-03-26T09:00:00'
+      end: '2020-03-26T11:00:00'
+      track: 'Room Blue'
       tags:
         - 'management'
       speakers:
         - 'leonard-brunings'
       about:
-        - 'TBD.'
+        - 'In this workshop we''ll introduce the Spock testing framework.'
+        - 'Participants will learn about'
+        - '- How to use Spock with Maven and Gradle,'
+        - '- Spock''s basic test structure (blocks),'
+        - ' - Testing of Exceptions,'
+        - '- Data Driven Testing,'
+        - '- Mocking, Stubbing, Spying and'
+        - '- Spring support'
+        - 'Participants should have a Laptop with their favorite IDE and JDK 8+ installed. Groovy knowledge is nice but not required.'
+    -
+      uid: 'a-groovy-kind-of-browser-automation'
+      title: 'A Groovy Kind of Browser Automation – Geb Testing Workshop'
+      start: '2020-03-26T11:15:00'
+      end: '2020-03-26T13:15:00'
+      track: 'Room Blue'
+      tags:
+        - 'testing'
+      speakers:
+        - 'michael-kutz'
+      about:
+        - 'In this workshop we''ll introduce the participants to the Geb framework and how to use it for real groovy browser automation. We will make use of the Spock framework for the tests but won''t go into much detail on that. Covered topics:'
+        - '- Setup with Gradle - Basics of navigation & interaction'
+        - '- Page objects - Waiting for dynamic content'
+        - '- Modules for repeating & complex content'
+        - '- Configuration - Combination with Testcontainers'
     -
       uid: 'managing-software-projects-with-taiga'
       title: 'Managing Software Projects with Taiga'
-      start: '2020-03-27T14:30:00'
-      end: '2020-03-27T14:45:00'
+      start: '2020-03-27T13:45:00'
+      end: '2020-03-27T14:00:00'
       track: 'Auditorium'
       tags:
         - 'management'
@@ -297,9 +420,9 @@ agenda:
     -
       uid: 'spock-geb-and-asciidoc'
       title: 'Spock, Geb and AsciiDoc - from test to specification and back again'
-      start: '2020-03-26T17:15:00'
-      end: '2020-03-26T18:00:00'
-      track: 'Auditorium'
+      start: '2020-03-27T17:15:00'
+      end: '2020-03-27T18:00:00'
+      track: 'Meetup Room'
       tags:
         - 'spock'
         - 'asciidoc'
@@ -311,9 +434,9 @@ agenda:
     -
       uid: 'when-micronaut-met-telegram'
       title: 'When Micronaut met Telegram'
-      start: '2020-03-26T15:00:00'
-      end: '2020-03-26T15:45:00'
-      track: 'Auditorium'
+      start: '2020-03-26T14:45:00'
+      end: '2020-03-26T17:00:00'
+      track: 'Room Blue'
       tags:
         - 'micronaut'
       speakers:
@@ -336,8 +459,8 @@ agenda:
     -
       uid: 'the-micronaut-an-unexpected-journey'
       title: 'The Micronaut: An Unexpected Journey'
-      start: '2020-03-28T10:00:00'
-      end: '2020-03-28T10:45:00'
+      start: '2020-03-28T09:00:00'
+      end: '2020-03-28T09:45:00'
       track: 'Meetup Room'
       tags:
         - 'micronaut'
@@ -353,9 +476,9 @@ agenda:
     -
       uid: 'testing-micronaut-applications'
       title: 'Testing Micronaut applications'
-      start: '2020-03-26T14:00:00'
-      end: '2020-03-26T14:45:00'
-      track: 'Auditorium'
+      start: '2020-03-27T12:00:00'
+      end: '2020-03-27T12:45:00'
+      track: 'Meetup Room'
       tags:
         - 'micronaut'
         - 'testing'
@@ -409,9 +532,9 @@ agenda:
     -
       uid: 'leveraging-micronaut-in-grails-4'
       title: 'Leveraging Micronaut in Grails 4'
-      start: '2020-03-26T10:00:00'
-      end: '2020-03-26T10:45:00'
-      track: 'Auditorium'
+      start: '2020-03-28T12:15:00'
+      end: '2020-03-28T13:00:00'
+      track: 'Meetup Room'
       tags:
         - 'micronaut'
         - 'grails'
@@ -419,24 +542,44 @@ agenda:
         - 'vladimir-orany'
       about:
         - 'Upgrading to Grails 4 is such a simple task so you might not notice that you are now standing on the shoulders of micronauts. Let''s take a look together how to fully leverage Micronaut in a Grails application to benefit from the unique symbiosis.'
-#    -
-#      uid: 'everything-you-need-to-know-about-kafka-streams'
-#      title: 'Everything you need to know about Kafka Streams'
-#      start: '2020-03-26T10:00:00'
-#      end: '2020-03-26T10:45:00'
-#      track: 'Auditorium'
-#      tags:
-#        - 'kafka'
-#        - 'database'
-#      speakers:
-#        - 'anton-rodriguez'
-#      about:
-#        - 'Would you like to learn stream processing within the Kafka platform?. In this easy-to-follow workshop, you’ll explore real-world examples to collect, transform, and aggregate data, work with multiple processors, and handle real-time events. You’ll even dive into streaming SQL with KSQL!. Practical to the very end, it will finish with testing and operational aspects, such as monitoring and debugging.'
+    -
+      uid: 'kotlin-beyond-basics'
+      title: 'Kotlin Beyond Basics'
+      start: '2020-03-26T09:00:00'
+      end: '2020-03-26T11:00:00'
+      track: 'Room Green'
+      tags:
+        - 'kotlin'
+      speakers:
+        - 'bob-dahlberg'
+      about:
+        - 'So you''ve started developing in Kotlin? Great! But you don''t really know about all those advanced (or seemingly advanced) features that are rarely used. Well, don''t stress it!'
+        - 'This workshop will go through the Kotlin features that are beyond the basic stuff. Like Delegation, Destructure, Inline Classes, Sealed Classes, Operation Overloading, DSL, lateinit, reifid, type aliases, Flow & Coroutines.'
+        - 'In this follow along you will get hands-on coding with the concepts and I''ll explain some of them more thoroughly.'
+    -
+      uid: 'learn-to-build-cloud-native-java-applications-with-quarkus'
+      title: 'Learn to build Cloud Native Java Applications with Quarkus'
+      start: '2020-03-26T11:15:00'
+      end: '2020-03-26T13:15:00'
+      track: 'Room Green'
+      tags:
+        - 'quarkus'
+      speakers:
+        - 'aurea-munoz'
+        - 'gytis-trikleris'
+      about:
+        - 'Java assumed the whole computer belonged to itself, that it could consume all the available memory and CPU. In this workshop we will see the problems associated with using Java for “microservices”, and how the open source ecosystem is working to insure the future of Java by being cloud first, container native, serverless focused and Kubernetes optimized. This is where GraalVM meets Quarkus, bringing server-side and enterprise-capable Java to enable you to build truly cloud native apps.'
+        - 'This lab offers attendees an intro-level, hands-on session with Quarkus, from the first line of code to making services, to consuming them, and finally to assembling everything in a consistent system. But, what are we going to build? Well, it’s going to be a set of microservices (we want to be trendy):'
+        - 'using Quarkus'
+        - 'using HTTP and events (Kafka)'
+        - 'with some parts of the dark side of microservices (monitoring (Prometheus), resilience)'
+        - 'answer the ultimate question: are super heroes stronger than super villains?'
+        - 'This workshop is a BYOL (Bring Your Own Laptop) session, so bring your Windows, OSX, or Linux laptop. You need JDK 8+ on your machine, Apache Maven (3.6+), and Docker. On Windows, some parts may be qualified as experimental.'
     -
       uid: 'kafka-and-databases-a-love-story'
       title: 'Kafka and databases: a love story'
-      start: '2020-03-28T10:00:00'
-      end: '2020-03-28T10:45:00'
+      start: '2020-03-28T09:00:00'
+      end: '2020-03-28T09:45:00'
       track: 'Auditorium'
       tags:
         - 'kafka'
@@ -448,8 +591,8 @@ agenda:
     -
       uid: 'live-after-java-8'
       title: 'Live after Java 8'
-      start: '2020-03-27T09:00:00'
-      end: '2020-03-27T09:45:00'
+      start: '2020-03-27T09:45:00'
+      end: '2020-03-27T10:30:00'
       track: 'Auditorium'
       tags:
         - 'java'
@@ -460,9 +603,9 @@ agenda:
     -
       uid: '6-signs-you-have-no-clue-about-modern-java'
       title: '6 signs you have no clue about modern Java'
-      start: '2020-03-27T10:00:00'
-      end: '2020-03-27T10:45:00'
-      track: 'Auditorium'
+      start: '2020-03-27T11:00:00'
+      end: '2020-03-27T11:45:00'
+      track: 'Meetup Room'
       tags:
         - 'java'
       speakers:
@@ -493,9 +636,9 @@ agenda:
     -
       uid: 'build-and-deploy-micronaut-applications-to-the-cloud'
       title: 'Build and Deploy Micronaut Applications to the Cloud'
-      start: '2020-03-26T12:15:00'
-      end: '2020-03-26T13:00:00'
-      track: 'Auditorium'
+      start: '2020-03-28T10:15:00'
+      end: '2020-03-28T10:45:00'
+      track: 'Meetup Room'
       tags:
         - 'micronaut'
         - 'cloud'
@@ -506,8 +649,8 @@ agenda:
     -
       uid: 'intellij-tips'
       title: 'IntelliJ Tips'
-      start: '2020-03-27T12:15:00'
-      end: '2020-03-27T13:00:00'
+      start: '2020-03-27T12:00:00'
+      end: '2020-03-27T12:45:00'
       track: 'Auditorium'
       tags:
         - 'ide'
@@ -518,9 +661,9 @@ agenda:
     -
       uid: 'persist-with-jFleet'
       title: 'Persist with JFleet'
-      start: '2020-03-27T14:00:00'
-      end: '2020-03-27T14:15:00'
-      track: 'Auditorium'
+      start: '2020-03-27T13:45:00'
+      end: '2020-03-27T14:00:00'
+      track: 'Meetup Room'
       tags:
         - 'persistence'
         - 'java'
@@ -532,7 +675,7 @@ agenda:
     - uid: 'coffee-break-day1-1'
       title: 'Coffee Break'
       start: '2020-03-26T10:45:00'
-      end: '2020-03-26T11:15:00'
+      end: '2020-03-26T11:00:00'
     - uid: 'coffee-break-day3-1'
       title: 'Coffee Break'
       start: '2020-03-28T10:45:00'
@@ -540,28 +683,23 @@ agenda:
     -
       uid: 'coffee-break-day2-1'
       title: 'Coffee Break'
-      start: '2020-03-27T10:45:00'
-      end: '2020-03-27T11:15:00'
+      start: '2020-03-27T10:30:00'
+      end: '2020-03-27T10:45:00'
     -
       uid: 'lunch-break-day2-2'
       title: 'Lunch Break'
-      start: '2020-03-27T13:00:00'
-      end: '2020-03-27T14:00:00'
+      start: '2020-03-27T12:45:00'
+      end: '2020-03-27T13:45:00'
     -
       uid: 'lunch-break-day1-1'
       title: 'Lunch Break'
-      start: '2020-03-26T13:00:00'
-      end: '2020-03-26T14:00:00'
+      start: '2020-03-26T13:15:00'
+      end: '2020-03-26T14:45:00'
     -
       uid: 'lunch-break-day3-1'
       title: 'Lunch Break'
       start: '2020-03-28T13:00:00'
       end: '2020-03-28T14:00:00'
-    -
-      uid: 'coffee-break-day1-2'
-      title: 'Coffee Break'
-      start: '2020-03-26T15:45:00'
-      end: '2020-03-26T16:15:00'
     -
       uid: 'coffee-break-day2-2'
       title: 'Coffee Break'
