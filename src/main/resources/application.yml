@@ -70,8 +70,8 @@ agenda:
       name: 'Marcos F. Lobo'
       uid: 'marcos-lobo'
       twitter: 'arrayexception'
-      image: '/images/blank.png'
-      bio: 'Team Lead in a Software Engineers team at [Nexthink](www.nexthink.com). Active worker for important open source projects such as OpenStack (Horizon, Keystone, Mistral, Magnum, Murano), The CentOS Project, RDO Project and Fedora Project. '
+      image: '/images/mlobo.jpg'
+      bio: 'Technical Lead in a Software Engineers team at [Nexthink](www.nexthink.com). Active worker for important open source projects such as OpenStack (Horizon, Keystone, Mistral, Magnum, Murano), The CentOS Project, RDO Project and Fedora Project. '
     -
       name: 'Ralf D. Müller'
       uid: 'ralfdmueller'
