@@ -238,7 +238,7 @@ agenda:
         - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
   talks:
     -
-      uid: 'Stream Processing Essentials'
+      uid: 'stream-processing-essentials'
       title: 'Stream Processing Essentials'
       start: '2020-03-26T14:45:00'
       end: '2020-03-26T17:00:00'
