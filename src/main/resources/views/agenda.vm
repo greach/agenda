@@ -46,7 +46,122 @@
 
         <article>
             <h1>Agenda</h1>
+
             #foreach( $day in $days)
+                #if ($day.getDay().toString().equals("2020-03-23") || $day.getDay().toString().equals("2020-03-24"))
+                    <table class="mobile">
+                        <thead>
+                        <tr><th colspan="2">${day.getDay().toString()}</th></tr>
+                        </thead>
+                    <tr>
+                        #foreach($timeSlot in $day.getTimeSlots())
+                        <tr>
+                            #set( $rowspan = $timeSlot.getTrackTalks().size())
+                            #if ($rowspan == 0)
+                                #set( $rowspan = 1)
+                            #end
+
+                            <td class="timeslot" rowspan="$rowspan">
+                                <span class="start">${timeSlot.getTimeSlot().getStart()}</span>
+                                <span class="timeSeparator"> - </span>
+                                <span class="end">${timeSlot.getTimeSlot().getEnd()}</span>
+                            </td>
+
+                            #if(${timeSlot.getTrackTalks()})
+                                #foreach($track in ${day.getTracks()})
+
+                                    #if($foreach.index > 0)
+                                    <tr>
+                                    #end
+
+                                    <td class="talk${day.getTracks().size()}">
+                                        #if(${timeSlot.getTrackTalks()[$track]})
+                                            $track - <a class="title" href="/talk/${timeSlot.getTrackTalks()[$track].uid}/index.html">${timeSlot.getTrackTalks()[$track].title}</a>
+                                            <span> - </span>
+                                            #foreach($speaker in ${timeSlot.getTrackTalks()[$track].getSpeakers()})
+                                                <a class="speaker" href="/speaker/${speaker.uid}/index.html">${speaker.getName()}</a>
+                                            #end
+                                        #end
+                                    </td>
+                                </tr>
+                                #end
+                            #end
+                            #foreach($item in $timeSlot.getItems())
+                                <td class="untrackItem">${item.getTitle()}
+                                    #if(${item.getLocationLink()})
+                                    <a href="${item.getLocationLink()}">
+                                    #end
+                                    #if(${item.getLocation()})
+                                        <span>${item.getLocation()}</span>
+                                    #end
+                                    #if(${item.getLocationLink()})
+                                    </a>
+                                    #end
+                                </td></tr>
+                            #end
+                        #end
+                        </tbody>
+                    </table>
+                #end
+            #end
+            #foreach( $day in $days)
+                #if ($day.getDay().toString().equals("2020-03-23") || $day.getDay().toString().equals("2020-03-24"))
+                    <table class="desktop">
+                        <thead>
+                            #set( $colspan = $day.getTracks().size() + 1 )
+                        <tr><th colspan="${colspan}">${day.getDay().toString()}</th></tr>
+                        <tr>
+                            <th class="timeslot"></th>
+                            #foreach($track in $day.getTracks())
+                                <th class="track${day.getTracks().size()}">$track</th>
+                            #end
+                        </tr>
+                        </thead>
+                        <tbody>
+                            #foreach($timeSlot in $day.getTimeSlots())
+                            <tr>
+                                <td class="timeslot">
+                                    <span class="start">${timeSlot.getTimeSlot().getStart()}</span>
+                                    <span class="timeSeparator"> - </span>
+                                    <span class="end">${timeSlot.getTimeSlot().getEnd()}</span>
+                                </td>
+                                #if(${timeSlot.getTrackTalks()})
+                                    #foreach($track in ${day.getTracks()})
+                                        <td class="talk${day.getTracks().size()}">
+                                            #if(${timeSlot.getTrackTalks()[$track]})
+                                                <a class="title" href="/talk/${timeSlot.getTrackTalks()[$track].uid}/index.html">${timeSlot.getTrackTalks()[$track].title}</a>
+                                                <span> - </span>
+                                                #foreach($speaker in ${timeSlot.getTrackTalks()[$track].getSpeakers()})
+                                                    <a class="speaker" href="/speaker/${speaker.uid}/index.html">${speaker.getName()}</a>
+                                                #end
+                                            #end
+                                        </td>
+                                    #end
+                                #end
+                                #foreach($item in $timeSlot.getItems())
+                                    <td colspan="${day.getTracks().size()}" class="untrackItem">${item.getTitle()}
+                                        #if(${item.getLocationLink()})
+                                        <a href="${item.getLocationLink()}">
+                                        #end
+                                        #if(${item.getLocation()})
+                                            <span>${item.getLocation()}</span>
+                                        #end
+                                        #if(${item.getLocationLink()})
+                                        </a>
+                                        #end
+                                    </td>
+                                #end
+                            </tr>
+                            #end
+
+                        </tbody>
+                    </table>
+                #end
+            #end
+            <div class="clear"/>
+
+            #foreach( $day in $days)
+                #if ($day.getDay().toString().equals("2020-03-26") || $day.getDay().toString().equals("2020-03-27") || $day.getDay().toString().equals("2020-03-28"))
                 <table class="mobile">
                     <thead>
                     <tr><th colspan="2">${day.getDay().toString()}</th></tr>
@@ -100,9 +215,10 @@
                     #end
                     </tbody>
                 </table>
+                #end
             #end
             #foreach( $day in $days)
-
+                #if ($day.getDay().toString().equals("2020-03-26") || $day.getDay().toString().equals("2020-03-27") || $day.getDay().toString().equals("2020-03-28"))
                 <table class="desktop">
                     <thead>
                         #set( $colspan = $day.getTracks().size() + 1 )
@@ -153,6 +269,7 @@
 
                     </tbody>
                 </table>
+                #end
             #end
         </article>
 
