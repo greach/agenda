@@ -263,7 +263,7 @@ agenda:
       title: 'Pre-Conference Workshop: Micronaut on AWS Jumpstart'
       start: '2020-03-23T09:00:00'
       end: '2020-03-23T16:00:00'
-      track: 'Glueconcept'
+      track: 'Glue Edison'
       tags:
         - 'micronaut'
         - 'aws'
@@ -291,7 +291,7 @@ agenda:
       title: 'Over two hundred CI/CD pipelines and a single Jenkins Shared Library - a case study'
       start: '2020-03-28T15:00:00'
       end: '2020-03-28T15:45:00'
-      track: 'Meetup Room'
+      track: 'Auditorium'
       tags:
         - 'micronaut'
       speakers:
@@ -456,8 +456,8 @@ agenda:
     -
       uid: 'spock-geb-and-asciidoc'
       title: 'Spock, Geb and AsciiDoc - from test to specification and back again'
-      start: '2020-03-27T17:15:00'
-      end: '2020-03-27T18:00:00'
+      start: '2020-03-28T15:00:00'
+      end: '2020-03-28T15:45:00'
       track: 'Meetup Room'
       tags:
         - 'spock'
@@ -482,9 +482,9 @@ agenda:
     -
       uid: 'jvm-tuning-what-you-must-know-before-going-into-production'
       title: 'JVM tuning: what you must know before going into production'
-      start: '2020-03-28T15:00:00'
-      end: '2020-03-28T15:45:00'
-      track: 'Auditorium'
+      start: '2020-03-27T17:15:00'
+      end: '2020-03-27T18:00:00'
+      track: 'Meetup Room'
       tags:
         - 'business'
       speakers:
