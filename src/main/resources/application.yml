@@ -39,11 +39,14 @@ agenda:
         - "Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, [Salenda](https://www.salenda.es), in 2005, a software factory and Atlassian Gold Solution Partner headquartered in Madrid, Spain. As of today, he is still the company owner. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems."
         - "Álvaro has spoken in 11 different countries at conferences like Devoxx, GeeCON, JavaLand, JavaZone, Codemotion and Commit Conf. In his spare time, as well as coding and experimenting with new technologies, he likes to spend time with his wife and son, support [CD Leganes football team](https://www.cdleganes.com/), and play paddle tennis."
     -
-      name: 'Nicolas Frankel'
-      uid: 'nicolas-frankel'
-      twitter: 'nicolas_frankel'
-      image: '/images/nicolas_frankel.jpg'
-      bio: 'Developer Advocate with 15+ years experience consulting for many different customers, in a wide range of contexts (such as telecoms, banking, insurances, large retail and public sector). Usually working on Java/Java EE and Spring technologies, but with focused interests like Rich Internet Applications, Testing, CI/CD and DevOps. Currently working for Hazelcast. Also double as a teacher in universities and higher education schools, a trainer and triples as a book author.'
+      name: 'Vladimir Schreiner'
+      uid: 'vladimirschreiner'
+      twitter: 'hazelcast'
+      image: '/images/vladimirschreiner.jpg'
+      company-name: 'Hazelcast'
+      company-link: 'https://hazelcast.com'
+      company-image: '/images/hazelcast.jpg'      
+      bio: 'Vladimir is a technical product manager with an engineering background and deep expertise in stream processing and real-time data pipelines. Vladimir joined Hazelcast in 2016 and he is a product guy behind Hazelcast Jet streaming engine. He authored the Understanding Stream Processing DZone Refcard.'
     -
       name: 'Alberto Grande'
       uid: 'alberto-grande'
@@ -281,7 +284,7 @@ agenda:
       tags:
         - 'hazelcast'
       speakers:
-        - 'nicolas-frankel'
+        - 'vladimirschreiner'
       about:
         - 'Take your first steps to understanding and start working with stream processing! By the end of the course, you will be able to build and run distributed streaming pipelines in Java:'
         - 'Explain when to use streaming Design a streaming application from the building blocks Transform, match, correlate and aggregate continuous data Scale, deploy, and operate streaming apps'
