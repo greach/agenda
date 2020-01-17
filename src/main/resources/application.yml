@@ -264,9 +264,9 @@ agenda:
     -
       uid: 'micronaut-aws-jumpstart'
       title: 'Pre-Conference Workshop: Micronaut on AWS Jumpstart'
-      start: '2020-03-23T09:00:00'
-      end: '2020-03-23T16:00:00'
       track: 'Glue Edison'
+      start: '2020-03-25T09:00:00'
+      end: '2020-03-25T16:00:00'
       tags:
         - 'micronaut'
         - 'aws'

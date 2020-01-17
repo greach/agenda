@@ -48,7 +48,7 @@
             <h1>Agenda</h1>
 
             #foreach( $day in $days)
-                #if ($day.getDay().toString().equals("2020-03-23") || $day.getDay().toString().equals("2020-03-24"))
+                #if ($day.getDay().toString().equals("2020-03-24") || $day.getDay().toString().equals("2020-03-25"))
                     <table class="mobile">
                         <thead>
                         <tr><th colspan="2">${day.getDay().toString()}</th></tr>
@@ -105,7 +105,7 @@
                 #end
             #end
             #foreach( $day in $days)
-                #if ($day.getDay().toString().equals("2020-03-23") || $day.getDay().toString().equals("2020-03-24"))
+                #if ($day.getDay().toString().equals("2020-03-24") || $day.getDay().toString().equals("2020-03-25"))
                     <table class="desktop">
                         <thead>
                             #set( $colspan = $day.getTracks().size() + 1 )
