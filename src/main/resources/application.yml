@@ -252,7 +252,7 @@ agenda:
       title: 'Pre-Conference Workshop: Micronaut on AWS Jumpstart'
       start: '2020-03-24T09:00:00'
       end: '2020-03-24T16:00:00'
-      track: 'Glue Edison'
+      track: '📍 Glue Edison'
       tags:
         - 'micronaut'
         - 'aws'
@@ -264,9 +264,9 @@ agenda:
     -
       uid: 'micronaut-aws-jumpstart'
       title: 'Pre-Conference Workshop: Micronaut on AWS Jumpstart'
-      track: 'Glue Edison'
       start: '2020-03-25T09:00:00'
       end: '2020-03-25T16:00:00'
+      track: '📍 Glue Edison'
       tags:
         - 'micronaut'
         - 'aws'
@@ -280,7 +280,7 @@ agenda:
       title: 'Stream Processing Essentials'
       start: '2020-03-26T14:45:00'
       end: '2020-03-26T17:00:00'
-      track: 'Room Green'
+      track: '📍 Glue Edison Room Green'
       tags:
         - 'hazelcast'
       speakers:
@@ -294,7 +294,7 @@ agenda:
       title: 'Over two hundred CI/CD pipelines and a single Jenkins Shared Library - a case study'
       start: '2020-03-28T15:00:00'
       end: '2020-03-28T15:45:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'micronaut'
       speakers:
@@ -306,7 +306,7 @@ agenda:
       title: 'Becoming a better Groovy programmer - a warrior''s path'
       start: '2020-03-27T17:15:00'
       end: '2020-03-27T18:00:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'micronaut'
       speakers:
@@ -318,7 +318,7 @@ agenda:
       title: 'Micronaut and Kubernetes'
       start: '2020-03-27T15:00:00'
       end: '2020-03-27T15:45:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'micronaut'
       speakers:
@@ -330,7 +330,7 @@ agenda:
       title: 'Quarkus for Spring developers'
       start: '2020-03-28T10:15:00'
       end: '2020-03-28T10:45:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'management'
       speakers:
@@ -345,7 +345,7 @@ agenda:
       title: 'Discovering Quarkus: Subatomic Supersonic Java in Action'
       start: '2020-03-27T11:00:00'
       end: '2020-03-27T11:45:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'management'
       speakers:
@@ -361,7 +361,7 @@ agenda:
       title: 'Microsevices architectures: staying alive while trying'
       start: '2020-03-27T09:45:00'
       end: '2020-03-27T10:30:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'management'
       speakers:
@@ -375,7 +375,7 @@ agenda:
       title: 'Keynote'
       start: '2020-03-27T09:00:00'
       end: '2020-03-27T09:30:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'management'
       speakers:
@@ -387,7 +387,7 @@ agenda:
       title: '10 Gradle Plugins to Improve Your Cloud Life'
       start: '2020-03-27T14:05:00'
       end: '2020-03-27T14:50:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'gradle'
       speakers:
@@ -400,7 +400,7 @@ agenda:
       title: 'Conference Closing'
       start: '2020-03-28T16:00:00'
       end: '2020-03-28T16:15:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'management'
       speakers:
@@ -412,7 +412,7 @@ agenda:
       title: 'Spock: A Logical Way of Testing'
       start: '2020-03-26T09:00:00'
       end: '2020-03-26T11:00:00'
-      track: 'Room Blue'
+      track: '📍 Glue Edison Room Blue'
       tags:
         - 'management'
       speakers:
@@ -432,7 +432,7 @@ agenda:
       title: 'A Groovy Kind of Browser Automation – Geb Testing Workshop'
       start: '2020-03-26T11:15:00'
       end: '2020-03-26T13:15:00'
-      track: 'Room Blue'
+      track: '📍 Glue Edison Room Blue'
       tags:
         - 'testing'
       speakers:
@@ -449,7 +449,7 @@ agenda:
       title: 'Managing Software Projects with Taiga'
       start: '2020-03-27T13:45:00'
       end: '2020-03-27T14:00:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'management'
       speakers:
@@ -461,7 +461,7 @@ agenda:
       title: 'Spock, Geb and AsciiDoc - from test to specification and back again'
       start: '2020-03-28T15:00:00'
       end: '2020-03-28T15:45:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'spock'
         - 'asciidoc'
@@ -475,7 +475,7 @@ agenda:
       title: 'When Micronaut met Telegram'
       start: '2020-03-26T14:45:00'
       end: '2020-03-26T17:00:00'
-      track: 'Room Blue'
+      track: '📍 Glue Edison Room Blue'
       tags:
         - 'micronaut'
       speakers:
@@ -487,7 +487,7 @@ agenda:
       title: 'JVM tuning: what you must know before going into production'
       start: '2020-03-27T17:15:00'
       end: '2020-03-27T18:00:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'business'
       speakers:
@@ -500,7 +500,7 @@ agenda:
       title: 'The Micronaut: An Unexpected Journey'
       start: '2020-03-28T09:00:00'
       end: '2020-03-28T09:45:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'micronaut'
         - 'kubernetes'
@@ -517,7 +517,7 @@ agenda:
       title: 'Testing Micronaut applications'
       start: '2020-03-27T12:00:00'
       end: '2020-03-27T12:45:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'micronaut'
         - 'testing'
@@ -533,7 +533,7 @@ agenda:
       title: 'Nonfunctional Requirements - the Often Forgotten Ones'
       start: '2020-03-28T12:15:00'
       end: '2020-03-28T13:00:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'business'
       speakers:
@@ -548,7 +548,7 @@ agenda:
       title: 'Take Control of your Professional Career'
       start: '2020-03-27T16:15:00'
       end: '2020-03-27T17:00:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'business'
       speakers:
@@ -560,7 +560,7 @@ agenda:
       title: 'Mastering Spreadsheet Generation'
       start: '2020-03-28T11:15:00'
       end: '2020-03-28T12:00:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'spreadsheet'
       speakers:
@@ -573,7 +573,7 @@ agenda:
       title: 'Leveraging Micronaut in Grails 4'
       start: '2020-03-28T12:15:00'
       end: '2020-03-28T13:00:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'micronaut'
         - 'grails'
@@ -586,7 +586,7 @@ agenda:
       title: 'Kotlin Beyond Basics'
       start: '2020-03-26T09:00:00'
       end: '2020-03-26T11:00:00'
-      track: 'Room Green'
+      track: '📍 Glue Edison Room Green'
       tags:
         - 'kotlin'
       speakers:
@@ -600,7 +600,7 @@ agenda:
       title: 'Learn to build Cloud Native Java Applications with Quarkus'
       start: '2020-03-26T11:15:00'
       end: '2020-03-26T13:15:00'
-      track: 'Room Green'
+      track: '📍 Glue Edison Room Green'
       tags:
         - 'quarkus'
       speakers:
@@ -619,7 +619,7 @@ agenda:
       title: 'Kafka and databases: a love story'
       start: '2020-03-28T09:00:00'
       end: '2020-03-28T09:45:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'kafka'
         - 'database'
@@ -632,7 +632,7 @@ agenda:
       title: 'Live after Java 8'
       start: '2020-03-27T09:45:00'
       end: '2020-03-27T10:30:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'java'
       speakers:
@@ -644,7 +644,7 @@ agenda:
       title: '6 signs you have no clue about modern Java'
       start: '2020-03-27T11:00:00'
       end: '2020-03-27T11:45:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'java'
       speakers:
@@ -665,7 +665,7 @@ agenda:
       title: 'Griffon: State of the Union'
       start: '2020-03-28T11:15:00'
       end: '2020-03-28T12:00:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'griffon'
       speakers:
@@ -677,7 +677,7 @@ agenda:
       title: 'Build and Deploy Micronaut Applications to the Cloud'
       start: '2020-03-28T10:15:00'
       end: '2020-03-28T10:45:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'micronaut'
         - 'cloud'
@@ -690,7 +690,7 @@ agenda:
       title: 'IntelliJ Tips'
       start: '2020-03-27T12:00:00'
       end: '2020-03-27T12:45:00'
-      track: 'Auditorium'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'ide'
       speakers:
@@ -702,7 +702,7 @@ agenda:
       title: 'Persist with JFleet'
       start: '2020-03-27T13:45:00'
       end: '2020-03-27T14:00:00'
-      track: 'Meetup Room'
+      track: '📍 Google Campus Room'
       tags:
         - 'persistence'
         - 'java'
