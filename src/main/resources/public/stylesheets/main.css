@@ -301,3 +301,9 @@ body#agenda article table td.timeslot {
 	float: left;
 	margin-right: 15px;
 }
+
+
+.sold .priceBundleName,
+.sold .priceBundlePrice {
+	text-decoration: line-through;
+}
