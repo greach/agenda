@@ -9,7 +9,7 @@ reportsDir = new File("build/reports")
 // default is to use htmlunit
 driver = {
     HtmlUnitDriver htmlUnitDriver = new HtmlUnitDriver()
-    htmlUnitDriver.javascriptEnabled = true
+    htmlUnitDriver.javascriptEnabled = false
     htmlUnitDriver
 }
 
@@ -18,7 +18,7 @@ environments {
     htmlUnit {
         driver = {
             HtmlUnitDriver htmlUnitDriver = new HtmlUnitDriver()
-            htmlUnitDriver.javascriptEnabled = true
+            htmlUnitDriver.javascriptEnabled = false
             htmlUnitDriver
         }
     }
