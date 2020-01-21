@@ -318,22 +318,6 @@ agenda:
         - 'The arrival of Quarkus 1.0 brings an innovative platform for developing Linux container- and kubernetes-native Java microservices. With Quarkus, developers don’t have to set aside their existing knowledge because it includes Spring API compatibility, brought to Quarkus by the same engineers that bring Spring Boot support too.'
         - 'This session will show you how Quarkus speaks Spring by live coding a Quarkus application using some of the most popular Spring features which will then be converted to GraalVM native image and deployed and scaled up in milliseconds on Kubernetes and OpenShift. Don''t miss it!'
     -
-      uid: 'discovering-quarkus-subatomic-supersonic-java-in-action'
-      title: 'Discovering Quarkus: Subatomic Supersonic Java in Action'
-      start: '2020-03-27T11:00:00'
-      end: '2020-03-27T11:45:00'
-      track: '📍 Google Campus Auditorium'
-      tags:
-        - 'management'
-      speakers:
-        - 'aurea-munoz'
-        - 'gytis-trikleris'
-      about:
-        - 'Microservices, rapid scalability & high density deployment platforms like Kubernetes require apps with low memory usage and fast boot time.'
-        - 'Java was born in the mid-1990s and has nearly 20 years of optimizations for running highly dynamic monolithic applications that assumed sole ownership of (virtualized) host CPU and memory. However, we now live in a world dominated by the cloud, mobile, IoT, and open source, where containers, Kubernetes, microservices, reactive, Function-as-a-Service (FaaS), and cloud-native application development can deliver higher levels of productivity and efficiency.'
-        - 'The goal of Quarkus is to make Java a leading platform in Kubernetes and serverless environments, while offering developers a unified reactive and imperative programming model to optimally address a wider range of distributed application architectures.'
-        - 'Come learn how Quarkus works, explore live reload, GraalVM native compilation and more in this introduction to the project. Since Quarkus is better lived than talked, expect a demo session!'
-    -
       uid: 'microsevices-architectures-staying-alive-while-trying'
       title: 'Microsevices architectures: staying alive while trying'
       start: '2020-03-27T09:45:00'
