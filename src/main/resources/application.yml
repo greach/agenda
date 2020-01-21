@@ -67,7 +67,9 @@ agenda:
       uid: 'schalk-cronje'
       twitter: 'ysb33r'
       image: '/images/schalk-cronje.jpeg'
-      bio: 'Schalk describes himself as the glue man. He glues tech together to produce great pipelines so that others can flow their work. He is the author of two books on Gradle plugin development and also sits on the steering committees of both the Agile Testing Alliance and the DevOps++ Alliance. He has recently thrown his weight behind Jobble Inc. where he has already brought painful manual deployments down to multiple pain free deployments per day across multiple products.'
+      bio:
+        - 'Schalk describes himself as the glue man. He glues tech together to produce great pipelines so that others can flow their work. He is the author of two books on Gradle plugin development and also sits on the steering committees of both the Agile Testing Alliance and the DevOps++ Alliance.'
+        - 'He has recently thrown his weight behind Jobble Inc. where he has already brought painful manual deployments down to multiple pain free deployments per day across multiple products.'
     -
       name: 'Sergio del Amo'
       uid: 'sdelamo'
