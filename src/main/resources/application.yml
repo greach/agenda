@@ -39,15 +39,6 @@ agenda:
         - "Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, [Salenda](https://www.salenda.es), in 2005, a software factory and Atlassian Gold Solution Partner headquartered in Madrid, Spain. As of today, he is still the company owner. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems."
         - "Álvaro has spoken in 11 different countries at conferences like Devoxx, GeeCON, JavaLand, JavaZone, Codemotion and Commit Conf. In his spare time, as well as coding and experimenting with new technologies, he likes to spend time with his wife and son, support [CD Leganes football team](https://www.cdleganes.com/), and play paddle tennis."
     -
-      name: 'Vladimir Schreiner'
-      uid: 'vladimirschreiner'
-      twitter: 'hazelcast'
-      image: '/images/vladimirschreiner.jpg'
-      company-name: 'Hazelcast'
-      company-link: 'https://hazelcast.com'
-      company-image: '/images/hazelcast.jpg'      
-      bio: 'Vladimir is a technical product manager with an engineering background and deep expertise in stream processing and real-time data pipelines. Vladimir joined Hazelcast in 2016 and he is a product guy behind Hazelcast Jet streaming engine. He authored the Understanding Stream Processing DZone Refcard.'
-    -
       name: 'Alberto Grande'
       uid: 'alberto-grande'
       twitter: 'alberto_grande'
@@ -275,20 +266,6 @@ agenda:
       about:
         - 'In this 2-day training workshop, students learn how to use the new Micronaut Framework in concert with Amazon Web Services.'
         - '[More Info and Enroll](https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-jumpstart)'
-    -
-      uid: 'stream-processing-essentials'
-      title: 'Stream Processing Essentials'
-      start: '2020-03-26T14:45:00'
-      end: '2020-03-26T17:00:00'
-      track: '📍 Glue Edison Room Green'
-      tags:
-        - 'hazelcast'
-      speakers:
-        - 'vladimirschreiner'
-      about:
-        - 'Take your first steps to understanding and start working with stream processing! By the end of the course, you will be able to build and run distributed streaming pipelines in Java:'
-        - 'Explain when to use streaming Design a streaming application from the building blocks Transform, match, correlate and aggregate continuous data Scale, deploy, and operate streaming apps'
-        - 'We will also cover the advantages and disadvantages of the stream processing technologies available when approaching real-world problems.'
     -
       uid: 'over-two-hundred-ci-cd-pipelines'
       title: 'Over two hundred CI/CD pipelines and a single Jenkins Shared Library - a case study'
