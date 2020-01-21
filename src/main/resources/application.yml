@@ -13,6 +13,24 @@ micronaut:
 agenda:
   speakers:
     -
+      name: 'Pedro Santos'
+      uid: 'pedro-santos'
+      twitter: 'pedrodanielcsan'
+      image: '/images/pedrodanielcsan.jpg'
+      bio:
+        - 'Pedro is a pragmatic software engineer, with a rich background, that has been dedicating most of his professional career to Android development with the goal of making people''s lives easier with useful-yet-mindful bits of technology at their fingertips.'
+        - 'He always strives to leave code better than he found it and also sharing his lessons with the community so that his errors are only made once.'
+    -
+      name: 'Gal Shelach'
+      uid: 'gal-shelach'
+      twitter: 'taboola'
+      image: '/images/galshelach.jpg'
+      bio:
+        - 'Gal is a member of the SRE team in the Infrastructure group. As such, I take part and lead tasks that improve Taboola’s performance and stability.'
+        - 'Gal works on the core pillars of our infrastructure, to support Taboola''s ever-growing scale.'
+        - 'The fun part of his job is to look at the big picture of our system and track down suspicious bottlenecks. Gal is doing so, by using both in-house and open source monitoring and profiling tools.'
+        - 'The culprits can be Taboola’s services, or even commercial and open source 3rd party services. After catching them, he does whatever is necessary to make the services great again.'
+    -
       name: 'Marcin Erdmann'
       uid: 'marcin-erdmann'
       twitter: 'marcinerdmann'
@@ -238,6 +256,20 @@ agenda:
         - 'Iván is a Senior Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails and Micronaut teams at Object Computing, Inc. (OCI). He discovered Grails 8 years ago and since then he develops almost exclusively using Groovy and Java. He is the creator of some well known Grails plugins like Postgresql-Extensions.'
         - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
   talks:
+    -
+      uid: 'how-to-push-to-production'
+      title: 'How to Push to Production on Thursday Afternoon and Live to Tell the Tale'
+      start: '2020-03-27T14:05:00'
+      end: '2020-03-27T14:50:00'
+      track: '📍 Google Campus Auditorium'
+      tags:
+        - 'devops'
+      speakers:
+        - 'gal-shelach'
+      about:
+        - 'Taboola has >250 developers creating over 20 releases a day. Going from QA to production means exposing a new feature to 1.4B monthly unique users and up to 500K HTTP requests/sec which can be frightening.'
+        - 'In my talk, I will demonstrate the concepts we use in Taboola to tackle the above challenge.'
+        - 'I believe that working the way we do make me a better developer. It is helping me be more creative and responsible, take bigger risks and most importantly enjoy. I will be happy to convince you to try and work as we do.'
     -
       uid: 'micronaut-aws-jumpstart'
       title: 'Pre-Conference Workshop: Micronaut on AWS Jumpstart'
