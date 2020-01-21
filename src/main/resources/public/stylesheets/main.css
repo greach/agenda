@@ -73,8 +73,8 @@ body#sponsors .silver .column {
 
 @media screen and (min-width: 680px) {
 	body#sponsors .silver .column {
-		width: 40%;
-		margin: 0 5% 20px 5%;
+		width: 38%;
+		margin: 0 6% 20px 6%;
 	}
 }
 body#sponsors .bronze .column {
