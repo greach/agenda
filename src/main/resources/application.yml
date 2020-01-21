@@ -257,6 +257,25 @@ agenda:
         - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
   talks:
     -
+      uid: 'converting-java-pojos-to-kotlin'
+      title: 'Converting 8+k lines of Java POJOs to Kotlin'
+      start: '2020-03-27T15:00:00'
+      end: '2020-03-27T15:45:00'
+      track: '📍 Google Campus Room'
+      tags:
+        - 'devops'
+      speakers:
+        - 'pedro-santos'
+      about:
+        - 'At the moment, converting Java code to Kotlin is one of Doist’s engineers’ favorite tasks! We know and love all the benefits Kotlin brings us (conciseness, readability, safer null handling, etc). However, there are a few caveats that might be overlooked or things we take for granted in this process.'
+        - 'Our main product, Todoist, had a complex hierarchy of Java POJOs used to parse the API responses, local DB models, along with a few other utilities. All this added up to a total of over 8k LOC.'
+        - 'We’ve recently decided to modernize that part of our system by converting it all to Kotlin.'
+        - 'We had a few requirements to consider this refactoring successful:'
+        - '- Ensure these models were usable in both Android and JVM-only projects;'
+        - '- Ensure that an open-source version of these POJOs was still available to the community that wanted to do something related to [Todoist](https://github.com/Doist/TodoistPojos)'
+        - '- Ensure we got additional benefits from it - just reducing the number of LOC wasn’t a plausible justification for such an endeavour. It ended up taking about 2 months from the beginning of the implementation to the complete stabilisation in production, passing by testing and code review;'
+        - 'This talk will highlight the process we’ve adopted, the lessons we’ve learned and some other interesting takeaways. The goal is that you know how to deal with similar cases in the future and, most importantly, be aware of Kotlin’s quirks and features and leverage them in the best way possible.'
+    -
       uid: 'how-to-push-to-production'
       title: 'How to Push to Production on Thursday Afternoon and Live to Tell the Tale'
       start: '2020-03-27T14:05:00'
