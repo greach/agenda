@@ -34,9 +34,10 @@ agenda:
       name: 'Marcin Erdmann'
       uid: 'marcin-erdmann'
       twitter: 'marcinerdmann'
-      image: '/images/marcinerdmann.jpg'
+      image: '/images/marcinerdmann.jpeg'
       bio:
-        - "Marcin has been developing in Groovy since 2010. Currently based in London but has worked in other European countries in the past. He loves Open Source Software and has a strong need to give back to the community whenever possible. That’s why he’s proud to be the current project lead of Geb, a Groovy Browser automation library. In the past he contributed to many open source projects in the Groovy ecosystem and he enjoys going to conferences both as an attendee and a speaker. That’s where you will find him with a pint of good beer in hand engaged in lengthy discussions on how to make software development process and quality better."
+        - 'Marcin has been developing in Groovy since 2010. Currently based in London but has worked in other European countries in the past. He loves Open Source Software and has a strong need to give back to the community whenever possible. That’s why he’s proud to be the current project lead of Geb, a Groovy Browser automation library.'
+        - 'In the past he contributed to many open source projects in the Groovy ecosystem and he enjoys going to conferences both as an attendee and a speaker. That’s where you will find him with a pint of good beer in hand engaged in lengthy discussions on how to make software development process and quality better.'
     -
       name: 'Szymon Stepniak'
       uid: 'szymon-stepniak'
