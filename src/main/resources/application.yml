@@ -211,7 +211,7 @@ agenda:
       name: 'Bob Dahlberg'
       uid: 'bob-dahlberg'
       twitter: 'mr_bob'
-      image: '/images/blank.png'
+      image: '/images/bobdahlberg.jpg'
       bio:
         - 'I''m the Tech Lead Mobile at Qvik in Sweden.'
         - 'Mostly doing Kotlin and Android and trying to be helpful.'
