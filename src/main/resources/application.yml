@@ -486,6 +486,18 @@ agenda:
       about:
         - 'In this talk we will see how to develop and deploy a telegram bot from scratch using Micronaut either with groovy or with java. We will see the basic architecture to build a bot as well as different platforms where deploy it. You will learn how to send messages, accept commands and react to them.'
     -
+      uid: 'everything-you-need-to-know-about-kafka-streams'
+      title: 'Everything you need to know about Kafka Streams'
+      start: '2020-03-26T14:45:00'
+      end: '2020-03-26T17:00:00'
+      track: '📍 Glue Edison Room Green'
+      tags:
+        - 'kafka'
+      speakers:
+        - 'anton-rodriguez'
+      about:
+        - 'Would you like to learn stream processing within the Kafka platform?. In this easy-to-follow workshop, you’ll explore real-world examples to collect, transform, and aggregate data, work with multiple processors, and handle real-time events. You’ll even dive into streaming SQL with KSQL!. Practical to the very end, it will finish with testing and operational aspects, such as monitoring and debugging.'
+    -
       uid: 'when-micronaut-met-telegram'
       title: 'When Micronaut met Telegram'
       start: '2020-03-26T14:45:00'
