@@ -2,7 +2,19 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>${speaker.name}  | Agenda | Greach 2020 - 26th, 27th, 28th March</title>
+    <title>${speaker.name} | Agenda | Greach 2020 - 26th, 27th, 28th March</title>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@greachconf" />
+    <meta name="twitter:creator" content="@sdelamo" />
+    <meta property="og:url" content="https://greachconf.com/speaker/${speaker.uid}/index.html" />
+    <meta property="og:title" content="${speaker.name} | Greach 2020 Speaker" />
+    #foreach($bioparagraph in $speaker.bio)
+        <meta property="og:description" content="${bioparagraph.replaceAll("<p>", "").replaceAll("</p>", "")}" />
+        #break
+    #end
+    <meta property="og:image" content="https://greachconf.com${speaker.image}" />
+
     <meta name="keywords" content="Micronaut, Grails, Spring boot, Geb, Ratpack, Griffon, Android, Gradle, Groovy, Kotlin, Spock, Madrid, Greach, Conference"/>
     <meta name="description" content="Agenda for Greach conference (26th, 27th, 28th March 2020)."/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
