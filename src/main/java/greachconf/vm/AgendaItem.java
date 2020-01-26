@@ -1,8 +1,11 @@
 package greachconf.vm;
 
+import io.micronaut.core.annotation.Introspected;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+@Introspected
 public class AgendaItem {
     @Nonnull
     private String title;
