@@ -84,6 +84,9 @@ agenda:
       name: 'Leonard Brünings'
       uid: 'leonard-brunings'
       twitter: 'spockframework'
+      company-name: '1&1'
+      company-link: 'https://www.1und1.de'
+      company-image: '/images/1and1.png'
       image: '/images/leonard-brunings.jpeg'
       bio: 'Leonard is a Java/Groovy developer and has been contributing over 15 years to open source. In 2015 Leonard took the lead of the Spock project, when the original author had to leave the project.'
     -
