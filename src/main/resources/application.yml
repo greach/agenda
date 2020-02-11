@@ -377,9 +377,9 @@ agenda:
     -
       uid: 'microsevices-architectures-staying-alive-while-trying'
       title: 'Microsevices architectures: staying alive while trying'
-      start: '2020-03-27T09:45:00'
-      end: '2020-03-27T10:30:00'
-      track: '📍 Google Campus Room'
+      start: '2020-03-28T09:00:00'
+      end: '2020-03-28T09:45:00'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'management'
       speakers:
@@ -647,9 +647,9 @@ agenda:
     -
       uid: 'kafka-and-databases-a-love-story'
       title: 'Kafka and databases: a love story'
-      start: '2020-03-28T09:00:00'
-      end: '2020-03-28T09:45:00'
-      track: '📍 Google Campus Auditorium'
+      start: '2020-03-27T09:45:00'
+      end: '2020-03-27T10:30:00'
+      track: '📍 Google Campus Room'
       tags:
         - 'kafka'
         - 'database'
