@@ -122,6 +122,15 @@ agenda:
       image: '/images/mlobo.jpg'
       bio: 'Technical Lead in a Software Engineers team at [Nexthink](www.nexthink.com). Active worker for important open source projects such as OpenStack (Horizon, Keystone, Mistral, Magnum, Murano), The CentOS Project, RDO Project and Fedora Project. '
     -
+      name: 'Adrián Casado Riva'
+      uid: 'adrian-casado-riva'
+      bio: 'Backend developer at Clarity AI. Currently Java and Spring. Enjoys being involved in projects with social background. T3chFest co-founder.'
+      company-image: '/images/clarity.png'
+      company-link: 'https://clarity.ai/'
+      company-name: 'Clarity'
+      image: '/images/adrian-casado-riva.jpg'
+      twitter: 'ClarityAIEng'
+    -
       name: 'Ralf D. Müller'
       uid: 'ralfdmueller'
       twitter: 'ralfdmueller'
@@ -262,6 +271,21 @@ agenda:
         - 'Iván is a Senior Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails and Micronaut teams at Object Computing, Inc. (OCI). He discovered Grails 8 years ago and since then he develops almost exclusively using Groovy and Java. He is the creator of some well known Grails plugins like Postgresql-Extensions.'
         - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
   talks:
+    -
+      uid: 'functional-testing-with-karate'
+      title: 'Functional testing with Karate'
+      start: '2020-03-27T16:15:00'
+      end: '2020-03-27T17:00:00'
+      track: '📍 Google Campus Room'
+      tags:
+        - 'test'
+      speakers:
+        - 'adrian-casado-riva'
+      about:
+        - 'Test your code as Daniel-san will do.'
+        - 'When somebody start to speak about testing and "PUFF" or "ya otro día.." is your first reaction? Or is it the task that has always motivated you the most? Whatever your option is, our Karate club is opened in order for you to start the path to black belt.'
+        - 'We are going to talk about the importance of functional testing, about how we understand it at Clarity and the challenges that we have faced. We will focus on Karate (https://intuit.github.io/karate/) as framework to develop tests, its pros and cons, we will do some examples and finally we will discuss lessons learned during one year making use of it in our tech team.'
+        - 'Let''s make a secret deal. I promise to teach karate, you promise to learn. I tell, you perform, no questions." - Mr. Miyagi'
     -
       uid: 'converting-java-pojos-to-kotlin'
       title: 'Converting 8+k lines of Java POJOs to Kotlin'
