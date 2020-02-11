@@ -459,6 +459,7 @@ agenda:
         - 'management'
       speakers:
         - 'leonard-brunings'
+        - 'michael-kutz'
       about:
         - 'In this workshop we''ll introduce the Spock testing framework.'
         - 'Participants will learn about'
