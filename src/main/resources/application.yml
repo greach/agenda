@@ -122,8 +122,8 @@ agenda:
       image: '/images/mlobo.jpg'
       bio: 'Technical Lead in a Software Engineers team at [Nexthink](www.nexthink.com). Active worker for important open source projects such as OpenStack (Horizon, Keystone, Mistral, Magnum, Murano), The CentOS Project, RDO Project and Fedora Project. '
     -
-      name: 'Adrián Casado Riva'
-      uid: 'adrian-casado-riva'
+      name: 'Adrián Casado Rivas'
+      uid: 'adrian-casado-rivas'
       bio: 'Backend developer at Clarity AI. Currently Java and Spring. Enjoys being involved in projects with social background. T3chFest co-founder.'
       company-image: '/images/clarity.png'
       company-link: 'https://clarity.ai/'
@@ -280,7 +280,7 @@ agenda:
       tags:
         - 'test'
       speakers:
-        - 'adrian-casado-riva'
+        - 'adrian-casado-rivas'
       about:
         - 'Test your code as Daniel-san will do.'
         - 'When somebody start to speak about testing and "PUFF" or "ya otro día.." is your first reaction? Or is it the task that has always motivated you the most? Whatever your option is, our Karate club is opened in order for you to start the path to black belt.'
