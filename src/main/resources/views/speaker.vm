@@ -10,7 +10,7 @@
     <meta property="og:url" content="https://greachconf.com/speaker/${speaker.uid}/index.html" />
     <meta property="og:title" content="${speaker.name} | Greach 2020 Speaker" />
     #foreach($bioparagraph in $speaker.bio)
-        <meta property="og:description" content="${bioparagraph.replaceAll("<p>", "").replaceAll("</p>", "")}" />
+        <meta property="og:description" content="${bioparagraph.replaceAll("<p>", "").replaceAll("</p>", "").replaceAll("<a href=""", "").replaceAll("</a>", "").replaceAll(""">", " ")}" />
         #break
     #end
     <meta property="og:image" content="https://greachconf.com${speaker.image}" />
