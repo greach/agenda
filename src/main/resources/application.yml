@@ -237,7 +237,7 @@ agenda:
       company-image: '/images/clarity.png'
       company-link: 'https://clarity.ai/'
       company-name: 'Clarity'
-      bio: 'Backend Developer at Clarity.'
+      bio: 'Jerónimo tries to rebuild capitalism as a Backend Developer at Clarity and is coorganizer of MadridJUG. '
       link: 'https://www.jerolba.com/'
     -
       name: 'Jacob Ae Mikkelsen'
@@ -765,7 +765,7 @@ agenda:
       speakers:
         - 'jeronimo-lopez'
       about:
-        - 'TBD'
+        - 'Jerónimo presents us JFleet, a library which persist in database large collections of Java objects as fast as possible, using the best available technique in each database provider (Postgres, MySQL and SQLServer), achieving it using not standard persistence methods from each JDBC driver implementation.'
     - uid: 'coffee-break-day1-1'
       title: 'Coffee Break'
       start: '2020-03-26T10:45:00'
