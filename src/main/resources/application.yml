@@ -278,7 +278,7 @@ agenda:
       end: '2020-03-27T17:00:00'
       track: '📍 Google Campus Room'
       tags:
-        - 'test'
+        - 'testing'
         - 'karate'
         - 'functional'
       speakers:
