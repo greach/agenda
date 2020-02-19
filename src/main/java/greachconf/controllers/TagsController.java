@@ -34,7 +34,7 @@ public class TagsController {
     }
 
     @View("tags")
-    @Get("/tags")
+    @Get("/tags/index.html")
     public Map<String, Object> index() {
         Map<String, Object> model = new HashMap<>();
         Map<String, Integer> tagDensitiy = talkRepository.calculateTagDensity();
@@ -43,7 +43,7 @@ public class TagsController {
     }
 
     @View("tag")
-    @Get("/tags/{tag}")
+    @Get("/tags/{tag}/index.html")
     public Map<String, Object> tag(@NotBlank String tag) {
         Map<String, Object> model = new HashMap<>();
         model.put(KEY_TAG, tag.toUpperCase());

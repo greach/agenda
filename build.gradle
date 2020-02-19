@@ -168,6 +168,27 @@ tasks.register('copyTalkPages') { task ->
     task.dependsOn('test')
 }
 check.dependsOn('copyTalkPages')
+
+tasks.register('copyTagPages') { task ->
+    task.doLast {
+        File dir = file("build/reports/com/greachconf/TagsSpec")
+        if (!dir.exists()) {
+            throw new GradleException("TagsSpec folder does not exist")
+        }
+        dir.eachFile { file ->
+            String name = file.name.replaceAll('.html', '')
+            File outputDir = project.file("build/dist/talks/tags" +((name == 'tags') ? "" : ("/" +name)))
+            outputDir.mkdirs()
+            File output = project.file("build/dist/talks/tags/"+ ((name == 'tags') ? 'index.html' : (name + '/index.html')))
+            output.createNewFile()
+            output.text = file.text
+        }
+    }
+    task.mustRunAfter('copyStaticWebsite')
+    task.dependsOn('test')
+}
+check.dependsOn('copyTagPages')
+
 tasks.register('copySpeakerPages') { task ->
     task.doLast {
         File dir = file("build/reports/com/greachconf/SpeakerSpec")
