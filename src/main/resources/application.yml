@@ -279,6 +279,8 @@ agenda:
       track: '📍 Google Campus Room'
       tags:
         - 'test'
+        - 'karate'
+        - 'functional'
       speakers:
         - 'adrian-casado-rivas'
       about:
@@ -293,7 +295,8 @@ agenda:
       end: '2020-03-27T15:45:00'
       track: '📍 Google Campus Room'
       tags:
-        - 'devops'
+        - 'java'
+        - 'kotlin'
       speakers:
         - 'pedro-santos'
       about:
@@ -354,7 +357,9 @@ agenda:
       end: '2020-03-28T15:45:00'
       track: '📍 Google Campus Auditorium'
       tags:
-        - 'micronaut'
+        - 'jenkins'
+        - 'ci'
+        - 'cd'
       speakers:
         - 'szymon-stepniak'
       about:
@@ -366,7 +371,7 @@ agenda:
       end: '2020-03-27T18:00:00'
       track: '📍 Google Campus Auditorium'
       tags:
-        - 'micronaut'
+        - 'groovy'
       speakers:
         - 'szymon-stepniak'
       about:
@@ -379,6 +384,7 @@ agenda:
       track: '📍 Google Campus Auditorium'
       tags:
         - 'micronaut'
+        - 'kubernetes'
       speakers:
         - 'alvaro-sanchez-mariscal'
       about:
@@ -390,7 +396,8 @@ agenda:
       end: '2020-03-28T10:45:00'
       track: '📍 Google Campus Auditorium'
       tags:
-        - 'management'
+        - 'quarkus'
+        - 'spring'
       speakers:
         - 'aurea-munoz'
         - 'gytis-trikleris'
@@ -405,7 +412,7 @@ agenda:
       end: '2020-03-28T09:45:00'
       track: '📍 Google Campus Auditorium'
       tags:
-        - 'management'
+        - 'microservices'
       speakers:
         - 'alberto-grande'
       about:
@@ -418,8 +425,6 @@ agenda:
       start: '2020-03-27T09:00:00'
       end: '2020-03-27T09:30:00'
       track: '📍 Google Campus Auditorium'
-      tags:
-        - 'management'
       speakers:
         - 'sdelamo'
       about:
@@ -432,6 +437,7 @@ agenda:
       track: '📍 Google Campus Room'
       tags:
         - 'gradle'
+        - 'cloud'
       speakers:
         - 'schalk-cronje'
       about:
@@ -443,8 +449,6 @@ agenda:
       start: '2020-03-28T16:00:00'
       end: '2020-03-28T16:15:00'
       track: '📍 Google Campus Auditorium'
-      tags:
-        - 'management'
       speakers:
         - 'sdelamo'
       about:
@@ -456,7 +460,8 @@ agenda:
       end: '2020-03-26T11:00:00'
       track: '📍 Glue Edison Room Blue'
       tags:
-        - 'management'
+        - 'testing'
+        - 'spock'
       speakers:
         - 'leonard-brunings'
         - 'michael-kutz'
@@ -478,6 +483,8 @@ agenda:
       track: '📍 Glue Edison Room Blue'
       tags:
         - 'testing'
+        - 'geb'
+        - 'functional'
       speakers:
         - 'michael-kutz'
         - 'marcin-erdmann'
@@ -495,6 +502,7 @@ agenda:
       track: '📍 Google Campus Auditorium'
       tags:
         - 'management'
+        - 'taiga'
       speakers:
         - 'pablo-ruiz-muzquiz'
       about:
@@ -509,6 +517,7 @@ agenda:
         - 'spock'
         - 'asciidoc'
         - 'geb'
+        - 'testing'
       speakers:
         - 'ralfdmueller'
       about:
@@ -521,6 +530,7 @@ agenda:
       track: '📍 Glue Edison Room Green'
       tags:
         - 'kafka'
+        - 'streams'
       speakers:
         - 'anton-rodriguez'
       about:
@@ -533,6 +543,8 @@ agenda:
       track: '📍 Glue Edison Room Blue'
       tags:
         - 'micronaut'
+        - 'chatbot'
+        - 'telegram'
       speakers:
         - 'jorge-aguilera'
       about:
@@ -544,7 +556,7 @@ agenda:
       end: '2020-03-27T18:00:00'
       track: '📍 Google Campus Room'
       tags:
-        - 'business'
+        - 'java'
       speakers:
         - 'eduardo-sanchez'
       about:
@@ -590,7 +602,7 @@ agenda:
       end: '2020-03-28T13:00:00'
       track: '📍 Google Campus Auditorium'
       tags:
-        - 'business'
+        - 'testing'
       speakers:
         - 'jacob-ae-mikkelsen'
       about:
@@ -657,6 +669,7 @@ agenda:
       end: '2020-03-26T13:15:00'
       track: '📍 Glue Edison Room Green'
       tags:
+        - 'cloud'
         - 'quarkus'
       speakers:
         - 'aurea-munoz'
