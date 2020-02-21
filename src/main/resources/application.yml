@@ -506,7 +506,7 @@ agenda:
       speakers:
         - 'pablo-ruiz-muzquiz'
       about:
-        - 'TBD.'
+        - 'I will show how Taiga can help teams develop better software addressing agile antipatterns and multidisciplinary teams. It will be short but well packed with useful tips.'
     -
       uid: 'spock-geb-and-asciidoc'
       title: 'Spock, Geb and AsciiDoc - from test to specification and back again'
