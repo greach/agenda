@@ -13,6 +13,26 @@ micronaut:
 agenda:
   speakers:
     -
+      name: 'Laura Morillo-Velarde'
+      uid: 'laura-morillo-velarde-rodriguez'
+      twitter: 'laura_morillo'
+      image: '/images/laura_morillo.jpg'
+      bio:
+        - 'Tech Lead at seedtag. She has worked with several technologies from C++ to Javascript and learnt how to use a Kubernetes infrastructure along the way.'
+        - 'She is a Google Cloud GDE and an organiser of different meetups like GDG Madrid and others like AgileGirls and Tech&Ladies to promote an increase in the participation of women in technology.'
+      company-name: 'Seedtag'
+      company-link: 'https://www.seedtag.com'
+      company-image: '/images/seedtag.svg'
+    -
+      name: 'Beatriz Martinez'
+      uid: 'beatriz-martinez'
+      twitter: 'beatrizmrg'
+      image: '/images/beatriz-martinez.jpg'
+      bio: 'Beatriz Martínez works at IBM''s Architecture and Innovation department, mainly focus on enterprise-grade cloud environments. Passionate about technology and innovation, she is an insatiable learner who loves getting involved with open-source communities.'
+      company-name: 'IBM'
+      company-link: 'https://www.ibm.com/es-es'
+      company-image: '/images/ibm.png'
+    -
       name: 'Pedro Santos'
       uid: 'pedro-santos'
       twitter: 'pedrodanielcsan'
@@ -272,6 +292,23 @@ agenda:
         - "He's also the coordinator of the Madrid Groovy User Group (@madridgug), ex-organizer of the [Greach Conference](http://greachconf.com) and a frequent speaker at conferences like Devoxx, Codemotion, RigaDevDays, JavaCro, GeeCon, ConFoo, SpringOne 2GX, Spring IO,.."
   talks:
     -
+      uid: 'cloud-native-monitoring-with-prometheus'
+      title: 'Cloud-native monitoring with Prometheus'
+      start: '2020-03-27T11:00:00'
+      end: '2020-03-27T11:45:00'
+      track: '📍 Google Campus Auditorium'
+      about:
+        - 'In the world of cloud-native applications and microservices, Prometheus has become the standard for monitoring.'
+        - 'This talk shows why, and what differentiates it from the more traditional approaches. How it can be used to monitor both systems and applications, and how to develop Prometheus-native applications.'
+        - 'It also shows the best practices when designing alert systems and integrate them with incident management tools that maybe already deployed.'
+      tags:
+        - 'cloud'
+        - 'monitoring'
+        - 'prometheus'
+      speakers:
+        - 'beatriz-martinez'
+        - 'laura-morillo-velarde-rodriguez'
+    -
       uid: 'functional-testing-with-karate'
       title: 'Functional testing with Karate'
       start: '2020-03-27T16:15:00'
@@ -313,7 +350,7 @@ agenda:
       title: 'How to Push to Production on Thursday Afternoon and Live to Tell the Tale'
       start: '2020-03-27T14:05:00'
       end: '2020-03-27T14:50:00'
-      track: '📍 Google Campus Auditorium'
+      track: '📍 Google Campus Room'
       tags:
         - 'devops'
       speakers:
@@ -432,8 +469,8 @@ agenda:
     -
       uid: '10-gradle-plugins-to-improve-your-cloud-life'
       title: '10 Gradle Plugins to Improve Your Cloud Life'
-      start: '2020-03-27T14:05:00'
-      end: '2020-03-27T14:50:00'
+      start: '2020-03-27T12:00:00'
+      end: '2020-03-27T12:45:00'
       track: '📍 Google Campus Room'
       tags:
         - 'gradle'
@@ -582,8 +619,8 @@ agenda:
     -
       uid: 'testing-micronaut-applications'
       title: 'Testing Micronaut applications'
-      start: '2020-03-27T11:00:00'
-      end: '2020-03-27T11:45:00'
+      start: '2020-03-27T14:05:00'
+      end: '2020-03-27T14:50:00'
       track: '📍 Google Campus Auditorium'
       tags:
         - 'micronaut'
