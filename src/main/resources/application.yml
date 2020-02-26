@@ -74,8 +74,8 @@ agenda:
       company-link: 'https://objectcomputing.com'
       company-image: '/images/oci.svg'
       bio:
-        - "Álvaro is a passionate developer and agile enthusiast with over 18 years of experience. He now works as a Senior Software Engineer at OCI, the company leading Groovy, Grails and Micronaut open-source development."
-        - "Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, [Salenda](https://www.salenda.es), in 2005, a software factory and Atlassian Gold Solution Partner headquartered in Madrid, Spain. As of today, he is still the company owner. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems."
+        - "Álvaro is a passionate developer and agile enthusiast with over 19 years of experience. He now works as a Senior Software Engineer at OCI, the company leading Micronaut, Groovy and Grails open-source development"
+        - "Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, [Salenda](https://www.salenda.es), in 2005, a software factory and Atlassian Gold Solution Partner headquartered in Madrid, Spain. Adaptavist acquired Salenda in 2019. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems"
         - "Álvaro has spoken in 11 different countries at conferences like Devoxx, GeeCON, JavaLand, JavaZone, Codemotion and Commit Conf. In his spare time, as well as coding and experimenting with new technologies, he likes to spend time with his wife and son, support [CD Leganes football team](https://www.cdleganes.com/), and play paddle tennis."
     -
       name: 'Alberto Grande'
@@ -415,17 +415,24 @@ agenda:
         - 'The one thing I admire in programming is that it is not a skill that you acquire, and you''re done. It is a journey. A never-ending process of learning new things and moving what you already know to the next level. In this talk, I would like to share with you a few ready-to-implement ideas that will help you improve your Groovy knowledge, become a problem solver, and what is even more important - enjoy that ride. If you feel that you stuck with the learning progress and you don''t know how to overcome it, this talk might help you get out of the impasse. I guarantee that you will learn something new either way. Are you in?'
     -
       uid: 'micronaut-and-kubernetes'
-      title: 'Micronaut and Kubernetes'
+      title: 'From local to cloud with Micronaut and Kubernetes'
       start: '2020-03-27T15:00:00'
       end: '2020-03-27T15:45:00'
       track: '📍 Google Campus Auditorium'
       tags:
         - 'micronaut'
         - 'kubernetes'
+        - 'docker'
+        - 'google cloud'
       speakers:
         - 'alvaro-sanchez-mariscal'
       about:
-        - ''
+        - 'This sessions aims to explain the options to deploy Micronaut microservices that make use of service discovery and distributed configuration. The steps that will be followed are:'
+        - '- Local execution.'
+        - '- Creating container images, with both the default Dockerfile and Jib.'
+        - '- Using Docker Compose.'
+        - '- Deploying the microservices in a local Kubernetes cluster, using micronaut-kubernetes.'
+        - '- Deploying them in Google Kubernetes Engine.'
     -
       uid: 'quarkus-for-spring-developers'
       title: 'Quarkus for Spring developers'
