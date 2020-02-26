@@ -835,7 +835,7 @@ agenda:
       uid: 'coffee-break-day2-1'
       title: 'Coffee Break'
       start: '2020-03-27T10:30:00'
-      end: '2020-03-27T10:45:00'
+      end: '2020-03-27T11:00:00'
     -
       uid: 'lunch-break-day2-2'
       title: 'Lunch Break'
