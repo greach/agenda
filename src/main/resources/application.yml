@@ -644,7 +644,7 @@ agenda:
       title: 'Nonfunctional Requirements - the Often Forgotten Ones'
       start: '2020-03-28T12:15:00'
       end: '2020-03-28T13:00:00'
-      track: '📍 Google Campus Auditorium'
+      track: '📍 Google Campus Room'
       tags:
         - 'testing'
       speakers:
@@ -684,7 +684,7 @@ agenda:
       title: 'Leveraging Micronaut in Grails 4'
       start: '2020-03-28T12:15:00'
       end: '2020-03-28T13:00:00'
-      track: '📍 Google Campus Room'
+      track: '📍 Google Campus Auditorium'
       tags:
         - 'micronaut'
         - 'grails'
