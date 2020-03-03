@@ -423,7 +423,6 @@ agenda:
         - 'micronaut'
         - 'kubernetes'
         - 'docker'
-        - 'google cloud'
       speakers:
         - 'alvaro-sanchez-mariscal'
       about:
