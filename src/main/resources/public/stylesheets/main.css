@@ -316,3 +316,19 @@ body#agenda article table td.timeslot {
 .sold .priceBundlePrice {
 	text-decoration: line-through;
 }
+
+.breakingnews {
+	box-shadow: #3C3A3D;
+	background-color: red;
+	color: white;
+	padding: 1px 20px 5px;
+	margin-bottom: 30px;
+}
+
+.breakingnews a:visited,
+.breakingnews a:hover,
+.breakingnews a {
+	color: white;
+	text-decoration: underline;
+
+}
